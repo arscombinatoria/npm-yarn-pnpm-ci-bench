@@ -12,6 +12,13 @@ function formatSeconds(ms) {
   return `${(ms / 1000).toFixed(1)}s`;
 }
 
+function formatYarnPnpSeconds(setting, result) {
+  if (setting.nodeModules) {
+    return '-';
+  }
+  return formatSeconds(result?.p90_ms);
+}
+
 function buildTable(results) {
   const npm20 = results.partials['20-npm'];
   const npm22 = results.partials['22-npm'];
@@ -85,7 +92,7 @@ function buildTable(results) {
     row.push(formatSeconds(npm24Result?.p90_ms));
     row.push(formatSeconds(pnpmResult?.p90_ms));
     row.push(formatSeconds(yarnResult?.p90_ms));
-    row.push(formatSeconds(yarnPnpResult?.p90_ms));
+    row.push(formatYarnPnpSeconds(setting, yarnPnpResult));
 
     rows.push(row);
   }
