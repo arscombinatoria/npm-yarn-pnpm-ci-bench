@@ -1,0 +1,58 @@
+name: bench
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: bench-${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20, 22, 24]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: corepack enable
+      - run: corepack prepare yarn@stable --activate
+      - run: corepack prepare pnpm@latest --activate
+      - run: node bench/run.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: partial-${{ matrix.node-version }}
+          path: results/partial/${{ matrix.node-version }}.json
+
+  render:
+    needs: bench
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          path: results/partial
+          merge-multiple: true
+      - run: node bench/merge-results.mjs
+      - run: node bench/render-readme.mjs
+      - name: Commit updated results
+        run: |
+          if git status --porcelain | grep -E 'README.md|results/results.json'; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md results/results.json
+            git commit -m "[bench] update benchmark results"
+            git push
+          fi
