@@ -1,4 +1,5 @@
 node_modules
 results
+!results/results.json
 .bench
 .home
