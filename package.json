@@ -41,7 +41,7 @@
     "font-awesome": "^4.7.0",
     "fready": "^1.0.0",
     "glob": "^10.3.10",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-csslint": "^1.0.1",
     "gulp-cssnano": "^2.1.3",
