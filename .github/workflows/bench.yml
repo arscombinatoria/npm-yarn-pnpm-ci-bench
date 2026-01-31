@@ -37,7 +37,7 @@ jobs:
       - name: Run benchmark
         run: node bench/run.mjs --node ${{ matrix.node }} --scope ${{ matrix.scope }}
       - name: Upload partial results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: partial-${{ matrix.node }}-${{ matrix.scope }}
           path: results/partial
