@@ -86,7 +86,7 @@
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",
     "react-dropzone": "^14.2.3",
-    "react-grid-layout": "^1.4.4",
+    "react-grid-layout": "^2.2.2",
     "react-highcharts": "^16.1.0",
     "react-hot-loader": "4.13.1",
     "react-input-calendar": "^0.5.4",
