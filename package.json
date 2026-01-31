@@ -83,7 +83,7 @@
     "react-addons-shallow-compare": "^15.6.3",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
-    "react-dom": "^18.2.0",
+    "react-dom": "^19.2.4",
     "react-draft-wysiwyg": "^1.15.0",
     "react-dropzone": "^14.2.3",
     "react-grid-layout": "^1.4.4",
