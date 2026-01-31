@@ -8,6 +8,15 @@ updates:
       timezone: "Asia/Tokyo"
     open-pull-requests-limit: 30
     groups:
+      react-major:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-*"
+          - "@types/react"
+          - "@types/react-dom"
+        update-types:
+          - "major"
       npm-minor-patch:
         update-types:
           - "minor"
