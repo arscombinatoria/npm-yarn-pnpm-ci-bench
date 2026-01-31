@@ -107,7 +107,7 @@
     "sortablejs": "^1.15.2",
     "style-loader": "^3.3.4",
     "stylelint": "^16.1.0",
-    "superagent": "^8.1.2",
+    "superagent": "^10.3.0",
     "uglify-js": "^3.17.4",
     "uuid": "^9.0.1",
     "verge": "^1.10.2",
