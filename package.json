@@ -1,0 +1,9 @@
+{
+  "name": "npm-yarn-pnpm-ci-bench",
+  "private": true,
+  "scripts": {
+    "bench:run": "node bench/run.mjs",
+    "bench:merge": "node bench/merge-results.mjs",
+    "bench:render": "node bench/render-readme.mjs"
+  }
+}
