@@ -1,4 +1,1268 @@
 {
-  "generatedAt": "",
-  "partials": {}
+  "generatedAt": "2026-01-31T12:23:15.335Z",
+  "partials": {
+    "20-npm": {
+      "nodeMajor": 20,
+      "scope": "npm",
+      "versions": {
+        "node": "v20.20.0",
+        "npm": "10.8.2",
+        "pnpm": null,
+        "yarn": null
+      },
+      "generatedAt": "2026-01-31T12:19:30.265Z",
+      "results": [
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            525.874962,
+            527.092699,
+            540.360381,
+            549.702926,
+            533.251045,
+            538.904116,
+            549.934788,
+            535.441698,
+            538.230412,
+            546.368389,
+            532.761063
+          ],
+          "p90_ms": 549.702926
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1101.696181,
+            1109.280605,
+            1110.571931,
+            1112.718614,
+            1106.689847,
+            1104.688478,
+            1097.246062,
+            1100.836973,
+            1105.358679,
+            1103.661269,
+            1107.743172
+          ],
+          "p90_ms": 1110.571931
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            567.847107,
+            570.239638,
+            557.0604,
+            579.699281,
+            542.674978,
+            563.617678,
+            540.075796,
+            544.498201,
+            563.803524,
+            532.087335,
+            533.047508
+          ],
+          "p90_ms": 570.239638
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1613.689286,
+            1620.093629,
+            1619.777146,
+            1628.397387,
+            1613.072134,
+            1630.881265,
+            1623.194621,
+            1633.330551,
+            1629.497982,
+            1619.650531,
+            1644.006585
+          ],
+          "p90_ms": 1633.330551
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            532.115731,
+            682.498754,
+            536.998257
+          ],
+          "p90_ms": 653.3986545999999
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1533.469284,
+            1508.546693,
+            1501.453171
+          ],
+          "p90_ms": 1528.4847657999999
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            538.92305,
+            544.148377,
+            543.681255
+          ],
+          "p90_ms": 544.0549526
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            2993.028269,
+            3115.092817,
+            3088.173065
+          ],
+          "p90_ms": 3109.7088666
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1153.989072,
+            1156.843225,
+            1158.617923,
+            1140.397507,
+            1148.916162,
+            1158.674064,
+            1144.248044,
+            1159.427539,
+            1140.881619,
+            1153.476949,
+            1161.663321
+          ],
+          "p90_ms": 1159.427539
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1090.114461,
+            1083.535571,
+            1083.182308,
+            1096.318733,
+            1092.394975,
+            1098.555435,
+            1096.649233,
+            1091.483403,
+            1094.479729,
+            1092.126468,
+            1088.226064
+          ],
+          "p90_ms": 1096.649233
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1572.188981,
+            1553.188297,
+            1582.134614
+          ],
+          "p90_ms": 1580.1454874
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1505.012927,
+            1485.67392,
+            1497.281197
+          ],
+          "p90_ms": 1503.466581
+        }
+      ]
+    },
+    "22-npm": {
+      "nodeMajor": 22,
+      "scope": "npm",
+      "versions": {
+        "node": "v22.22.0",
+        "npm": "10.9.4",
+        "pnpm": null,
+        "yarn": null
+      },
+      "generatedAt": "2026-01-31T12:19:25.900Z",
+      "results": [
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            458.690321,
+            448.229429,
+            474.392834,
+            458.438178,
+            465.356583,
+            454.031002,
+            459.524549,
+            469.4755,
+            456.578829,
+            458.017688,
+            457.186328
+          ],
+          "p90_ms": 469.4755
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1040.405105,
+            1033.320936,
+            1035.141166,
+            1037.442594,
+            1036.029492,
+            1038.330569,
+            1024.994865,
+            1031.200632,
+            1036.079807,
+            1047.914175,
+            1033.555096
+          ],
+          "p90_ms": 1040.405105
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            466.043406,
+            468.179271,
+            473.551698,
+            473.227697,
+            497.142413,
+            468.191033,
+            465.603812,
+            485.670882,
+            468.518432,
+            466.703797,
+            477.253674
+          ],
+          "p90_ms": 485.670882
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1496.067896,
+            1539.841585,
+            1577.442133,
+            1600.864889,
+            1488.63025,
+            1475.049528,
+            1498.286412,
+            1487.761287,
+            1495.459499,
+            1494.852412,
+            1496.110357
+          ],
+          "p90_ms": 1577.442133
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            447.773553,
+            466.748972,
+            462.186256
+          ],
+          "p90_ms": 465.8364288
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1398.050798,
+            1409.559967,
+            1399.879398
+          ],
+          "p90_ms": 1407.6238531999998
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            479.21638,
+            465.032434,
+            472.686138
+          ],
+          "p90_ms": 477.9103316
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            3035.939388,
+            3105.187835,
+            3119.871284
+          ],
+          "p90_ms": 3116.9345942
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1105.041656,
+            1101.988189,
+            1101.885962,
+            1102.778953,
+            1103.534366,
+            1097.732841,
+            1106.078096,
+            1096.746495,
+            1103.319965,
+            1100.197432,
+            1109.314205
+          ],
+          "p90_ms": 1106.078096
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1029.633494,
+            1016.545424,
+            1021.828494,
+            1019.823255,
+            1027.809952,
+            1032.101345,
+            1019.472333,
+            1032.967734,
+            1025.164203,
+            1030.966258,
+            1038.403973
+          ],
+          "p90_ms": 1032.967734
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1456.440082,
+            1463.948776,
+            1467.711261
+          ],
+          "p90_ms": 1466.958764
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1385.644512,
+            1390.090918,
+            1397.355786
+          ],
+          "p90_ms": 1395.9028124000001
+        }
+      ]
+    },
+    "24-all": {
+      "nodeMajor": 24,
+      "scope": "all",
+      "versions": {
+        "node": "v24.13.0",
+        "npm": "11.6.2",
+        "pnpm": "10.28.2",
+        "yarn": "4.12.0"
+      },
+      "generatedAt": "2026-01-31T12:23:01.770Z",
+      "results": [
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            545.443502,
+            448.115569,
+            496.914791,
+            441.113854,
+            435.464065,
+            433.059392,
+            435.074336,
+            442.164623,
+            427.099664,
+            430.182737,
+            433.171246
+          ],
+          "p90_ms": 496.914791
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1136.853033,
+            1138.86586,
+            1137.337625,
+            1140.580961,
+            1153.109974,
+            1133.644429,
+            1131.197948,
+            1135.998689,
+            1155.579176,
+            1153.895581,
+            1156.965001
+          ],
+          "p90_ms": 1155.579176
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            444.58064,
+            461.368375,
+            455.114459,
+            448.390282,
+            464.941774,
+            456.148063,
+            450.865409,
+            450.783449,
+            453.175676,
+            467.760926,
+            434.335406
+          ],
+          "p90_ms": 464.941774
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1658.772504,
+            1611.724,
+            1639.185471,
+            1625.223484,
+            1626.984255,
+            1619.224089,
+            1621.838282,
+            1623.987836,
+            1619.587563,
+            1624.107065,
+            1644.856555
+          ],
+          "p90_ms": 1644.856555
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            448.873653,
+            442.868047,
+            433.150043
+          ],
+          "p90_ms": 447.6725318
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1481.652376,
+            1509.256737,
+            1498.239145
+          ],
+          "p90_ms": 1507.0532186
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            469.008132,
+            450.539634,
+            453.658173
+          ],
+          "p90_ms": 465.9381402
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            2859.649109,
+            2698.327339,
+            2702.808664
+          ],
+          "p90_ms": 2828.28102
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1224.90185,
+            1208.39258,
+            1202.208908,
+            1214.929633,
+            1211.616822,
+            1205.852286,
+            1210.433582,
+            1203.522396,
+            1215.894635,
+            1207.769694,
+            1215.97525
+          ],
+          "p90_ms": 1215.97525
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1125.735606,
+            1114.636437,
+            1120.611067,
+            1133.082746,
+            1134.38978,
+            1166.402518,
+            1183.403306,
+            1125.482829,
+            1111.52633,
+            1124.747228,
+            1115.476268
+          ],
+          "p90_ms": 1166.402518
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1546.566806,
+            1532.556291,
+            1548.155317
+          ],
+          "p90_ms": 1547.8376148
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1455.111344,
+            1457.058729,
+            1457.330799
+          ],
+          "p90_ms": 1457.2763850000001
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            435.75573,
+            434.991576,
+            437.205301,
+            433.063988,
+            439.917631,
+            439.167396,
+            438.469625,
+            436.800124,
+            434.498887,
+            432.930438,
+            432.308753
+          ],
+          "p90_ms": 439.167396
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            601.091138,
+            594.899865,
+            600.810022,
+            602.167479,
+            591.119481,
+            592.562915,
+            597.995831,
+            597.43523,
+            600.861277,
+            599.192163,
+            603.498472
+          ],
+          "p90_ms": 602.167479
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            569.898271,
+            583.133377,
+            565.265984,
+            568.539744,
+            571.560151,
+            583.53529,
+            565.876118,
+            568.487616,
+            570.113346,
+            567.709985,
+            567.787535
+          ],
+          "p90_ms": 583.133377
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1000.771684,
+            1029.818809,
+            1017.298654,
+            1021.903871,
+            1006.627666,
+            1021.037083,
+            1027.678597,
+            1041.078529,
+            1009.869724,
+            1021.711142,
+            999.950073
+          ],
+          "p90_ms": 1029.818809
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            436.836309,
+            440.539302,
+            434.2637
+          ],
+          "p90_ms": 439.7987034
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            898.295576,
+            899.941593,
+            896.446856
+          ],
+          "p90_ms": 899.6123896
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            1042.807571,
+            991.405023,
+            1011.94011
+          ],
+          "p90_ms": 1036.6340788
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1182.515953,
+            1176.178543,
+            1178.761405
+          ],
+          "p90_ms": 1181.7650434000002
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            425.082948,
+            417.724515,
+            425.712838,
+            418.108025,
+            423.212081,
+            420.298699,
+            424.026157,
+            423.32733,
+            420.104232,
+            425.860027,
+            419.398696
+          ],
+          "p90_ms": 425.712838
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            609.288164,
+            598.93407,
+            599.833592,
+            605.344812,
+            598.198307,
+            601.894557,
+            597.159551,
+            598.394084,
+            606.246724,
+            602.229168,
+            601.863362
+          ],
+          "p90_ms": 606.246724
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            437.627097,
+            442.228439,
+            431.692078
+          ],
+          "p90_ms": 441.3081706
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            890.897135,
+            888.700564,
+            902.922709
+          ],
+          "p90_ms": 900.5175942000001
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            344.467021,
+            338.402685,
+            349.06994,
+            345.200579,
+            341.976605,
+            346.555169,
+            344.4092,
+            343.852683,
+            346.704192,
+            344.129706,
+            340.229028
+          ],
+          "p90_ms": 346.704192
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            791.657193,
+            793.470089,
+            787.37981,
+            783.585151,
+            789.047024,
+            792.82466,
+            797.06123,
+            791.006083,
+            792.575222,
+            796.569125,
+            793.708626
+          ],
+          "p90_ms": 796.569125
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            649.477758,
+            723.089693,
+            656.441775,
+            617.855025,
+            635.201378,
+            665.199939,
+            649.200912,
+            644.612522,
+            656.900604,
+            634.769728,
+            638.173224
+          ],
+          "p90_ms": 665.199939
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1093.210424,
+            1118.69956,
+            1113.893257,
+            1112.266599,
+            1142.207002,
+            1107.907646,
+            1145.875743,
+            1119.71479,
+            1111.622012,
+            1103.321229,
+            1117.722189
+          ],
+          "p90_ms": 1142.207002
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            342.640653,
+            342.99567,
+            337.68502
+          ],
+          "p90_ms": 342.9246666
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            794.545846,
+            792.156201,
+            795.55067
+          ],
+          "p90_ms": 795.3497052
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            638.471797,
+            631.986763,
+            644.319178
+          ],
+          "p90_ms": 643.1497017999999
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1174.14435,
+            1125.255237,
+            1114.483368
+          ],
+          "p90_ms": 1164.3665274
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1032.637059,
+            1034.422781,
+            1038.585867,
+            1011.673737,
+            1057.704606,
+            1047.196118,
+            1031.642586,
+            1040.4853,
+            1022.265646,
+            1052.367734,
+            1034.671212
+          ],
+          "p90_ms": 1052.367734
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1509.25422,
+            1508.707744,
+            1532.462817,
+            1525.545746,
+            1480.529777,
+            1464.446872,
+            1470.864271,
+            1506.014659,
+            1501.273308,
+            1467.712858,
+            1482.998231
+          ],
+          "p90_ms": 1525.545746
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1058.874551,
+            1018.203133,
+            1031.655441
+          ],
+          "p90_ms": 1053.4307290000002
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1503.623156,
+            1523.233216,
+            1513.934809
+          ],
+          "p90_ms": 1521.3735346
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            326.967573,
+            329.506709,
+            325.363328,
+            326.416419,
+            324.132245,
+            327.77295,
+            326.28984,
+            325.731107,
+            330.420249,
+            323.929221,
+            324.503098
+          ],
+          "p90_ms": 329.506709
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            386.839899,
+            389.088809,
+            383.924802,
+            391.626974,
+            386.917809,
+            385.648748,
+            386.52498,
+            409.742521,
+            386.257208,
+            384.613489,
+            384.905937
+          ],
+          "p90_ms": 391.626974
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            624.56382,
+            634.098621,
+            619.198472,
+            609.31051,
+            626.094017,
+            619.553864,
+            592.562917,
+            640.592125,
+            632.172319,
+            629.019839,
+            619.574004
+          ],
+          "p90_ms": 634.098621
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            698.002644,
+            778.977002,
+            697.025338,
+            702.19756,
+            698.322529,
+            707.496245,
+            707.662816,
+            845.456282,
+            701.835712,
+            679.118548,
+            700.72762
+          ],
+          "p90_ms": 778.977002
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            334.710406,
+            324.773558,
+            328.267853
+          ],
+          "p90_ms": 333.4218954
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            387.566608,
+            381.617242,
+            383.385268
+          ],
+          "p90_ms": 386.73033999999996
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            651.710031,
+            612.813031,
+            602.990762
+          ],
+          "p90_ms": 643.930631
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            712.856719,
+            755.16971,
+            713.296327
+          ],
+          "p90_ms": 746.7950334
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1027.436386,
+            1050.942444,
+            1009.347847,
+            1038.674427,
+            1015.754877,
+            1025.100108,
+            1142.465839,
+            1047.723278,
+            1030.128257,
+            1042.156623,
+            1043.19279
+          ],
+          "p90_ms": 1050.942444
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1099.41224,
+            1091.305434,
+            1085.766149,
+            1086.186306,
+            1111.851706,
+            1098.436,
+            1099.741908,
+            1102.637685,
+            1054.13203,
+            1068.891747,
+            1073.455635
+          ],
+          "p90_ms": 1102.637685
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1019.78199,
+            1003.64531,
+            1000.064263
+          ],
+          "p90_ms": 1016.554654
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1056.167871,
+            1058.246704,
+            1082.699911
+          ],
+          "p90_ms": 1077.8092695999999
+        }
+      ]
+    }
+  }
 }
