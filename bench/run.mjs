@@ -37,11 +37,11 @@ const commandMap = {
     ci: 'pnpm install --frozen-lockfile'
   },
   yarn: {
-    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install',
+    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install --no-immutable',
     ci: 'yarn install --immutable'
   },
   'yarn-pnp': {
-    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install',
+    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install --no-immutable',
     ci: 'yarn install --immutable'
   }
 };
