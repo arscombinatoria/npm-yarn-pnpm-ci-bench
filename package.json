@@ -29,7 +29,7 @@
     "cssnano": "^6.0.3",
     "custom-event-polyfill": "^1.0.7",
     "draft-js": "^0.11.7",
-    "ejs": "^3.1.9",
+    "ejs": "^4.0.1",
     "eslint": "^8.56.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-import-resolver-webpack": "^0.13.8",
