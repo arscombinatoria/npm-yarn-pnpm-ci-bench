@@ -2,7 +2,7 @@
 
 This repository benchmarks install/ci-equivalent performance for npm, pnpm, and Yarn (node-modules and PnP).
 
-@-- BENCH:START --
+<!-- BENCH:START -->
 | action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.6.2) | pnpm(10.28.2) | Yarn(4.12.0) | Yarn PnP(4.12.0) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | install | ✓ | ✓ | ✓ | 0.5s | 0.5s | 0.5s | 0.4s | 0.3s | - |

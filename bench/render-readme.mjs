@@ -110,8 +110,8 @@ function buildTable(results) {
 const results = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
 const readme = fs.readFileSync(readmePath, 'utf8');
 const table = buildTable(results);
-const startMarker = '@-- BENCH:START --';
-const endMarker = '@-- BENCH:END --';
+const startMarker = '<!-- BENCH:START -->';
+const endMarker = '<!-- BENCH:END -->';
 
 const startIndex = readme.indexOf(startMarker);
 const endIndex = readme.indexOf(endMarker);
