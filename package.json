@@ -96,7 +96,7 @@
     "react-responsive": "9.0.2",
     "react-responsive-tabs": "^4.4.3",
     "react-router": "^6.21.2",
-    "react-router-dom": "^6.21.2",
+    "react-router-dom": "^7.13.0",
     "react-select-plus": "1.0.0-rc.3.patch12",
     "react-skylight": "^0.5.1",
     "react-sortablejs": "^6.1.4",
