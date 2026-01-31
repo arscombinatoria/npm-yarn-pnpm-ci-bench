@@ -29,8 +29,8 @@ for (const cache of [true, false]) {
 
 const commandMap = {
   npm: {
-    install: 'npm install',
-    ci: 'npm ci'
+    install: 'npm install --legacy-peer-deps',
+    ci: 'npm ci --legacy-peer-deps'
   },
   pnpm: {
     install: 'pnpm install',
