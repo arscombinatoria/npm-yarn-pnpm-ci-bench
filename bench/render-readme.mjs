@@ -12,6 +12,140 @@ function formatSeconds(ms) {
   return `${(ms / 1000).toFixed(1)}s`;
 }
 
+function median(values) {
+  const sorted = values.filter((value) => Number.isFinite(value)).sort((a, b) => a - b);
+  if (sorted.length === 0) {
+    return null;
+  }
+  const mid = Math.floor(sorted.length / 2);
+  if (sorted.length % 2 === 0) {
+    return (sorted[mid - 1] + sorted[mid]) / 2;
+  }
+  return sorted[mid];
+}
+
+function buildSummarySvg(results) {
+  const actions = ['install', 'ci'];
+  const series = [
+    { key: 'npm20', label: 'npm Node20', partial: results.partials['20-npm'], tool: 'npm' },
+    { key: 'npm22', label: 'npm Node22', partial: results.partials['22-npm'], tool: 'npm' },
+    { key: 'npm24', label: 'npm Node24', partial: results.partials['24-all'], tool: 'npm' },
+    { key: 'pnpm', label: 'pnpm', partial: results.partials['24-all'], tool: 'pnpm' },
+    { key: 'yarn', label: 'Yarn', partial: results.partials['24-all'], tool: 'yarn' },
+    { key: 'yarnPnp', label: 'Yarn PnP', partial: results.partials['24-all'], tool: 'yarn-pnp' }
+  ];
+  const colors = ['#4C78A8', '#F58518', '#E45756', '#72B7B2', '#54A24B', '#B279A2'];
+
+  const valuesByAction = actions.map((action) =>
+    series.map((item) => {
+      if (!item.partial) {
+        return null;
+      }
+      const entries = item.partial.results.filter(
+        (entry) => entry.tool === item.tool && entry.action === action
+      );
+      const p90Values = entries.map((entry) => entry.p90_ms);
+      return median(p90Values);
+    })
+  );
+
+  const flatValues = valuesByAction.flat().filter((value) => Number.isFinite(value));
+  const maxValue = flatValues.length ? Math.max(...flatValues) : 1;
+
+  const width = 960;
+  const height = 300;
+  const margin = { top: 40, right: 30, bottom: 70, left: 60 };
+  const chartWidth = width - margin.left - margin.right;
+  const chartHeight = height - margin.top - margin.bottom;
+  const groupWidth = chartWidth / actions.length;
+  const groupPadding = 16;
+  const barGap = 6;
+  const barWidth =
+    (groupWidth - groupPadding * 2 - barGap * (series.length - 1)) / series.length;
+
+  const yTicks = 4;
+  const tickValues = Array.from({ length: yTicks + 1 }, (_, index) => (maxValue / yTicks) * index);
+
+  const svgParts = [];
+  svgParts.push(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Benchmark p90 summary">`
+  );
+  svgParts.push(`<rect width="100%" height="100%" fill="#ffffff"/>`);
+
+  // Grid lines and Y axis labels
+  tickValues.forEach((tick) => {
+    const y = margin.top + chartHeight - (tick / maxValue) * chartHeight;
+    svgParts.push(
+      `<line x1="${margin.left}" y1="${y.toFixed(1)}" x2="${width - margin.right}" y2="${y.toFixed(
+        1
+      )}" stroke="#e5e7eb" stroke-width="1"/>`
+    );
+    svgParts.push(
+      `<text x="${margin.left - 8}" y="${y + 4}" text-anchor="end" font-size="11" fill="#4b5563">${(
+        tick / 1000
+      ).toFixed(1)}s</text>`
+    );
+  });
+
+  // Bars
+  actions.forEach((action, actionIndex) => {
+    const groupStart = margin.left + actionIndex * groupWidth + groupPadding;
+    const centerX = margin.left + actionIndex * groupWidth + groupWidth / 2;
+    svgParts.push(
+      `<text x="${centerX}" y="${height - margin.bottom + 40}" text-anchor="middle" font-size="12" fill="#111827">${action}</text>`
+    );
+    series.forEach((item, seriesIndex) => {
+      const value = valuesByAction[actionIndex][seriesIndex];
+      const barHeight = value ? (value / maxValue) * chartHeight : 0;
+      const x = groupStart + seriesIndex * (barWidth + barGap);
+      const y = margin.top + chartHeight - barHeight;
+      svgParts.push(
+        `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(
+          1
+        )}" height="${barHeight.toFixed(1)}" fill="${colors[seriesIndex]}" rx="2" ry="2"/>`
+      );
+      const label = value ? `${(value / 1000).toFixed(1)}s` : '-';
+      const labelY = Math.max(y - 6, margin.top + 12);
+      svgParts.push(
+        `<text x="${(x + barWidth / 2).toFixed(
+          1
+        )}" y="${labelY.toFixed(1)}" text-anchor="middle" font-size="11" fill="#111827">${label}</text>`
+      );
+    });
+  });
+
+  // Axis
+  svgParts.push(
+    `<line x1="${margin.left}" y1="${margin.top}" x2="${margin.left}" y2="${margin.top + chartHeight}" stroke="#111827" stroke-width="1"/>`
+  );
+  svgParts.push(
+    `<line x1="${margin.left}" y1="${margin.top + chartHeight}" x2="${width - margin.right}" y2="${
+      margin.top + chartHeight
+    }" stroke="#111827" stroke-width="1"/>`
+  );
+
+  // Legend
+  const legendStartX = margin.left;
+  const legendStartY = 16;
+  const legendGap = 140;
+  series.forEach((item, index) => {
+    const x = legendStartX + index * legendGap;
+    svgParts.push(
+      `<rect x="${x}" y="${legendStartY}" width="12" height="12" fill="${colors[index]}" rx="2" ry="2"/>`
+    );
+    svgParts.push(
+      `<text x="${x + 18}" y="${legendStartY + 11}" font-size="12" fill="#111827">${item.label}</text>`
+    );
+  });
+
+  svgParts.push(
+    `<text x="${margin.left}" y="${height - 12}" font-size="11" fill="#6b7280">P90 median by action (seconds)</text>`
+  );
+  svgParts.push('</svg>');
+
+  return svgParts.join('\n');
+}
+
 function buildTable(results) {
   const npm20 = results.partials['20-npm'];
   const npm22 = results.partials['22-npm'];
@@ -103,6 +237,7 @@ function buildTable(results) {
 const results = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));
 const readme = fs.readFileSync(readmePath, 'utf8');
 const table = buildTable(results);
+const summarySvg = buildSummarySvg(results);
 const startMarker = '<!-- BENCH:START -->';
 const endMarker = '<!-- BENCH:END -->';
 
@@ -115,6 +250,7 @@ if (startIndex === -1 || endIndex === -1 || startIndex > endIndex) {
 
 const before = readme.slice(0, startIndex + startMarker.length);
 const after = readme.slice(endIndex);
-const updated = `${before}\n${table}\n${after}`;
+const updated = `${before}\n![Benchmark summary](./results/summary.svg)\n\n${table}\n${after}`;
 
 fs.writeFileSync(readmePath, updated);
+fs.writeFileSync(path.join(repoRoot, 'results', 'summary.svg'), summarySvg);
