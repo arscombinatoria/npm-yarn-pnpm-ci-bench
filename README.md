@@ -64,22 +64,7 @@ The merge step collects every JSON file in `results/partial` and writes a single
 
 ## Results table
 
-The benchmark table below is updated automatically by CI. The `<!-- BENCH:START -->
-| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.6.2) | pnpm(10.28.2) | Yarn(4.12.0) | Yarn PnP(4.12.0) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| install | ✓ | ✓ | ✓ | 1.0s | 0.8s | 0.9s | 0.6s | 0.9s | 0.8s |
-| install | ✓ | ✓ |  | 3.6s | 3.5s | 3.8s | 1.0s | 2.4s | 1.4s |
-| install | ✓ |  | ✓ | 0.9s | 0.9s | 1.2s | 1.3s | 1.9s | 1.8s |
-| install | ✓ |  |  | 6.4s | 5.6s | 5.9s | 2.8s | 3.4s | 2.5s |
-| install |  | ✓ | ✓ | 1.4s | 1.4s | 1.2s | 0.5s | 0.9s | 0.8s |
-| install |  | ✓ |  | 5.5s | 4.8s | 5.2s | 2.5s | 2.4s | 1.4s |
-| install |  |  | ✓ | 0.9s | 0.9s | 4.1s | 2.8s | 1.9s | 1.8s |
-| install |  |  |  | 14.1s | 17.0s | 16.4s | 4.0s | 3.5s | 2.5s |
-| ci | ✓ | ✓ | ✓ | 3.7s | 3.6s | 3.9s | 0.6s | 3.5s | 3.4s |
-| ci | ✓ | ✓ |  | 3.5s | 3.3s | 3.7s | 1.0s | 5.0s | 4.1s |
-| ci |  | ✓ | ✓ | 5.5s | 5.0s | 5.4s | 0.5s | 3.5s | 3.4s |
-| ci |  | ✓ |  | 5.3s | 4.7s | 5.2s | 2.4s | 5.0s | 4.1s |
-<!-- BENCH:END -->` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.【F:bench/render-readme.mjs†L108-L118】
+The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START --\>` and `\<!-- BENCH:END --\>` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.【F:bench/render-readme.mjs†L108-L118】
 
 <!-- BENCH:START -->
 | action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.6.2) | pnpm(10.28.2) | Yarn(4.12.0) | Yarn PnP(4.12.0) |
