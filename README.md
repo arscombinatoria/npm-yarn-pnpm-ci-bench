@@ -11,7 +11,7 @@ Each tool is exercised across a matrix of settings:
 - **Lockfile:** present vs removed (where applicable).【F:bench/run.mjs†L124-L185】
 - **node_modules / PnP state:** existing vs removed (PnP artifacts are cleared for Yarn PnP).【F:bench/run.mjs†L92-L185】
 
-Results are summarized as **P90 latency in seconds** across multiple runs to reduce outlier noise.【F:bench/run.mjs†L16-L17】【F:bench/run.mjs†L61-L81】【F:bench/run.mjs†L187-L231】
+Results are summarized as **P90 latency in seconds** across multiple runs to reduce outlier noise.
 
 ## How the benchmark works
 
@@ -22,10 +22,33 @@ The entrypoint is `bench/run.mjs`, which:
 3. Executes the appropriate install command for npm, pnpm, Yarn (node-modules), and Yarn PnP.【F:bench/run.mjs†L27-L59】【F:bench/run.mjs†L216-L264】
 4. Writes a JSON payload to `results/partial/<nodeMajor>-<scope>.json` with version metadata and per-case timings.【F:bench/run.mjs†L16-L26】【F:bench/run.mjs†L233-L269】
 
-Two environment variables control sample size:
+Sample control is configurable through environment variables:
 
-- `RUNS_CACHED` (default: 11) for cache-warm scenarios.
-- `RUNS_NOCACHE` (default: 3) for cache-cold scenarios.【F:bench/run.mjs†L12-L17】【F:bench/run.mjs†L193-L205】
+- `RUNS_CACHED` (default: 11): baseline maximum runs for cache-warm scenarios.
+- `RUNS_NOCACHE` (default: 3): baseline maximum runs for cache-cold scenarios.
+- `MIN_RUNS` (default: 3): minimum runs always executed before any early-stop decision.
+- `MAX_RUNS` (default: `0`): hard upper bound for adaptive sampling (`0` means use `RUNS_CACHED`/`RUNS_NOCACHE`).
+- `TARGET_RSE` (default: `0.05`): stop when relative standard error (standard error / mean) falls below this value.
+- `TARGET_IQR_RATIO` (default: `0.1`): alternative stop criterion based on `IQR / median`.
+
+
+### Adaptive sampling
+
+`runCases` now uses adaptive stopping to balance runtime and confidence:
+
+1. Each case runs at least `MIN_RUNS`.
+2. After each run, stability is recomputed from collected samples using two criteria:
+   - **RSE** (relative standard error), and
+   - **IQR ratio** (`IQR / median`) as a robust spread check.
+3. If either criterion meets its target (`TARGET_RSE` or `TARGET_IQR_RATIO`), that case ends early.
+4. Otherwise, sampling continues until `MAX_RUNS` (or the baseline run count when `MAX_RUNS=0`).
+
+Every case in output JSON now includes:
+
+- `actual_runs`: the real sample count used for that case.
+- `stability`: computed diagnostics (`rse`, `iqr_ratio`, thresholds, and which criterion passed).
+
+This reduces total benchmark time for stable cases while preserving traceable reliability metadata for noisier cases.
 
 ## Running the benchmarks locally
 
@@ -60,11 +83,11 @@ Update the README benchmark table from `results/results.json`:
 npm run bench:render
 ```
 
-The merge step collects every JSON file in `results/partial` and writes a single `results/results.json` payload consumed by the README renderer.【F:bench/merge-results.mjs†L1-L30】【F:bench/render-readme.mjs†L1-L118】
+The merge step collects every JSON file in `results/partial` and writes a single `results/results.json` payload consumed by the README renderer.
 
 ## Results table
 
-The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START --\>` and `\<!-- BENCH:END --\>` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.【F:bench/render-readme.mjs†L108-L118】
+The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START --\>` and `\<!-- BENCH:END --\>` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.
 
 <!-- BENCH:START -->
 | action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.9.0) | pnpm(10.32.0) | Yarn(4.13.0) | Yarn PnP(4.13.0) |

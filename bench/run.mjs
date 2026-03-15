@@ -10,6 +10,10 @@ const scope = scopeArgIndex !== -1 ? args[scopeArgIndex + 1] : 'all';
 
 const RUNS_CACHED = Number(process.env.RUNS_CACHED || 11);
 const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 3);
+const MIN_RUNS = Number(process.env.MIN_RUNS || 3);
+const MAX_RUNS = Number(process.env.MAX_RUNS || 0);
+const TARGET_RSE = Number(process.env.TARGET_RSE || 0.05);
+const TARGET_IQR_RATIO = Number(process.env.TARGET_IQR_RATIO || 0.1);
 const repoRoot = path.resolve(process.cwd());
 const resultsDir = path.join(repoRoot, 'results', 'partial');
 
@@ -84,6 +88,49 @@ function quantileLinear(values, q) {
   }
   const weight = position - lower;
   return sorted[lower] * (1 - weight) + sorted[upper] * weight;
+}
+
+function average(values) {
+  if (!values.length) {
+    return 0;
+  }
+  return values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function sampleStdDev(values) {
+  if (values.length < 2) {
+    return 0;
+  }
+  const mean = average(values);
+  const variance = values.reduce((sum, value) => sum + (value - mean) ** 2, 0) / (values.length - 1);
+  return Math.sqrt(variance);
+}
+
+function calculateStability(runs) {
+  const mean = average(runs);
+  const stdDev = sampleStdDev(runs);
+  const standardError = runs.length < 2 ? null : stdDev / Math.sqrt(runs.length);
+  const rse = !standardError || mean === 0 ? null : standardError / mean;
+  const p25 = runs.length < 4 ? null : quantileLinear(runs, 0.25);
+  const p75 = runs.length < 4 ? null : quantileLinear(runs, 0.75);
+  const iqr = p25 === null || p75 === null ? null : p75 - p25;
+  const median = runs.length ? quantileLinear(runs, 0.5) : null;
+  const iqrRatio = iqr === null || median === null || median === 0 ? null : iqr / median;
+  const meetsRse = rse !== null && rse <= TARGET_RSE;
+  const meetsIqr = iqrRatio !== null && iqrRatio <= TARGET_IQR_RATIO;
+
+  return {
+    mean_ms: mean,
+    stddev_ms: stdDev,
+    standard_error_ms: standardError,
+    rse,
+    iqr_ms: iqr,
+    iqr_ratio: iqrRatio,
+    target_rse: TARGET_RSE,
+    target_iqr_ratio: TARGET_IQR_RATIO,
+    passed: meetsRse || meetsIqr,
+    criterion: meetsRse ? 'rse' : meetsIqr ? 'iqr_ratio' : null
+  };
 }
 
 function runCommand(command) {
@@ -211,14 +258,24 @@ function runCases(tool) {
       continue;
     }
     const runs = [];
-    const runCount = settings.cache ? RUNS_CACHED : RUNS_NOCACHE;
-    for (let i = 0; i < runCount; i += 1) {
+    const defaultRunCount = settings.cache ? RUNS_CACHED : RUNS_NOCACHE;
+    const maxRuns = MAX_RUNS > 0 ? MAX_RUNS : defaultRunCount;
+    const minRuns = Math.min(MIN_RUNS, maxRuns);
+    let stability = null;
+
+    for (let i = 0; i < maxRuns; i += 1) {
       cleanupForSettings(tool, settings);
       ensureState(tool, settings);
       cleanupForSettings(tool, settings);
       const durationMs = runCommand(commandMap[tool][settings.action]);
       runs.push(durationMs);
+      stability = calculateStability(runs);
+
+      if (runs.length >= minRuns && stability.passed) {
+        break;
+      }
     }
+
     results.push({
       tool,
       action: settings.action,
@@ -226,6 +283,8 @@ function runCases(tool) {
       lockfile: settings.lockfile,
       nodeModules: settings.nodeModules,
       runs,
+      actual_runs: runs.length,
+      stability,
       p90_ms: quantileLinear(runs, 0.9)
     });
   }
