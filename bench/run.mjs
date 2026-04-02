@@ -12,6 +12,7 @@ const RUNS_CACHED = Number(process.env.RUNS_CACHED || 11);
 const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 3);
 const MIN_RUNS = Number(process.env.MIN_RUNS || 3);
 const MAX_RUNS = Number(process.env.MAX_RUNS || 0);
+const WARMUP_RUNS = Number(process.env.WARMUP_RUNS || 1);
 const TARGET_RSE = Number(process.env.TARGET_RSE || 0.05);
 const TARGET_IQR_RATIO = Number(process.env.TARGET_IQR_RATIO || 0.1);
 const repoRoot = path.resolve(process.cwd());
@@ -47,6 +48,10 @@ const commandMap = {
   'yarn-pnp': {
     install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install --no-immutable',
     ci: 'yarn install --immutable'
+  },
+  bun: {
+    install: 'bun install',
+    ci: 'bun install --frozen-lockfile'
   }
 };
 
@@ -160,6 +165,18 @@ function getCachePaths(tool) {
   if (tool === 'yarn' || tool === 'yarn-pnp') {
     return [path.join(repoRoot, '.yarn', 'cache')];
   }
+  if (tool === 'bun') {
+    try {
+      const cacheDir = execSync('bun pm cache', { encoding: 'utf8' }).trim().split('\n').at(-1)?.trim();
+      if (cacheDir) {
+        return [cacheDir];
+      }
+    } catch {
+      // Fallback to Bun's default global cache path.
+    }
+    const homeDir = process.env.HOME || process.env.USERPROFILE;
+    return homeDir ? [path.join(homeDir, '.bun', 'install', 'cache')] : [];
+  }
   return [];
 }
 
@@ -172,6 +189,13 @@ function getLockfilePath(tool) {
   }
   if (tool === 'yarn' || tool === 'yarn-pnp') {
     return path.join(repoRoot, 'yarn.lock');
+  }
+  if (tool === 'bun') {
+    const bunTextLockfile = path.join(repoRoot, 'bun.lock');
+    if (fileExists(bunTextLockfile)) {
+      return bunTextLockfile;
+    }
+    return path.join(repoRoot, 'bun.lockb');
   }
   return null;
 }
@@ -267,6 +291,9 @@ function runCases(tool) {
       cleanupForSettings(tool, settings);
       ensureState(tool, settings);
       cleanupForSettings(tool, settings);
+      for (let warmup = 0; warmup < WARMUP_RUNS; warmup += 1) {
+        runCommand(commandMap[tool][settings.action]);
+      }
       const durationMs = runCommand(commandMap[tool][settings.action]);
       runs.push(durationMs);
       stability = calculateStability(runs);
@@ -296,13 +323,17 @@ function getVersions(tools) {
     node: process.version,
     npm: getCommandVersion('npm --version'),
     pnpm: null,
-    yarn: null
+    yarn: null,
+    bun: null
   };
   if (tools.includes('pnpm')) {
     versions.pnpm = getCommandVersion('pnpm --version');
   }
   if (tools.includes('yarn') || tools.includes('yarn-pnp')) {
     versions.yarn = getCommandVersion('yarn --version');
+  }
+  if (tools.includes('bun')) {
+    versions.bun = getCommandVersion('bun --version');
   }
   return versions;
 }
@@ -311,7 +342,10 @@ function resolveTools(scopeValue) {
   if (scopeValue === 'npm') {
     return ['npm'];
   }
-  return ['npm', 'pnpm', 'yarn', 'yarn-pnp'];
+  if (scopeValue === 'bun') {
+    return ['bun'];
+  }
+  return ['npm', 'pnpm', 'yarn', 'yarn-pnp', 'bun'];
 }
 
 function applyYarnLinker(tool) {

@@ -1,6 +1,6 @@
 # npm/yarn/pnpm install benchmark
 
-This repository benchmarks install/ci-equivalent performance for npm, pnpm, and Yarn (node-modules and PnP). It focuses on reproducible, cache-aware install scenarios that mirror CI workflows while keeping the dependency set constant (see `package.json`).【F:package.json†L1-L19】
+This repository benchmarks install/ci-equivalent performance for npm, pnpm, Yarn (node-modules and PnP), and Bun. It focuses on reproducible, cache-aware install scenarios that mirror CI workflows while keeping the dependency set constant (see `package.json`).【F:package.json†L1-L19】
 
 ## What gets measured
 
@@ -19,7 +19,7 @@ The entrypoint is `bench/run.mjs`, which:
 
 1. Builds a test matrix (8 `install` cases + 4 `ci` cases).【F:bench/run.mjs†L16-L47】
 2. Normalizes state by creating or removing lockfiles, caches, and install artifacts per scenario.【F:bench/run.mjs†L66-L185】
-3. Executes the appropriate install command for npm, pnpm, Yarn (node-modules), and Yarn PnP.【F:bench/run.mjs†L27-L59】【F:bench/run.mjs†L216-L264】
+3. Executes the appropriate install command for npm, pnpm, Yarn (node-modules), Yarn PnP, and Bun.【F:bench/run.mjs†L27-L59】【F:bench/run.mjs†L216-L264】
 4. Writes a JSON payload to `results/partial/<nodeMajor>-<scope>.json` with version metadata and per-case timings.【F:bench/run.mjs†L16-L26】【F:bench/run.mjs†L233-L269】
 
 Sample control is configurable through environment variables:
@@ -28,6 +28,7 @@ Sample control is configurable through environment variables:
 - `RUNS_NOCACHE` (default: 3): baseline maximum runs for cache-cold scenarios.
 - `MIN_RUNS` (default: 3): minimum runs always executed before any early-stop decision.
 - `MAX_RUNS` (default: `0`): hard upper bound for adaptive sampling (`0` means use `RUNS_CACHED`/`RUNS_NOCACHE`).
+- `WARMUP_RUNS` (default: `1`): warm-up executions per case before recorded samples (not included in timing output).
 - `TARGET_RSE` (default: `0.05`): stop when relative standard error (standard error / mean) falls below this value.
 - `TARGET_IQR_RATIO` (default: `0.1`): alternative stop criterion based on `IQR / median`.
 
@@ -55,7 +56,7 @@ This reduces total benchmark time for stable cases while preserving traceable re
 ### Prerequisites
 
 - Node.js (the script can target multiple Node majors via `--node`).
-- npm, pnpm, and yarn available on PATH.
+- npm, pnpm, yarn, and bun available on PATH.
 
 ### Commands
 
@@ -69,6 +70,12 @@ Limit to npm only:
 
 ```bash
 npm run bench:run -- --node 24 --scope npm
+```
+
+Limit to Bun only:
+
+```bash
+npm run bench:run -- --node 24 --scope bun
 ```
 
 Merge partial runs into a single results file:
@@ -90,20 +97,20 @@ The merge step collects every JSON file in `results/partial` and writes a single
 The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START --\>` and `\<!-- BENCH:END --\>` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.
 
 <!-- BENCH:START -->
-| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.9.0) | pnpm(10.33.0) | Yarn(4.13.0) | Yarn PnP(4.13.0) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| install | ✓ | ✓ | ✓ | 1.3s | 1.1s | 1.0s | 0.6s | 0.9s | 0.8s |
-| install | ✓ | ✓ |  | 3.8s | 3.8s | 4.0s | 1.1s | 2.4s | 1.4s |
-| install | ✓ |  | ✓ | 1.0s | 0.9s | 1.1s | 1.1s | 1.8s | 1.7s |
-| install | ✓ |  |  | 6.5s | 5.9s | 6.1s | 2.6s | 4.3s | 2.3s |
-| install |  | ✓ | ✓ | 1.5s | 1.4s | 1.2s | 0.5s | 0.9s | 0.8s |
-| install |  | ✓ |  | 7.9s | 5.2s | 5.4s | 2.4s | 2.4s | 1.4s |
-| install |  |  | ✓ | 1.0s | 0.9s | 3.7s | 3.0s | 1.8s | 1.7s |
-| install |  |  |  | 22.6s | 19.6s | 13.6s | 3.4s | 3.3s | 2.8s |
-| ci | ✓ | ✓ | ✓ | 4.1s | 4.0s | 4.3s | 0.6s | 3.3s | 3.3s |
-| ci | ✓ | ✓ |  | 3.6s | 3.5s | 3.9s | 1.0s | 4.9s | 3.9s |
-| ci |  | ✓ | ✓ | 5.8s | 5.7s | 5.5s | 0.5s | 3.4s | 3.2s |
-| ci |  | ✓ |  | 5.5s | 5.6s | 5.3s | 2.4s | 4.9s | 3.9s |
+| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.4) | npm(Node24 11.9.0) | pnpm(10.33.0) | Yarn(4.13.0) | Yarn PnP(4.13.0) | Bun(-) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| install | ✓ | ✓ | ✓ | 1.3s | 1.1s | 1.0s | 0.6s | 0.9s | 0.8s | - |
+| install | ✓ | ✓ |  | 3.8s | 3.8s | 4.0s | 1.1s | 2.4s | 1.4s | - |
+| install | ✓ |  | ✓ | 1.0s | 0.9s | 1.1s | 1.1s | 1.8s | 1.7s | - |
+| install | ✓ |  |  | 6.5s | 5.9s | 6.1s | 2.6s | 4.3s | 2.3s | - |
+| install |  | ✓ | ✓ | 1.5s | 1.4s | 1.2s | 0.5s | 0.9s | 0.8s | - |
+| install |  | ✓ |  | 7.9s | 5.2s | 5.4s | 2.4s | 2.4s | 1.4s | - |
+| install |  |  | ✓ | 1.0s | 0.9s | 3.7s | 3.0s | 1.8s | 1.7s | - |
+| install |  |  |  | 22.6s | 19.6s | 13.6s | 3.4s | 3.3s | 2.8s | - |
+| ci | ✓ | ✓ | ✓ | 4.1s | 4.0s | 4.3s | 0.6s | 3.3s | 3.3s | - |
+| ci | ✓ | ✓ |  | 3.6s | 3.5s | 3.9s | 1.0s | 4.9s | 3.9s | - |
+| ci |  | ✓ | ✓ | 5.8s | 5.7s | 5.5s | 0.5s | 3.4s | 3.2s | - |
+| ci |  | ✓ |  | 5.5s | 5.6s | 5.3s | 2.4s | 4.9s | 3.9s | - |
 <!-- BENCH:END -->
 
 Results are populated automatically by GitHub Actions using P90 (seconds).

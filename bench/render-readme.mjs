@@ -22,6 +22,7 @@ function buildTable(results) {
   const npm24Ver = all24?.versions?.npm ?? '-';
   const pnpmVer = all24?.versions?.pnpm ?? '-';
   const yarnVer = all24?.versions?.yarn ?? '-';
+  const bunVer = all24?.versions?.bun ?? '-';
 
   const header = [
     'action',
@@ -33,7 +34,8 @@ function buildTable(results) {
     `npm(Node24 ${npm24Ver})`,
     `pnpm(${pnpmVer})`,
     `Yarn(${yarnVer})`,
-    `Yarn PnP(${yarnVer})`
+    `Yarn PnP(${yarnVer})`,
+    `Bun(${bunVer})`
   ];
 
   const rows = [];
@@ -79,6 +81,7 @@ function buildTable(results) {
     const pnpmResult = findResult(all24, 'pnpm', setting);
     const yarnResult = findResult(all24, 'yarn', setting);
     const yarnPnpResult = findResult(all24, 'yarn-pnp', setting);
+    const bunResult = findResult(all24, 'bun', setting);
 
     row.push(formatSeconds(npm20Result?.p90_ms));
     row.push(formatSeconds(npm22Result?.p90_ms));
@@ -86,6 +89,7 @@ function buildTable(results) {
     row.push(formatSeconds(pnpmResult?.p90_ms));
     row.push(formatSeconds(yarnResult?.p90_ms));
     row.push(formatSeconds(yarnPnpResult?.p90_ms));
+    row.push(formatSeconds(bunResult?.p90_ms));
 
     rows.push(row);
   }
