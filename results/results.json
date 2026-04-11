@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T12:31:34.036Z",
+  "generatedAt": "2026-04-10T12:43:01.938Z",
   "partials": {
     "20-npm": {
       "nodeMajor": 20,
@@ -10,7 +10,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-04-10T12:26:28.279Z",
+      "generatedAt": "2026-04-10T12:38:33.310Z",
       "results": [
         {
           "tool": "npm",
@@ -19,26 +19,26 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1507.996851,
-            933.269737,
-            930.500633,
-            939.441146,
-            944.879536
+            1483.745149,
+            903.785779,
+            912.066985,
+            902.801763,
+            913.111292
           ],
           "actual_runs": 5,
           "stability": {
-            "mean_ms": 1051.2175806,
-            "stddev_ms": 255.40816753588132,
-            "standard_error_ms": 114.2220049237771,
-            "rse": 0.10865686327142948,
-            "iqr_ms": 11.609799000000066,
-            "iqr_ratio": 0.012358197263801841,
+            "mean_ms": 1023.1021936000001,
+            "stddev_ms": 257.54967906154405,
+            "standard_error_ms": 115.17971799297334,
+            "rse": 0.11257889848490041,
+            "iqr_ms": 9.325513,
+            "iqr_ratio": 0.010224592221151388,
             "target_rse": 0.05,
             "target_iqr_ratio": 0.1,
             "passed": true,
             "criterion": "iqr_ratio"
           },
-          "p90_ms": 1282.749925
+          "p90_ms": 1255.4916062000002
         },
         {
           "tool": "npm",
@@ -47,16 +47,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3772.579451,
-            3764.121034,
-            3752.423858
+            3639.257012,
+            3627.106892,
+            3624.005811
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3763.0414476666665,
-            "stddev_ms": 10.12107268444168,
-            "standard_error_ms": 5.8434040388501725,
-            "rse": 0.00155284073271993,
+            "mean_ms": 3630.1232383333336,
+            "stddev_ms": 8.060616718810124,
+            "standard_error_ms": 4.6537992324394235,
+            "rse": 0.00128199483237822,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -64,7 +64,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3770.8877676
+          "p90_ms": 3636.8269880000003
         },
         {
           "tool": "npm",
@@ -73,16 +73,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            933.206302,
-            928.119173,
-            924.177042
+            1020.825877,
+            989.404897,
+            1002.9451
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 928.5008389999999,
-            "stddev_ms": 4.526713569309096,
-            "standard_error_ms": 2.6134992977849385,
-            "rse": 0.0028147516814305633,
+            "mean_ms": 1004.391958,
+            "stddev_ms": 15.760378948306501,
+            "standard_error_ms": 9.09925902833527,
+            "rse": 0.009059470215645902,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -90,7 +90,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 932.1888762000001
+          "p90_ms": 1017.2497215999999
         },
         {
           "tool": "npm",
@@ -99,16 +99,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            6712.344357,
-            6724.097177,
-            6683.875268
+            6432.549763,
+            6437.593785,
+            6461.428715
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 6706.772267333334,
-            "stddev_ms": 20.68179461122992,
-            "standard_error_ms": 11.940639686118146,
-            "rse": 0.0017803854388015235,
+            "mean_ms": 6443.857421000001,
+            "stddev_ms": 15.424763178407254,
+            "standard_error_ms": 8.905491173239657,
+            "rse": 0.0013820124486642728,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -116,7 +116,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 6721.746612999999
+          "p90_ms": 6456.661729
         },
         {
           "tool": "npm",
@@ -125,16 +125,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1545.645692,
-            1046.839316,
-            1047.368707
+            1547.630299,
+            1138.059347,
+            1048.106156
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1213.2845716666668,
-            "stddev_ms": 287.83329514778006,
-            "standard_error_ms": 166.18063043530782,
-            "rse": 0.1369675625290681,
+            "mean_ms": 1244.5986006666665,
+            "stddev_ms": 266.259369391687,
+            "standard_error_ms": 153.72491859255052,
+            "rse": 0.12351365212061793,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -142,7 +142,7 @@
             "passed": false,
             "criterion": null
           },
-          "p90_ms": 1445.990295
+          "p90_ms": 1465.7161085999999
         },
         {
           "tool": "npm",
@@ -151,16 +151,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5767.935304,
-            5758.35932,
-            5686.188446
+            5589.753824,
+            5531.846493,
+            5537.700951
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5737.494356666666,
-            "stddev_ms": 44.689453111377674,
-            "standard_error_ms": 25.80146778379106,
-            "rse": 0.004496992272212192,
+            "mean_ms": 5553.100422666666,
+            "stddev_ms": 31.87746134175772,
+            "standard_error_ms": 18.40446088674571,
+            "rse": 0.0033142676137500253,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -168,7 +168,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5766.0201072
+          "p90_ms": 5579.3432494
         },
         {
           "tool": "npm",
@@ -177,16 +177,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            934.657306,
-            974.2545,
-            939.982673
+            1026.078008,
+            963.115529,
+            1003.583342
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 949.631493,
-            "stddev_ms": 21.48974729290017,
-            "standard_error_ms": 12.407111384372945,
-            "rse": 0.013065185259576206,
+            "mean_ms": 997.592293,
+            "stddev_ms": 31.905923298764737,
+            "standard_error_ms": 18.420893405285373,
+            "rse": 0.018465352563910967,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -194,7 +194,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 967.4001346
+          "p90_ms": 1021.5790748
         },
         {
           "tool": "npm",
@@ -203,16 +203,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            14344.486779,
-            13826.711271,
-            14690.060724
+            18620.799123,
+            18698.262638,
+            16955.948227
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 14287.086258000001,
-            "stddev_ms": 434.5275415404111,
-            "standard_error_ms": 250.87459307866266,
-            "rse": 0.01755953513181782,
+            "mean_ms": 18091.669996,
+            "stddev_ms": 984.3262170004442,
+            "standard_error_ms": 568.3010063556125,
+            "rse": 0.03141230226293436,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -220,7 +220,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 14620.945935000002
+          "p90_ms": 18682.769935
         },
         {
           "tool": "npm",
@@ -229,16 +229,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            4271.612073,
-            3959.28941,
-            4029.331785
+            4072.894033,
+            3736.112844,
+            3826.400508
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4086.7444226666667,
-            "stddev_ms": 163.88569089074227,
-            "standard_error_ms": 94.61944775209786,
-            "rse": 0.023152768552714423,
+            "mean_ms": 3878.4691283333336,
+            "stddev_ms": 174.32368810240908,
+            "standard_error_ms": 100.64582825205424,
+            "rse": 0.025949885102038713,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -246,7 +246,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4223.1560154
+          "p90_ms": 4023.595328
         },
         {
           "tool": "npm",
@@ -255,16 +255,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3757.24308,
-            3699.670016,
-            3715.126762
+            3525.786567,
+            3555.995429,
+            3534.527977
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3724.013286,
-            "stddev_ms": 29.797519295890435,
-            "standard_error_ms": 17.203605786665413,
-            "rse": 0.004619641356098377,
+            "mean_ms": 3538.7699909999997,
+            "stddev_ms": 15.544769149649886,
+            "standard_error_ms": 8.974776653040951,
+            "rse": 0.002536128845860599,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -272,7 +272,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3748.8198164000005
+          "p90_ms": 3551.7019386
         },
         {
           "tool": "npm",
@@ -281,16 +281,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5925.160545,
-            5833.004718,
-            5837.096437
+            5630.830412,
+            5655.678874,
+            5643.966871
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5865.087233333333,
-            "stddev_ms": 52.06522469022934,
-            "standard_error_ms": 30.059871490322262,
-            "rse": 0.005125221551604816,
+            "mean_ms": 5643.492052333334,
+            "stddev_ms": 12.431033968098598,
+            "standard_error_ms": 7.177060807787107,
+            "rse": 0.0012717411030675077,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -298,7 +298,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5907.5477234
+          "p90_ms": 5653.3364734
         },
         {
           "tool": "npm",
@@ -307,16 +307,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5600.385302,
-            5566.723674,
-            5542.899408
+            5397.050113,
+            5339.045976,
+            5409.641308
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5570.002794666667,
-            "stddev_ms": 28.882892453920093,
-            "standard_error_ms": 16.675545733245777,
-            "rse": 0.002993812812663717,
+            "mean_ms": 5381.912465666667,
+            "stddev_ms": 37.65350581471573,
+            "standard_error_ms": 21.739261718059264,
+            "rse": 0.004039319081598326,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -324,7 +324,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5593.6529764
+          "p90_ms": 5407.123069
         }
       ]
     },
@@ -337,7 +337,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-04-10T12:26:10.900Z",
+      "generatedAt": "2026-04-10T12:38:38.740Z",
       "results": [
         {
           "tool": "npm",
@@ -346,26 +346,26 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1358.903614,
-            769.084784,
-            780.599266,
-            758.232932,
-            749.566866
+            1382.17168,
+            821.519044,
+            812.976627,
+            838.655438,
+            812.253386
           ],
           "actual_runs": 5,
           "stability": {
-            "mean_ms": 883.2774923999999,
-            "stddev_ms": 266.1379689533912,
-            "standard_error_ms": 119.02051799470225,
-            "rse": 0.1347487273464937,
-            "iqr_ms": 22.366333999999938,
-            "iqr_ratio": 0.029081753358417683,
+            "mean_ms": 933.5152350000001,
+            "stddev_ms": 251.03193301196967,
+            "standard_error_ms": 112.26489334758753,
+            "rse": 0.12026037619791767,
+            "iqr_ms": 25.678810999999996,
+            "iqr_ratio": 0.03125771847596998,
             "target_rse": 0.05,
             "target_iqr_ratio": 0.1,
             "passed": true,
             "criterion": "iqr_ratio"
           },
-          "p90_ms": 1127.5818748000002
+          "p90_ms": 1164.7651832000001
         },
         {
           "tool": "npm",
@@ -374,16 +374,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3418.95398,
-            3338.467406,
-            3345.595014
+            4164.078303,
+            4187.562757,
+            4157.521721
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3367.6721333333335,
-            "stddev_ms": 44.55414175032476,
-            "standard_error_ms": 25.723345733062747,
-            "rse": 0.007638316532791953,
+            "mean_ms": 4169.720926999999,
+            "stddev_ms": 15.795422285977299,
+            "standard_error_ms": 9.119491308772808,
+            "rse": 0.0021870747391562325,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -391,7 +391,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3404.2821868
+          "p90_ms": 4182.8658662
         },
         {
           "tool": "npm",
@@ -400,16 +400,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            742.393432,
-            767.222957,
-            751.037633
+            905.75958,
+            1014.829182,
+            920.874893
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 753.5513406666665,
-            "stddev_ms": 12.604180759037854,
-            "standard_error_ms": 7.277027154145207,
-            "rse": 0.009656975923773455,
+            "mean_ms": 947.1545516666666,
+            "stddev_ms": 59.09323027925429,
+            "standard_error_ms": 34.11749240901201,
+            "rse": 0.03602104044052467,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -417,7 +417,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 763.9858922
+          "p90_ms": 996.0383242
         },
         {
           "tool": "npm",
@@ -426,16 +426,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            5659.893842,
-            5797.595443,
-            5890.002312
+            6403.238243,
+            6671.886767,
+            6425.867419
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5782.497199,
-            "stddev_ms": 115.79483891930498,
-            "standard_error_ms": 66.85418142083009,
-            "rse": 0.01156147233973439,
+            "mean_ms": 6500.330809666666,
+            "stddev_ms": 149.00202942922326,
+            "standard_error_ms": 86.02636180076259,
+            "rse": 0.013234151356240589,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -443,7 +443,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5871.5209382
+          "p90_ms": 6622.6828974
         },
         {
           "tool": "npm",
@@ -452,16 +452,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1274.409792,
-            799.416018,
-            798.755959
+            1507.047562,
+            958.778045,
+            967.203735
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 957.5272563333333,
-            "stddev_ms": 274.4285243508281,
-            "standard_error_ms": 158.4413824072624,
-            "rse": 0.16546931835025067,
+            "mean_ms": 1144.343114,
+            "stddev_ms": 314.1395159992333,
+            "standard_error_ms": 181.3685341252561,
+            "rse": 0.15849139292785233,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -469,7 +469,7 @@
             "passed": false,
             "criterion": null
           },
-          "p90_ms": 1179.4110372
+          "p90_ms": 1399.0787965999998
         },
         {
           "tool": "npm",
@@ -478,16 +478,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4843.68404,
-            4823.796101,
-            4765.768193
+            5683.311774,
+            5638.302642,
+            5580.774419
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4811.082778,
-            "stddev_ms": 40.483839241215826,
-            "standard_error_ms": 23.37335548374549,
-            "rse": 0.004858231828940169,
+            "mean_ms": 5634.129611666667,
+            "stddev_ms": 51.39589408913097,
+            "standard_error_ms": 29.673433287601263,
+            "rse": 0.005266728906299225,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -495,7 +495,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4839.7064522
+          "p90_ms": 5674.3099476
         },
         {
           "tool": "npm",
@@ -504,16 +504,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            760.107666,
-            821.910596,
-            807.470702
+            926.365781,
+            897.735,
+            883.05671
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 796.4963213333334,
-            "stddev_ms": 32.329990912601666,
-            "standard_error_ms": 18.665728956288728,
-            "rse": 0.023434796189695302,
+            "mean_ms": 902.3858303333333,
+            "stddev_ms": 22.025929601559394,
+            "standard_error_ms": 12.716676384612063,
+            "rse": 0.014092282876288777,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -521,7 +521,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 819.0226172000001
+          "p90_ms": 920.6396248000001
         },
         {
           "tool": "npm",
@@ -530,16 +530,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            13525.033461,
-            13689.215354,
-            14628.251642
+            17797.222259,
+            19553.31063,
+            18420.759158
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 13947.500152333334,
-            "stddev_ms": 595.2359754835088,
-            "standard_error_ms": 343.6596506767533,
-            "rse": 0.0246395158217124,
+            "mean_ms": 18590.43068233333,
+            "stddev_ms": 890.2544081988908,
+            "standard_error_ms": 513.9886222208806,
+            "rse": 0.027648021232199265,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -547,7 +547,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 14440.4443844
+          "p90_ms": 19326.8003356
         },
         {
           "tool": "npm",
@@ -556,16 +556,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            4205.666414,
-            3823.335036,
-            3822.404927
+            4571.460034,
+            4323.833734,
+            4261.588887
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3950.468792333333,
-            "stddev_ms": 221.00811264279506,
-            "standard_error_ms": 127.59909332740887,
-            "rse": 0.03229973454670498,
+            "mean_ms": 4385.6275516666665,
+            "stddev_ms": 163.91732325211942,
+            "standard_error_ms": 94.63771070445405,
+            "rse": 0.021579057863335648,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -573,7 +573,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4129.2001384000005
+          "p90_ms": 4521.934773999999
         },
         {
           "tool": "npm",
@@ -582,16 +582,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3533.04008,
-            3562.213681,
-            3413.503811
+            4014.903798,
+            4013.776509,
+            4064.578235
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3502.919190666667,
-            "stddev_ms": 78.79788918192811,
-            "standard_error_ms": 45.4939825307605,
-            "rse": 0.012987448483532444,
+            "mean_ms": 4031.0861806666667,
+            "stddev_ms": 29.010445924228723,
+            "standard_error_ms": 16.749188763664534,
+            "rse": 0.004155006371234299,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -599,7 +599,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3556.3789608000006
+          "p90_ms": 4054.6433476
         },
         {
           "tool": "npm",
@@ -608,16 +608,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5207.255315,
-            5403.169662,
-            5251.940735
+            5805.667245,
+            5776.128559,
+            5746.656404
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5287.455237333334,
-            "stddev_ms": 102.67213715072532,
-            "standard_error_ms": 59.277786022245444,
-            "rse": 0.011211023708286087,
+            "mean_ms": 5776.150736,
+            "stddev_ms": 29.505426750791077,
+            "standard_error_ms": 17.034966077124015,
+            "rse": 0.0029491900152385526,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -625,7 +625,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5372.9238766
+          "p90_ms": 5799.7595077999995
         },
         {
           "tool": "npm",
@@ -634,16 +634,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4645.336619,
-            4675.916065,
-            4815.894352
+            5643.249675,
+            5486.655939,
+            5598.635881
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4712.3823453333325,
-            "stddev_ms": 90.93859066720132,
-            "standard_error_ms": 52.50341980143388,
-            "rse": 0.011141587408209344,
+            "mean_ms": 5576.180498333332,
+            "stddev_ms": 80.6757875489247,
+            "standard_error_ms": 46.57818765845674,
+            "rse": 0.008353063117734177,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -651,7 +651,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4787.8986946
+          "p90_ms": 5634.326916200001
         }
       ]
     },
@@ -664,7 +664,7 @@
         "pnpm": "10.33.0",
         "yarn": "4.13.0"
       },
-      "generatedAt": "2026-04-10T12:31:22.628Z",
+      "generatedAt": "2026-04-10T12:42:52.945Z",
       "results": [
         {
           "tool": "npm",
@@ -673,16 +673,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            835.167306,
-            810.255938,
-            813.386474
+            847.044046,
+            762.270893,
+            776.572765
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 819.6032393333334,
-            "stddev_ms": 13.569458070061527,
-            "standard_error_ms": 7.834330269507363,
-            "rse": 0.009558686317394035,
+            "mean_ms": 795.2959013333333,
+            "stddev_ms": 45.38214123427619,
+            "standard_error_ms": 26.201391458010974,
+            "rse": 0.032945462706501685,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -690,7 +690,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 830.8111396000002
+          "p90_ms": 832.9497898
         },
         {
           "tool": "npm",
@@ -699,16 +699,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3861.895948,
-            3780.813381,
-            3745.290426
+            3167.907715,
+            3114.312441,
+            3100.698752
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3795.999918333333,
-            "stddev_ms": 59.76775993255609,
-            "standard_error_ms": 34.50693228592219,
-            "rse": 0.009090340629162278,
+            "mean_ms": 3127.639636,
+            "stddev_ms": 35.53127878095382,
+            "standard_error_ms": 20.513993368835326,
+            "rse": 0.006558937651484388,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -716,7 +716,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3845.6794345999997
+          "p90_ms": 3157.1886602
         },
         {
           "tool": "npm",
@@ -725,26 +725,24 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1175.430926,
-            1211.016348,
-            1943.757862,
-            1174.862606,
-            1151.486405
+            1139.759634,
+            1129.00165,
+            1121.026405
           ],
-          "actual_runs": 5,
+          "actual_runs": 3,
           "stability": {
-            "mean_ms": 1331.3108294,
-            "stddev_ms": 343.02825849179,
-            "standard_error_ms": 153.40690083820238,
-            "rse": 0.11522996542238025,
-            "iqr_ms": 36.15374200000019,
-            "iqr_ratio": 0.030757861819266267,
+            "mean_ms": 1129.9292296666667,
+            "stddev_ms": 9.400998362946344,
+            "standard_error_ms": 5.427668935498303,
+            "rse": 0.0048035476851054516,
+            "iqr_ms": null,
+            "iqr_ratio": null,
             "target_rse": 0.05,
             "target_iqr_ratio": 0.1,
             "passed": true,
-            "criterion": "iqr_ratio"
+            "criterion": "rse"
           },
-          "p90_ms": 1650.6612564000002
+          "p90_ms": 1137.6080372000001
         },
         {
           "tool": "npm",
@@ -753,16 +751,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            6054.740244,
-            6074.52174,
-            6054.63922
+            5650.716507,
+            5663.577191,
+            5650.162519
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 6061.300401333334,
-            "stddev_ms": 11.45012657424229,
-            "standard_error_ms": 6.610733659894074,
-            "rse": 0.0010906461026811802,
+            "mean_ms": 5654.818739000001,
+            "stddev_ms": 7.590097940953354,
+            "standard_error_ms": 4.382145089385044,
+            "rse": 0.000774939974496863,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -770,7 +768,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 6070.5654408
+          "p90_ms": 5661.0050542
         },
         {
           "tool": "npm",
@@ -779,16 +777,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            814.824043,
-            900.649059,
-            827.74972
+            759.118808,
+            776.649894,
+            764.729502
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 847.7409406666666,
-            "stddev_ms": 46.27331866915948,
-            "standard_error_ms": 26.715912989936562,
-            "rse": 0.031514241802368385,
+            "mean_ms": 766.8327346666666,
+            "stddev_ms": 8.95278922026258,
+            "standard_error_ms": 5.168895266316581,
+            "rse": 0.0067405772245279025,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -796,7 +794,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 886.0691912
+          "p90_ms": 774.2658156
         },
         {
           "tool": "npm",
@@ -805,16 +803,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4997.122429,
-            5004.637483,
-            4958.270809
+            4581.315726,
+            4564.780466,
+            4595.404134
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4986.676907,
-            "stddev_ms": 24.88571501574648,
-            "standard_error_ms": 14.367774263317543,
-            "rse": 0.0028812322376749367,
+            "mean_ms": 4580.500108666667,
+            "stddev_ms": 15.328117437225739,
+            "standard_error_ms": 8.849692728552478,
+            "rse": 0.0019320363538051582,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -822,7 +820,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5003.1344722
+          "p90_ms": 4592.5864524
         },
         {
           "tool": "npm",
@@ -831,16 +829,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            3861.677888,
-            4149.751466,
-            4120.115964
+            3886.496616,
+            3936.8999,
+            4211.913536
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4043.8484393333333,
-            "stddev_ms": 158.45866361457138,
-            "standard_error_ms": 91.48615209330114,
-            "rse": 0.0226235363332221,
+            "mean_ms": 4011.7700173333337,
+            "stddev_ms": 175.1519163689109,
+            "standard_error_ms": 101.12400606466953,
+            "rse": 0.02520683030875427,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -848,7 +846,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4143.8243655999995
+          "p90_ms": 4156.9108088
         },
         {
           "tool": "npm",
@@ -857,16 +855,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            14969.599118,
-            16154.238775,
-            15664.540019
+            16274.143092,
+            15222.289406,
+            16255.528142
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 15596.125970666666,
-            "stddev_ms": 595.275684654838,
-            "standard_error_ms": 343.6825767775095,
-            "rse": 0.022036406824612137,
+            "mean_ms": 15917.320213333334,
+            "stddev_ms": 601.9862925745854,
+            "standard_error_ms": 347.5569480664017,
+            "rse": 0.0218351420596079,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -874,7 +872,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 16056.2990238
+          "p90_ms": 16270.420102
         },
         {
           "tool": "npm",
@@ -883,16 +881,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3884.731889,
-            3876.734147,
-            3854.918271
+            3194.997408,
+            3212.888435,
+            3267.491602
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3872.1281023333336,
-            "stddev_ms": 15.431289322865394,
-            "standard_error_ms": 8.909259044499334,
-            "rse": 0.002300868878571099,
+            "mean_ms": 3225.125815,
+            "stddev_ms": 37.76462819723912,
+            "standard_error_ms": 21.80341825552214,
+            "rse": 0.00676048610386449,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -900,7 +898,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3883.1323406
+          "p90_ms": 3256.5709686
         },
         {
           "tool": "npm",
@@ -909,16 +907,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3613.52329,
-            3635.500294,
-            3623.410102
+            3031.633942,
+            3032.910184,
+            3062.106778
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3624.144562,
-            "stddev_ms": 11.006895557908347,
-            "standard_error_ms": 6.35483411330048,
-            "rse": 0.0017534714757055766,
+            "mean_ms": 3042.216968,
+            "stddev_ms": 17.236896611273014,
+            "standard_error_ms": 9.951726898512224,
+            "rse": 0.0032712087938470214,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -926,7 +924,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3633.0822556000003
+          "p90_ms": 3056.2674592
         },
         {
           "tool": "npm",
@@ -935,16 +933,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5195.015828,
-            5145.440807,
-            5161.344343
+            4734.923135,
+            4790.518551,
+            4698.801628
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5167.266992666667,
-            "stddev_ms": 25.31262552745471,
-            "standard_error_ms": 14.61425116217217,
-            "rse": 0.0028282361222891268,
+            "mean_ms": 4741.414438,
+            "stddev_ms": 46.201745119912275,
+            "standard_error_ms": 26.67458998201183,
+            "rse": 0.005625871842846873,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -952,7 +950,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5188.281530999999
+          "p90_ms": 4779.3994678
         },
         {
           "tool": "npm",
@@ -961,16 +959,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4980.997199,
-            4897.048611,
-            4883.800019
+            4416.001839,
+            4479.175759,
+            4489.361162
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4920.615276333333,
-            "stddev_ms": 52.71018626592122,
-            "standard_error_ms": 30.432240229664934,
-            "rse": 0.00618464125330724,
+            "mean_ms": 4461.51292,
+            "stddev_ms": 39.74140761107415,
+            "standard_error_ms": 22.944712382228307,
+            "rse": 0.0051428098032333626,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -978,7 +976,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4964.207481400001
+          "p90_ms": 4487.3240814
         },
         {
           "tool": "pnpm",
@@ -987,16 +985,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            642.41313,
-            642.341706,
-            652.758043
+            651.682839,
+            624.367807,
+            631.479386
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 645.8376263333333,
-            "stddev_ms": 5.993363035654723,
-            "standard_error_ms": 3.460269761986407,
-            "rse": 0.00535780143630169,
+            "mean_ms": 635.843344,
+            "stddev_ms": 14.170774162323616,
+            "standard_error_ms": 8.181500277242934,
+            "rse": 0.01286716351511094,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1004,7 +1002,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 650.6890604
+          "p90_ms": 647.6421483999999
         },
         {
           "tool": "pnpm",
@@ -1013,16 +1011,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1069.39147,
-            1039.888029,
-            1071.197896
+            976.282418,
+            972.082641,
+            975.150198
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1060.1591316666666,
-            "stddev_ms": 17.578509499251474,
-            "standard_error_ms": 10.148957191345232,
-            "rse": 0.009573050769642618,
+            "mean_ms": 974.5050856666667,
+            "stddev_ms": 2.172937908546044,
+            "standard_error_ms": 1.254546286431401,
+            "rse": 0.001287367613451864,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1030,7 +1028,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1070.8366107999998
+          "p90_ms": 976.0559740000001
         },
         {
           "tool": "pnpm",
@@ -1039,16 +1037,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1194.636251,
-            1190.917116,
-            1194.980104
+            1176.09431,
+            1166.049285,
+            1156.106331
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1193.511157,
-            "stddev_ms": 2.2530746223023024,
-            "standard_error_ms": 1.3008132396905487,
-            "rse": 0.0010899045493301146,
+            "mean_ms": 1166.0833086666667,
+            "stddev_ms": 9.994032936384105,
+            "standard_error_ms": 5.770057606111349,
+            "rse": 0.0049482378859440155,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1056,7 +1054,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1194.9113333999999
+          "p90_ms": 1174.085305
         },
         {
           "tool": "pnpm",
@@ -1065,16 +1063,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            2723.917368,
-            2710.019021,
-            2681.119143
+            2740.734817,
+            2753.214405,
+            2753.108842
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2705.0185106666668,
-            "stddev_ms": 21.8329073529612,
-            "standard_error_ms": 12.60523493742431,
-            "rse": 0.004659944058688781,
+            "mean_ms": 2749.019354666667,
+            "stddev_ms": 7.174814224044916,
+            "standard_error_ms": 4.142380923637889,
+            "rse": 0.001506857678759477,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1082,7 +1080,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2721.1376985999996
+          "p90_ms": 2753.1932924000002
         },
         {
           "tool": "pnpm",
@@ -1091,16 +1089,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            533.424419,
-            534.001881,
-            532.204504
+            532.069661,
+            518.566125,
+            529.567797
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 533.210268,
-            "stddev_ms": 0.9176254726918632,
-            "standard_error_ms": 0.5297913136739049,
-            "rse": 0.000993587981081236,
+            "mean_ms": 526.7345276666666,
+            "stddev_ms": 7.183796521493978,
+            "standard_error_ms": 4.147566855488045,
+            "rse": 0.007874112361422317,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1108,7 +1106,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 533.8863886
+          "p90_ms": 531.5692882
         },
         {
           "tool": "pnpm",
@@ -1117,16 +1115,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2685.235135,
-            2611.784717,
-            2283.898667
+            2303.786897,
+            2230.784091,
+            2483.893128
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2526.9728396666665,
-            "stddev_ms": 213.6879290911914,
-            "standard_error_ms": 123.37278338337302,
-            "rse": 0.04882236225366283,
+            "mean_ms": 2339.4880386666664,
+            "stddev_ms": 130.2765320001819,
+            "standard_error_ms": 75.21519081939591,
+            "rse": 0.03215027799939638,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1134,7 +1132,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2670.5450513999995
+          "p90_ms": 2447.8718818
         },
         {
           "tool": "pnpm",
@@ -1143,16 +1141,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            2731.243848,
-            2672.388439,
-            2741.148118
+            2632.007487,
+            2619.026492,
+            2593.872696
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2714.926801666667,
-            "stddev_ms": 37.17065865476263,
-            "standard_error_ms": 21.4604897802829,
-            "rse": 0.007904629239767537,
+            "mean_ms": 2614.968891666667,
+            "stddev_ms": 19.38849301782425,
+            "standard_error_ms": 11.19395166302201,
+            "rse": 0.004280720775950599,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1160,7 +1158,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2739.167264
+          "p90_ms": 2629.4112880000002
         },
         {
           "tool": "pnpm",
@@ -1169,16 +1167,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            3818.811178,
-            3838.466788,
-            3755.391195
+            3745.836491,
+            3741.312907,
+            3774.512802
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3804.2230536666666,
-            "stddev_ms": 43.41657018638165,
-            "standard_error_ms": 25.066568484397727,
-            "rse": 0.006589142679275217,
+            "mean_ms": 3753.8873999999996,
+            "stddev_ms": 18.004752394783743,
+            "standard_error_ms": 10.395048641820955,
+            "rse": 0.0027691423674085047,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1186,7 +1184,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3834.535666
+          "p90_ms": 3768.7775398000003
         },
         {
           "tool": "pnpm",
@@ -1195,16 +1193,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            573.532769,
-            570.937191,
-            563.069878
+            554.47805,
+            561.280602,
+            558.051368
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 569.179946,
-            "stddev_ms": 5.448298313417594,
-            "standard_error_ms": 3.145576497877032,
-            "rse": 0.005526506195418614,
+            "mean_ms": 557.9366733333333,
+            "stddev_ms": 3.4027260509916606,
+            "standard_error_ms": 1.9645648015185877,
+            "rse": 0.003521125058479315,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1212,7 +1210,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 573.0136534000001
+          "p90_ms": 560.6347552000001
         },
         {
           "tool": "pnpm",
@@ -1221,16 +1219,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1036.811927,
-            1046.29567,
-            1054.216952
+            949.889144,
+            959.169013,
+            939.095781
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1045.7748496666666,
-            "stddev_ms": 8.714193260271804,
-            "standard_error_ms": 5.031141824588349,
-            "rse": 0.0048109225673116825,
+            "mean_ms": 949.384646,
+            "stddev_ms": 10.046121112422378,
+            "standard_error_ms": 5.800130728568643,
+            "rse": 0.006109358048927877,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1238,7 +1236,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1052.6326956
+          "p90_ms": 957.3130392
         },
         {
           "tool": "pnpm",
@@ -1247,16 +1245,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            555.791731,
-            540.548729,
-            554.958825
+            518.050956,
+            535.056549,
+            531.743208
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 550.433095,
-            "stddev_ms": 8.570236374667653,
-            "standard_error_ms": 4.948028277933092,
-            "rse": 0.008989336438669431,
+            "mean_ms": 528.2835709999999,
+            "stddev_ms": 9.01522958383416,
+            "standard_error_ms": 5.20494522703293,
+            "rse": 0.009852559331308318,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1264,7 +1262,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 555.6251498
+          "p90_ms": 534.3938808
         },
         {
           "tool": "pnpm",
@@ -1273,16 +1271,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2328.121226,
-            2540.348244,
-            2567.420593
+            2197.740085,
+            2241.05868,
+            2196.763324
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2478.630021,
-            "stddev_ms": 131.04541597995106,
-            "standard_error_ms": 75.65910619209123,
-            "rse": 0.03052456621241385,
+            "mean_ms": 2211.8540296666665,
+            "stddev_ms": 25.296683899910366,
+            "standard_error_ms": 14.605047259218123,
+            "rse": 0.006603079164956989,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1290,7 +1288,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2562.0061232
+          "p90_ms": 2232.394961
         },
         {
           "tool": "yarn",
@@ -1299,16 +1297,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            909.923787,
-            878.359958,
-            925.259572
+            940.768236,
+            910.675914,
+            914.486127
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 904.514439,
-            "stddev_ms": 23.913160240254268,
-            "standard_error_ms": 13.806269501885458,
-            "rse": 0.015263735885907131,
+            "mean_ms": 921.976759,
+            "stddev_ms": 16.385027819857022,
+            "standard_error_ms": 9.459900222473959,
+            "rse": 0.010260454105952098,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1316,7 +1314,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 922.192415
+          "p90_ms": 935.5118142000001
         },
         {
           "tool": "yarn",
@@ -1325,16 +1323,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2442.391995,
-            2455.097183,
-            2452.889641
+            2305.816717,
+            2313.447057,
+            2330.423107
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2450.126273,
-            "stddev_ms": 6.788416793067752,
-            "standard_error_ms": 3.919294262849043,
-            "rse": 0.0015996294991156331,
+            "mean_ms": 2316.5622936666664,
+            "stddev_ms": 12.595520307832984,
+            "standard_error_ms": 7.272027040310772,
+            "rse": 0.0031391459060660836,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1342,7 +1340,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2454.6556746
+          "p90_ms": 2327.027897
         },
         {
           "tool": "yarn",
@@ -1351,16 +1349,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1869.936317,
-            1859.202959,
-            1850.227152
+            1903.541623,
+            1957.763018,
+            1928.105723
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1859.7888093333331,
-            "stddev_ms": 9.867634554902514,
-            "standard_error_ms": 5.69708146653782,
-            "rse": 0.003063294841837454,
+            "mean_ms": 1929.8034546666668,
+            "stddev_ms": 27.15053661616119,
+            "standard_error_ms": 15.675369623983455,
+            "rse": 0.008122780372310531,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1368,7 +1366,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1867.7896454
+          "p90_ms": 1951.8315590000002
         },
         {
           "tool": "yarn",
@@ -1377,16 +1375,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            3723.735652,
-            3389.498512,
-            3517.857835
+            3385.587633,
+            3337.973474,
+            3296.481784
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3543.697333,
-            "stddev_ms": 168.61013072029172,
-            "standard_error_ms": 97.34710435945841,
-            "rse": 0.027470490623714452,
+            "mean_ms": 3340.0142969999997,
+            "stddev_ms": 44.58796699100217,
+            "standard_error_ms": 25.74287474487325,
+            "rse": 0.0077074145365172535,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1394,7 +1392,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3682.5600886
+          "p90_ms": 3376.0648012
         },
         {
           "tool": "yarn",
@@ -1403,16 +1401,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            911.638693,
-            886.29868,
-            877.128866
+            945.544982,
+            900.217849,
+            887.443106
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 891.6887463333333,
-            "stddev_ms": 17.87516856426204,
-            "standard_error_ms": 10.320233382386625,
-            "rse": 0.011573806919537695,
+            "mean_ms": 911.0686456666666,
+            "stddev_ms": 30.53296316943139,
+            "standard_error_ms": 17.628214505028144,
+            "rse": 0.019348942133914453,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1420,7 +1418,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 906.5706904
+          "p90_ms": 936.4795554000001
         },
         {
           "tool": "yarn",
@@ -1429,16 +1427,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2440.314116,
-            2452.583063,
-            2474.986364
+            2283.676797,
+            2317.538161,
+            2301.005621
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2455.961181,
-            "stddev_ms": 17.581238757829784,
-            "standard_error_ms": 10.150532929520107,
-            "rse": 0.004133018472786727,
+            "mean_ms": 2300.740193,
+            "stddev_ms": 16.93224237962916,
+            "standard_error_ms": 9.775834695862885,
+            "rse": 0.004248995486585514,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1446,7 +1444,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2470.5057038
+          "p90_ms": 2314.231653
         },
         {
           "tool": "yarn",
@@ -1455,16 +1453,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1868.709535,
-            1830.412164,
-            1837.216296
+            1900.880543,
+            1884.32168,
+            1929.306492
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1845.4459983333334,
-            "stddev_ms": 20.43203750851495,
-            "standard_error_ms": 11.796442355633637,
-            "rse": 0.006392190487441674,
+            "mean_ms": 1904.8362383333333,
+            "stddev_ms": 22.751790519571212,
+            "standard_error_ms": 13.135752381020415,
+            "rse": 0.006896000882739269,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1472,7 +1470,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1862.4108872000002
+          "p90_ms": 1923.6213022
         },
         {
           "tool": "yarn",
@@ -1481,16 +1479,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            3439.905339,
-            3464.758704,
-            3402.36255
+            3335.930964,
+            3273.181562,
+            3347.286059
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3435.6755309999994,
-            "stddev_ms": 31.41239349819714,
-            "standard_error_ms": 18.13595384207457,
-            "rse": 0.005278715547622118,
+            "mean_ms": 3318.7995283333335,
+            "stddev_ms": 39.91219970017438,
+            "standard_error_ms": 23.04331924084578,
+            "rse": 0.006943269409351126,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1498,7 +1496,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3459.788031
+          "p90_ms": 3345.01504
         },
         {
           "tool": "yarn",
@@ -1507,16 +1505,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3527.009784,
-            3606.643842,
-            3624.784737
+            3727.570124,
+            3674.790538,
+            3658.804468
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3586.1461209999998,
-            "stddev_ms": 52.01060260354074,
-            "standard_error_ms": 30.0283354138689,
-            "rse": 0.00837342774128107,
+            "mean_ms": 3687.0550433333333,
+            "stddev_ms": 35.986003245443946,
+            "standard_error_ms": 20.77652866081581,
+            "rse": 0.005634992810422624,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1524,7 +1522,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3621.1565579999997
+          "p90_ms": 3717.0142068
         },
         {
           "tool": "yarn",
@@ -1533,16 +1531,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5101.403645,
-            5194.489018,
-            5144.410704
+            5233.460506,
+            5264.70194,
+            5116.44845
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5146.767789,
-            "stddev_ms": 46.587429140382895,
-            "standard_error_ms": 26.89726475505268,
-            "rse": 0.005226049796250615,
+            "mean_ms": 5204.870298666667,
+            "stddev_ms": 78.1525705963488,
+            "standard_error_ms": 45.12140767166321,
+            "rse": 0.00866907436352871,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1550,7 +1548,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5184.4733552
+          "p90_ms": 5258.4536532
         },
         {
           "tool": "yarn",
@@ -1559,16 +1557,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3500.749147,
-            3450.893618,
-            3496.306001
+            3586.752667,
+            3669.444681,
+            3588.422875
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3482.649588666667,
-            "stddev_ms": 27.591060895351074,
-            "standard_error_ms": 15.9297064351583,
-            "rse": 0.004574019300419193,
+            "mean_ms": 3614.8734076666665,
+            "stddev_ms": 47.26748674942254,
+            "standard_error_ms": 27.289896198696173,
+            "rse": 0.0075493366215309025,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1576,7 +1574,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3499.8605178
+          "p90_ms": 3653.2403197999997
         },
         {
           "tool": "yarn",
@@ -1585,16 +1583,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5070.414789,
-            5061.156912,
-            5071.684759
+            5208.271438,
+            5050.603814,
+            5065.688287
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 5067.752153333334,
-            "stddev_ms": 5.746834966649375,
-            "standard_error_ms": 3.317936714983371,
-            "rse": 0.0006547156637881325,
+            "mean_ms": 5108.187846333333,
+            "stddev_ms": 87.00246733338635,
+            "standard_error_ms": 50.23089793509223,
+            "rse": 0.009833408528848066,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1602,7 +1600,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 5071.430764999999
+          "p90_ms": 5179.7548078
         },
         {
           "tool": "yarn-pnp",
@@ -1611,16 +1609,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            843.729006,
-            787.893082,
-            795.328891
+            873.59267,
+            828.8483,
+            854.632158
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 808.9836596666668,
-            "stddev_ms": 30.31917104306416,
-            "standard_error_ms": 17.5047815633194,
-            "rse": 0.021637991514602488,
+            "mean_ms": 852.3577093333333,
+            "stddev_ms": 22.45872879811325,
+            "standard_error_ms": 12.966553117247486,
+            "rse": 0.015212572110586294,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1628,7 +1626,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 834.048983
+          "p90_ms": 869.8005676
         },
         {
           "tool": "yarn-pnp",
@@ -1637,16 +1635,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1471.256012,
-            1475.62544,
-            1450.427549
+            1479.081654,
+            1504.363484,
+            1493.815967
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1465.7696669999998,
-            "stddev_ms": 13.465081277372208,
-            "standard_error_ms": 7.774068300151035,
-            "rse": 0.005303744834658962,
+            "mean_ms": 1492.4203683333333,
+            "stddev_ms": 12.698563059103382,
+            "standard_error_ms": 7.331518800494775,
+            "rse": 0.004912502506704783,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1654,7 +1652,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1474.7515544
+          "p90_ms": 1502.2539806
         },
         {
           "tool": "yarn-pnp",
@@ -1663,16 +1661,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1748.270448,
-            1818.617414,
-            1789.338335
+            1844.862184,
+            2002.641498,
+            1804.844616
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1785.4087323333333,
-            "stddev_ms": 35.3377310984972,
-            "standard_error_ms": 20.40224856226797,
-            "rse": 0.011427214504324996,
+            "mean_ms": 1884.1160993333333,
+            "stddev_ms": 104.57798063635501,
+            "standard_error_ms": 60.37812527170704,
+            "rse": 0.0320458624036337,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1680,7 +1678,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1812.7615982000002
+          "p90_ms": 1971.0856352
         },
         {
           "tool": "yarn-pnp",
@@ -1689,16 +1687,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            2415.929801,
-            2463.949028,
-            2418.293217
+            2528.922396,
+            2506.604642,
+            2521.152423
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2432.724015333333,
-            "stddev_ms": 27.06746193905852,
-            "standard_error_ms": 15.627406436795388,
-            "rse": 0.006423830380387029,
+            "mean_ms": 2518.8931536666664,
+            "stddev_ms": 11.32911114525479,
+            "standard_error_ms": 6.540865369392043,
+            "rse": 0.0025967220403416993,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1706,7 +1704,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2454.8178658
+          "p90_ms": 2527.3684014
         },
         {
           "tool": "yarn-pnp",
@@ -1715,16 +1713,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            828.839706,
-            798.3251,
-            785.537642
+            853.601982,
+            820.536917,
+            824.017401
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 804.2341493333333,
-            "stddev_ms": 22.247580423112275,
-            "standard_error_ms": 12.844646546101721,
-            "rse": 0.015971277216652934,
+            "mean_ms": 832.7187666666667,
+            "stddev_ms": 18.168928262623005,
+            "standard_error_ms": 10.489835623312393,
+            "rse": 0.012597092852011372,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1732,7 +1730,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 822.7367847999999
+          "p90_ms": 847.6850658000001
         },
         {
           "tool": "yarn-pnp",
@@ -1741,16 +1739,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1458.473551,
-            1468.944181,
-            1444.287406
+            1484.108512,
+            1505.656647,
+            1495.668531
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1457.2350459999998,
-            "stddev_ms": 12.374956942406989,
-            "standard_error_ms": 7.144684721908703,
-            "rse": 0.004902904813825555,
+            "mean_ms": 1495.1445633333333,
+            "stddev_ms": 10.783618923225188,
+            "standard_error_ms": 6.225925288162404,
+            "rse": 0.004164095861260456,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1758,7 +1756,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1466.850055
+          "p90_ms": 1503.6590238
         },
         {
           "tool": "yarn-pnp",
@@ -1767,16 +1765,16 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1808.586277,
-            1803.389254,
-            1760.899307
+            1796.986726,
+            1824.714629,
+            1838.027951
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 1790.9582793333332,
-            "stddev_ms": 26.161204584607916,
-            "standard_error_ms": 15.104178509248253,
-            "rse": 0.008433573625662926,
+            "mean_ms": 1819.9097686666667,
+            "stddev_ms": 20.93825564588142,
+            "standard_error_ms": 12.08870753351084,
+            "rse": 0.006642476314838112,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1784,7 +1782,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 1807.5468724000002
+          "p90_ms": 1835.3652866000002
         },
         {
           "tool": "yarn-pnp",
@@ -1793,16 +1791,16 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            2486.463613,
-            2460.671073,
-            2436.554626
+            2549.565764,
+            2521.628649,
+            2526.281041
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 2461.2297706666664,
-            "stddev_ms": 24.959183743736315,
-            "standard_error_ms": 14.410191453199493,
-            "rse": 0.00585487451230376,
+            "mean_ms": 2532.491818,
+            "stddev_ms": 14.968330295614086,
+            "standard_error_ms": 8.641969525492023,
+            "rse": 0.003412437293604722,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1810,7 +1808,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 2481.305105
+          "p90_ms": 2544.9088194
         },
         {
           "tool": "yarn-pnp",
@@ -1819,16 +1817,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3657.51928,
-            3465.196351,
-            3572.152734
+            3563.234429,
+            3590.230752,
+            3689.985689
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3564.9561216666666,
-            "stddev_ms": 96.36322263494495,
-            "standard_error_ms": 55.63533252826531,
-            "rse": 0.01560617596108168,
+            "mean_ms": 3614.4836233333335,
+            "stddev_ms": 66.76542371490142,
+            "standard_error_ms": 38.54703535435776,
+            "rse": 0.010664603681011861,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1836,7 +1834,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3640.4459708
+          "p90_ms": 3670.0347016
         },
         {
           "tool": "yarn-pnp",
@@ -1845,16 +1843,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4188.676456,
-            4099.95464,
-            4043.265605
+            4233.902034,
+            4270.914033,
+            4243.619134
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4110.632233666667,
-            "stddev_ms": 73.29111236718194,
-            "standard_error_ms": 42.31464345439961,
-            "rse": 0.010293950187962964,
+            "mean_ms": 4249.478400333333,
+            "stddev_ms": 19.18906639124758,
+            "standard_error_ms": 11.07881264648439,
+            "rse": 0.002607099413804611,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1862,7 +1860,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4170.932092800001
+          "p90_ms": 4265.4550532
         },
         {
           "tool": "yarn-pnp",
@@ -1871,16 +1869,16 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3376.447578,
-            3392.932583,
-            3430.111621
+            3600.081916,
+            3609.551716,
+            3535.858558
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 3399.8305939999996,
-            "stddev_ms": 27.488984968411614,
-            "standard_error_ms": 15.870772871262023,
-            "rse": 0.004668106963703035,
+            "mean_ms": 3581.83073,
+            "stddev_ms": 40.09363698653681,
+            "standard_error_ms": 23.148072106968165,
+            "rse": 0.0064626370847424616,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1888,7 +1886,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 3422.6758134
+          "p90_ms": 3607.657756
         },
         {
           "tool": "yarn-pnp",
@@ -1897,16 +1895,16 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4138.827557,
-            4164.809158,
-            4107.922169
+            4265.624309,
+            4438.303573,
+            4548.69818
           ],
           "actual_runs": 3,
           "stability": {
-            "mean_ms": 4137.186294666667,
-            "stddev_ms": 28.478986742976527,
-            "standard_error_ms": 16.442350662305284,
-            "rse": 0.003974283363430228,
+            "mean_ms": 4417.542020666667,
+            "stddev_ms": 142.67440433447948,
+            "standard_error_ms": 82.37310574898125,
+            "rse": 0.018646818833553513,
             "iqr_ms": null,
             "iqr_ratio": null,
             "target_rse": 0.05,
@@ -1914,7 +1912,7 @@
             "passed": true,
             "criterion": "rse"
           },
-          "p90_ms": 4159.6128378
+          "p90_ms": 4526.619258600001
         }
       ]
     }
