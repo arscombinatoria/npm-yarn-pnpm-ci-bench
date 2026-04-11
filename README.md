@@ -28,8 +28,7 @@ Sample control is configurable through environment variables:
 - `RUNS_NOCACHE` (default: 3): baseline maximum runs for cache-cold scenarios.
 - `MIN_RUNS` (default: 3): minimum runs always executed before any early-stop decision.
 - `MAX_RUNS` (default: `0`): hard upper bound for adaptive sampling (`0` means use `RUNS_CACHED`/`RUNS_NOCACHE`).
-- `TARGET_RSE` (default: `0.05`): stop when relative standard error (standard error / mean) falls below this value.
-- `TARGET_IQR_RATIO` (default: `0.1`): alternative stop criterion based on `IQR / median`.
+- `TARGET_REL_HALF_WIDTH` (default: `0.05`): stop when median-based robust relative half-width falls below this value.
 
 
 ### Adaptive sampling
@@ -37,16 +36,18 @@ Sample control is configurable through environment variables:
 `runCases` now uses adaptive stopping to balance runtime and confidence:
 
 1. Each case runs at least `MIN_RUNS`.
-2. After each run, stability is recomputed from collected samples using two criteria:
-   - **RSE** (relative standard error), and
-   - **IQR ratio** (`IQR / median`) as a robust spread check.
-3. If either criterion meets its target (`TARGET_RSE` or `TARGET_IQR_RATIO`), that case ends early.
+2. After each run, stability is recomputed from collected samples using:
+   - **median**,
+   - **IQR** (`P75 - P25`),
+   - **robust median standard error** (`1.57 * IQR / sqrt(n)`), and
+   - **relative half-width** (`robust median standard error / median`).
+3. If relative half-width meets `TARGET_REL_HALF_WIDTH`, that case ends early.
 4. Otherwise, sampling continues until `MAX_RUNS` (or the baseline run count when `MAX_RUNS=0`).
 
 Every case in output JSON now includes:
 
 - `actual_runs`: the real sample count used for that case.
-- `stability`: computed diagnostics (`rse`, `iqr_ratio`, thresholds, and which criterion passed).
+- `stability`: computed diagnostics (`relative_half_width`, threshold, and supporting dispersion stats).
 
 This reduces total benchmark time for stable cases while preserving traceable reliability metadata for noisier cases.
 
