@@ -28,8 +28,7 @@ Sample control is configurable through environment variables:
 - `RUNS_NOCACHE` (default: 3): baseline maximum runs for cache-cold scenarios.
 - `MIN_RUNS` (default: 3): minimum runs always executed before any early-stop decision.
 - `MAX_RUNS` (default: `0`): hard upper bound for adaptive sampling (`0` means use `RUNS_CACHED`/`RUNS_NOCACHE`).
-- `TARGET_RSE` (default: `0.05`): stop when relative standard error (standard error / mean) falls below this value.
-- `TARGET_IQR_RATIO` (default: `0.1`): alternative stop criterion based on `IQR / median`.
+- `TARGET_REL_HALF_WIDTH` (default: `0.05`): stop when median-based robust relative half-width falls below this value.
 
 
 ### Adaptive sampling
@@ -37,16 +36,18 @@ Sample control is configurable through environment variables:
 `runCases` now uses adaptive stopping to balance runtime and confidence:
 
 1. Each case runs at least `MIN_RUNS`.
-2. After each run, stability is recomputed from collected samples using two criteria:
-   - **RSE** (relative standard error), and
-   - **IQR ratio** (`IQR / median`) as a robust spread check.
-3. If either criterion meets its target (`TARGET_RSE` or `TARGET_IQR_RATIO`), that case ends early.
+2. After each run, stability is recomputed from collected samples using:
+   - **median**,
+   - **IQR** (`P75 - P25`),
+   - **robust median standard error** (`1.57 * IQR / sqrt(n)`), and
+   - **relative half-width** (`robust median standard error / median`).
+3. If relative half-width meets `TARGET_REL_HALF_WIDTH`, that case ends early.
 4. Otherwise, sampling continues until `MAX_RUNS` (or the baseline run count when `MAX_RUNS=0`).
 
 Every case in output JSON now includes:
 
 - `actual_runs`: the real sample count used for that case.
-- `stability`: computed diagnostics (`rse`, `iqr_ratio`, thresholds, and which criterion passed).
+- `stability`: computed diagnostics (`relative_half_width`, threshold, and supporting dispersion stats).
 
 This reduces total benchmark time for stable cases while preserving traceable reliability metadata for noisier cases.
 
@@ -92,18 +93,18 @@ The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START
 <!-- BENCH:START -->
 | action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.7) | npm(Node24 11.11.0) | pnpm(10.33.0) | Yarn(4.13.0) | Yarn PnP(4.13.0) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| install | ✓ | ✓ | ✓ | 1.3s | 1.2s | 0.8s | 0.6s | 0.9s | 0.9s |
-| install | ✓ | ✓ |  | 3.6s | 4.2s | 3.2s | 1.0s | 2.3s | 1.5s |
-| install | ✓ |  | ✓ | 1.0s | 1.0s | 1.1s | 1.2s | 2.0s | 2.0s |
-| install | ✓ |  |  | 6.5s | 6.6s | 5.7s | 2.8s | 3.4s | 2.5s |
-| install |  | ✓ | ✓ | 1.5s | 1.4s | 0.8s | 0.5s | 0.9s | 0.8s |
-| install |  | ✓ |  | 5.6s | 5.7s | 4.6s | 2.4s | 2.3s | 1.5s |
-| install |  |  | ✓ | 1.0s | 0.9s | 4.2s | 2.6s | 1.9s | 1.8s |
-| install |  |  |  | 18.7s | 19.3s | 16.3s | 3.8s | 3.3s | 2.5s |
-| ci | ✓ | ✓ | ✓ | 4.0s | 4.5s | 3.3s | 0.6s | 3.7s | 3.7s |
-| ci | ✓ | ✓ |  | 3.6s | 4.1s | 3.1s | 1.0s | 5.3s | 4.3s |
-| ci |  | ✓ | ✓ | 5.7s | 5.8s | 4.8s | 0.5s | 3.7s | 3.6s |
-| ci |  | ✓ |  | 5.4s | 5.6s | 4.5s | 2.2s | 5.2s | 4.5s |
+| install | ✓ | ✓ | ✓ | 1.3s | 1.1s | 1.0s | 0.6s | 0.9s | 0.8s |
+| install | ✓ | ✓ |  | 3.6s | 4.0s | 3.1s | 0.9s | 2.2s | 1.4s |
+| install | ✓ |  | ✓ | 1.0s | 0.9s | 1.1s | 1.1s | 1.9s | 1.8s |
+| install | ✓ |  |  | 6.5s | 6.1s | 5.5s | 2.7s | 3.2s | 2.6s |
+| install |  | ✓ | ✓ | 1.4s | 1.3s | 0.7s | 0.5s | 0.9s | 0.8s |
+| install |  | ✓ |  | 5.6s | 5.4s | 4.5s | 2.6s | 2.3s | 1.4s |
+| install |  |  | ✓ | 1.0s | 0.9s | 4.2s | 2.7s | 1.8s | 1.8s |
+| install |  |  |  | 16.8s | 15.0s | 15.7s | 3.8s | 3.2s | 2.6s |
+| ci | ✓ | ✓ | ✓ | 4.0s | 4.5s | 3.2s | 0.5s | 3.5s | 3.4s |
+| ci | ✓ | ✓ |  | 3.5s | 4.0s | 3.0s | 0.9s | 4.9s | 4.1s |
+| ci |  | ✓ | ✓ | 5.7s | 5.8s | 4.6s | 0.5s | 3.5s | 3.4s |
+| ci |  | ✓ |  | 5.5s | 5.6s | 4.5s | 2.6s | 4.9s | 4.1s |
 <!-- BENCH:END -->
 
 Results are populated automatically by GitHub Actions using P90 (seconds).

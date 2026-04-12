@@ -12,8 +12,7 @@ const RUNS_CACHED = Number(process.env.RUNS_CACHED || 11);
 const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 3);
 const MIN_RUNS = Number(process.env.MIN_RUNS || 3);
 const MAX_RUNS = Number(process.env.MAX_RUNS || 0);
-const TARGET_RSE = Number(process.env.TARGET_RSE || 0.05);
-const TARGET_IQR_RATIO = Number(process.env.TARGET_IQR_RATIO || 0.1);
+const TARGET_REL_HALF_WIDTH = Number(process.env.TARGET_REL_HALF_WIDTH || 0.05);
 const repoRoot = path.resolve(process.cwd());
 const resultsDir = path.join(repoRoot, 'results', 'partial');
 
@@ -97,6 +96,13 @@ function average(values) {
   return values.reduce((sum, value) => sum + value, 0) / values.length;
 }
 
+function median(values) {
+  if (!values.length) {
+    return 0;
+  }
+  return quantileLinear(values, 0.5);
+}
+
 function sampleStdDev(values) {
   if (values.length < 2) {
     return 0;
@@ -107,29 +113,33 @@ function sampleStdDev(values) {
 }
 
 function calculateStability(runs) {
+  const medianMs = median(runs);
+  const p25 = runs.length < 2 ? null : quantileLinear(runs, 0.25);
+  const p75 = runs.length < 2 ? null : quantileLinear(runs, 0.75);
+  const iqr = p25 === null || p75 === null ? null : p75 - p25;
+  const robustMedianStandardError = iqr === null ? null : (1.57 * iqr) / Math.sqrt(runs.length);
+  const relativeHalfWidth = !robustMedianStandardError || medianMs === 0
+    ? null
+    : robustMedianStandardError / medianMs;
+
   const mean = average(runs);
   const stdDev = sampleStdDev(runs);
   const standardError = runs.length < 2 ? null : stdDev / Math.sqrt(runs.length);
   const rse = !standardError || mean === 0 ? null : standardError / mean;
-  const p25 = runs.length < 4 ? null : quantileLinear(runs, 0.25);
-  const p75 = runs.length < 4 ? null : quantileLinear(runs, 0.75);
-  const iqr = p25 === null || p75 === null ? null : p75 - p25;
-  const median = runs.length ? quantileLinear(runs, 0.5) : null;
-  const iqrRatio = iqr === null || median === null || median === 0 ? null : iqr / median;
-  const meetsRse = rse !== null && rse <= TARGET_RSE;
-  const meetsIqr = iqrRatio !== null && iqrRatio <= TARGET_IQR_RATIO;
+  const passed = relativeHalfWidth !== null && relativeHalfWidth <= TARGET_REL_HALF_WIDTH;
 
   return {
+    median_ms: medianMs,
     mean_ms: mean,
     stddev_ms: stdDev,
     standard_error_ms: standardError,
     rse,
     iqr_ms: iqr,
-    iqr_ratio: iqrRatio,
-    target_rse: TARGET_RSE,
-    target_iqr_ratio: TARGET_IQR_RATIO,
-    passed: meetsRse || meetsIqr,
-    criterion: meetsRse ? 'rse' : meetsIqr ? 'iqr_ratio' : null
+    robust_median_standard_error_ms: robustMedianStandardError,
+    relative_half_width: relativeHalfWidth,
+    target_rel_half_width: TARGET_REL_HALF_WIDTH,
+    passed,
+    criterion: passed ? 'relative_half_width' : null
   };
 }
 
