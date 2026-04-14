@@ -92,7 +92,13 @@ function buildTable(results) {
 
   const lines = [];
   lines.push(`| ${header.join(' | ')} |`);
-  lines.push(`| ${header.map((_, index) => (index >= 4 ? '---:' : '---')).join(' | ')} |`);
+  lines.push(`| ${header
+    .map((_, index) => {
+      if (index >= 4) return '---:';
+      if (index >= 1 && index <= 3) return ':---:';
+      return '---';
+    })
+    .join(' | ')} |`);
   for (const row of rows) {
     lines.push(`| ${row.join(' | ')} |`);
   }
