@@ -35,21 +35,32 @@ for (const cache of [true, false]) {
 
 const commandMap = {
   npm: {
-    install: 'npm install',
-    ci: 'npm ci'
+    install: 'npm install --no-audit --no-fund --loglevel=error',
+    ci: 'npm ci --no-audit --no-fund --loglevel=error'
   },
   pnpm: {
-    install: 'pnpm install',
-    ci: 'pnpm install --frozen-lockfile'
+    install: {
+      lockfileOn: 'pnpm install --reporter=silent --frozen-lockfile',
+      lockfileOff: 'pnpm install --reporter=silent --no-frozen-lockfile'
+    },
+    ci: 'pnpm install --reporter=silent --frozen-lockfile'
   },
   yarn: {
-    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install --no-immutable',
-    ci: 'yarn install --immutable'
+    install: 'yarn --silent install --no-immutable',
+    ci: 'yarn --silent install --immutable'
   },
   'yarn-pnp': {
-    install: 'YARN_ENABLE_HARDENED_MODE=0 yarn install --no-immutable',
-    ci: 'yarn install --immutable'
+    install: 'yarn --silent install --no-immutable',
+    ci: 'yarn --silent install --immutable'
   }
+};
+
+const benchEnv = {
+  ...process.env,
+  CI: '1',
+  YARN_ENABLE_HARDENED_MODE: '0',
+  YARN_ENABLE_PROGRESS_BARS: '0',
+  npm_config_progress: 'false'
 };
 
 function ensureDir(dirPath) {
@@ -79,7 +90,7 @@ function writeJson(filepath, payload) {
 function runSpawnSync(command, { tool = 'unknown', caseId = 'unknown', phase = 'run' } = {}) {
   const startedAt = new Date();
   const start = process.hrtime.bigint();
-  const result = spawnSync(command, { shell: true, encoding: 'utf8' });
+  const result = spawnSync(command, { shell: true, encoding: 'utf8', env: benchEnv });
   const end = process.hrtime.bigint();
   const durationMs = Number(end - start) / 1e6;
   const finishedAt = new Date();
@@ -216,6 +227,13 @@ function runCommand(command, context) {
   return durationMs;
 }
 
+function resolveCommand(tool, action, settings) {
+  if (tool === 'pnpm' && action === 'install') {
+    return settings.lockfile ? commandMap.pnpm.install.lockfileOn : commandMap.pnpm.install.lockfileOff;
+  }
+  return commandMap[tool][action];
+}
+
 function writeYarnConfig(nodeLinker) {
   const contents = `nodeLinker: ${nodeLinker}\n`;
   fs.writeFileSync(path.join(repoRoot, '.yarnrc.yml'), contents);
@@ -292,7 +310,7 @@ function cleanupForSettings(tool, settings) {
 
 function ensureState(tool, settings) {
   const lockfilePath = getLockfilePath(tool);
-  const preCommand = commandMap[tool].install;
+  const preCommand = resolveCommand(tool, 'install', { ...settings, lockfile: true });
   const stateCaseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-ensure-state`;
   const needsLockfile = settings.lockfile && lockfilePath && !fileExists(lockfilePath);
   const needsNodeModules = settings.nodeModules && getNodeModulesPaths(tool).some((dirPath) => !fileExists(dirPath));
@@ -339,7 +357,8 @@ function runCases(tool) {
       ensureState(tool, settings);
       cleanupForSettings(tool, settings);
       const caseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-run-${i + 1}`;
-      const durationMs = runCommand(commandMap[tool][settings.action], { tool, caseId });
+      const command = resolveCommand(tool, settings.action, settings);
+      const durationMs = runCommand(command, { tool, caseId });
       runs.push(durationMs);
       stability = calculateStability(runs);
 
