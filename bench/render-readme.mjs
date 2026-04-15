@@ -13,27 +13,93 @@ function formatSeconds(ms) {
 }
 
 function buildTable(results) {
-  const npm20 = results.partials['20-npm'];
-  const npm22 = results.partials['22-npm'];
-  const all24 = results.partials['24-all'];
+  const toolOrder = ['npm', 'pnpm', 'yarn', 'yarn-pnp'];
+  const toolLabel = {
+    npm: 'npm',
+    pnpm: 'pnpm',
+    yarn: 'Yarn',
+    'yarn-pnp': 'Yarn PnP'
+  };
 
-  const npm20Ver = npm20?.versions?.npm ?? '-';
-  const npm22Ver = npm22?.versions?.npm ?? '-';
-  const npm24Ver = all24?.versions?.npm ?? '-';
-  const pnpmVer = all24?.versions?.pnpm ?? '-';
-  const yarnVer = all24?.versions?.yarn ?? '-';
+  const partialEntries = Object.entries(results.partials ?? {})
+    .map(([key, partial]) => {
+      const match = /^(\d+)-(.+)$/.exec(key);
+      const nodeMajor = match ? Number.parseInt(match[1], 10) : Number(partial?.nodeMajor);
+      const scope = match ? match[2] : String(partial?.scope ?? '');
+      const tools = [...new Set((partial?.results ?? []).map((entry) => entry.tool))];
+      return { key, nodeMajor, scope, partial, tools };
+    })
+    .filter((entry) => Number.isInteger(entry.nodeMajor))
+    .sort(
+      (a, b) =>
+        a.nodeMajor - b.nodeMajor ||
+        a.scope.localeCompare(b.scope) ||
+        a.key.localeCompare(b.key)
+    );
+
+  function scopePriority(scope, tool) {
+    if (scope === tool) return 0;
+    if (scope === 'all') return 1;
+    return 2;
+  }
+
+  const toolColumns = [];
+  const seenColumns = new Set();
+  for (const entry of partialEntries) {
+    for (const tool of entry.tools) {
+      const key = `${entry.nodeMajor}-${tool}`;
+      if (seenColumns.has(key)) {
+        continue;
+      }
+      seenColumns.add(key);
+      toolColumns.push({
+        key,
+        nodeMajor: entry.nodeMajor,
+        tool
+      });
+    }
+  }
+
+  toolColumns.sort(
+    (a, b) =>
+      a.nodeMajor - b.nodeMajor ||
+      (toolOrder.indexOf(a.tool) === -1 ? Number.MAX_SAFE_INTEGER : toolOrder.indexOf(a.tool)) -
+        (toolOrder.indexOf(b.tool) === -1 ? Number.MAX_SAFE_INTEGER : toolOrder.indexOf(b.tool)) ||
+      a.tool.localeCompare(b.tool)
+  );
+
+  function pickPartialForTool(nodeMajor, tool) {
+    const candidates = partialEntries
+      .filter((entry) => entry.nodeMajor === nodeMajor && entry.tools.includes(tool))
+      .sort(
+        (a, b) =>
+          scopePriority(a.scope, tool) - scopePriority(b.scope, tool) ||
+          a.scope.localeCompare(b.scope) ||
+          a.key.localeCompare(b.key)
+      );
+    return candidates[0]?.partial ?? null;
+  }
+
+  function resolveToolVersion(partial, tool) {
+    if (!partial) {
+      return '-';
+    }
+    if (tool === 'yarn-pnp') {
+      return partial.versions?.['yarn-pnp'] ?? partial.versions?.yarn ?? '-';
+    }
+    return partial.versions?.[tool] ?? '-';
+  }
 
   const header = [
     'action',
     'cache',
     'lockfile',
     'node_modules',
-    `npm(Node20 ${npm20Ver})`,
-    `npm(Node22 ${npm22Ver})`,
-    `npm(Node24 ${npm24Ver})`,
-    `pnpm(${pnpmVer})`,
-    `Yarn(${yarnVer})`,
-    `Yarn PnP(${yarnVer})`
+    ...toolColumns.map((column) => {
+      const partial = pickPartialForTool(column.nodeMajor, column.tool);
+      const version = resolveToolVersion(partial, column.tool);
+      return `${toolLabel[column.tool] ?? column.tool}(Node${column.nodeMajor} ${version})`;
+    })
   ];
 
   const rows = [];
@@ -73,19 +139,11 @@ function buildTable(results) {
       setting.nodeModules ? '✓' : ''
     ];
 
-    const npm20Result = findResult(npm20, 'npm', setting);
-    const npm22Result = findResult(npm22, 'npm', setting);
-    const npm24Result = findResult(all24, 'npm', setting);
-    const pnpmResult = findResult(all24, 'pnpm', setting);
-    const yarnResult = findResult(all24, 'yarn', setting);
-    const yarnPnpResult = findResult(all24, 'yarn-pnp', setting);
-
-    row.push(formatSeconds(npm20Result?.p90_ms));
-    row.push(formatSeconds(npm22Result?.p90_ms));
-    row.push(formatSeconds(npm24Result?.p90_ms));
-    row.push(formatSeconds(pnpmResult?.p90_ms));
-    row.push(formatSeconds(yarnResult?.p90_ms));
-    row.push(formatSeconds(yarnPnpResult?.p90_ms));
+    for (const column of toolColumns) {
+      const partial = pickPartialForTool(column.nodeMajor, column.tool);
+      const result = findResult(partial, column.tool, setting);
+      row.push(formatSeconds(result?.p90_ms));
+    }
 
     rows.push(row);
   }
