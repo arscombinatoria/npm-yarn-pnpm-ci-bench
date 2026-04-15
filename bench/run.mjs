@@ -43,12 +43,12 @@ const commandMap = {
     ci: 'pnpm install --reporter=silent --frozen-lockfile'
   },
   yarn: {
-    install: 'yarn --silent install --no-immutable',
-    ci: 'yarn --silent install --immutable'
+    install: 'yarn install --no-immutable',
+    ci: 'yarn install --immutable'
   },
   'yarn-pnp': {
-    install: 'yarn --silent install --no-immutable',
-    ci: 'yarn --silent install --immutable'
+    install: 'yarn install --no-immutable',
+    ci: 'yarn install --immutable'
   }
 };
 
