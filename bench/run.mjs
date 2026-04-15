@@ -5,9 +5,15 @@ import path from 'node:path';
 const args = process.argv.slice(2);
 const nodeArgIndex = args.indexOf('--node');
 const scopeArgIndex = args.indexOf('--scope');
+const cacheModeArgIndex = args.indexOf('--cache-mode');
 const debugLogEnabled = args.includes('--debug-log');
 const nodeMajor = nodeArgIndex !== -1 ? Number(args[nodeArgIndex + 1]) : Number(process.versions.node.split('.')[0]);
 const scope = scopeArgIndex !== -1 ? args[scopeArgIndex + 1] : 'all';
+const cacheMode = cacheModeArgIndex !== -1 ? args[cacheModeArgIndex + 1] : 'all';
+
+if (!['global', 'local', 'all'].includes(cacheMode)) {
+  throw new Error(`Invalid --cache-mode "${cacheMode}". Expected one of: global, local, all.`);
+}
 
 const RUNS_CACHED = Number(process.env.RUNS_CACHED || 11);
 const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 3);
@@ -233,19 +239,64 @@ function writeYarnConfig(nodeLinker) {
   fs.writeFileSync(path.join(repoRoot, '.yarnrc.yml'), contents);
 }
 
-function getCachePaths(tool) {
+function uniquePaths(paths) {
+  return [...new Set(paths.filter(Boolean))];
+}
+
+function isProjectLocalPath(targetPath) {
+  const absoluteTargetPath = path.resolve(targetPath);
+  const relativePath = path.relative(repoRoot, absoluteTargetPath);
+  return relativePath === '' || (!relativePath.startsWith('..') && !path.isAbsolute(relativePath));
+}
+
+function getCacheTargets(tool) {
+  const targets = {
+    global: [],
+    local: []
+  };
+
   if (tool === 'npm') {
     const cacheDir = execSync('npm config get cache', { encoding: 'utf8' }).trim();
-    return [cacheDir];
+    if (isProjectLocalPath(cacheDir)) {
+      targets.local.push(cacheDir);
+    } else {
+      targets.global.push(cacheDir);
+    }
+    return targets;
   }
   if (tool === 'pnpm') {
     const storeDir = execSync('pnpm store path', { encoding: 'utf8' }).trim();
-    return [storeDir];
+    if (isProjectLocalPath(storeDir)) {
+      targets.local.push(storeDir);
+    } else {
+      targets.global.push(storeDir);
+    }
+    return targets;
   }
   if (tool === 'yarn' || tool === 'yarn-pnp') {
-    return [path.join(repoRoot, '.yarn', 'cache')];
+    const yarnCacheFolder = execSync('yarn config get cacheFolder', { encoding: 'utf8' }).trim();
+    if (isProjectLocalPath(yarnCacheFolder)) {
+      targets.local.push(yarnCacheFolder);
+    } else {
+      targets.global.push(yarnCacheFolder);
+    }
+    targets.local.push(path.join(repoRoot, '.yarn', 'cache'));
+    targets.global = uniquePaths(targets.global);
+    targets.local = uniquePaths(targets.local);
+    return targets;
   }
-  return [];
+  return targets;
+}
+
+function resolveCacheRemovalPaths(tool, mode) {
+  const targets = getCacheTargets(tool);
+  if (mode === 'global') {
+    return targets.global;
+  }
+  if (mode === 'local') {
+    return targets.local;
+  }
+  return [...targets.global, ...targets.local];
 }
 
 function getLockfilePath(tool) {
@@ -296,7 +347,7 @@ function cleanupForSettings(tool, settings) {
   }
 
   if (!settings.cache) {
-    for (const cachePath of getCachePaths(tool)) {
+    for (const cachePath of resolveCacheRemovalPaths(tool, cacheMode)) {
       removePath(cachePath);
     }
   }
@@ -318,7 +369,7 @@ function ensureState(tool, settings) {
     removePath(lockfilePath);
   }
   if (!settings.cache) {
-    for (const cachePath of getCachePaths(tool)) {
+    for (const cachePath of resolveCacheRemovalPaths(tool, cacheMode)) {
       removePath(cachePath);
     }
   }
@@ -428,6 +479,7 @@ function main() {
   const payload = {
     nodeMajor,
     scope,
+    cache_mode: cacheMode,
     versions,
     generatedAt: new Date().toISOString(),
     results: allResults

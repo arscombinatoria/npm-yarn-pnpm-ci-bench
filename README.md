@@ -8,6 +8,10 @@ Each tool is exercised across a matrix of settings:
 
 - **Action:** `install` or `ci` (ci maps to each tool's immutable/locked equivalent).【F:bench/run.mjs†L8-L47】
 - **Cache:** warmed vs cold (the relevant cache/store directories are cleared when disabled).【F:bench/run.mjs†L66-L122】
+- **Cache mode (`--cache-mode`)**: when cache is disabled, choose which cache scope to clear — `global`, `local`, or `all` (default). The meaning is unified across tools:
+  - npm: `npm config get cache` のパスを取得し、リポジトリ外なら global / リポジトリ内なら local に分類
+  - pnpm: `pnpm store path` のパスを取得し、リポジトリ外なら global / リポジトリ内なら local に分類
+  - yarn / yarn-pnp: `yarn config get cacheFolder` を同様に分類し、あわせて `.yarn/cache` を project-local として扱う
 - **Lockfile:** present vs removed (where applicable).【F:bench/run.mjs†L124-L185】
 - **node_modules / PnP state:** existing vs removed (PnP artifacts are cleared for Yarn PnP).【F:bench/run.mjs†L92-L185】
 - **Execution controls (standardized):** all runs share a CI-like env (`CI=1`, progress minimization vars), and package-manager invocations are normalized to quiet/non-interactive forms where possible (npm: `--no-audit --no-fund --loglevel=error`, pnpm: `--reporter=silent` (`install` uses `--no-frozen-lockfile`, `ci` uses `--frozen-lockfile`), yarn: progress-bar suppression env + immutable/non-immutable mode flags).【F:bench/run.mjs†L35-L64】【F:bench/run.mjs†L93】
@@ -67,6 +71,12 @@ Run all tools for a specific Node major:
 npm run bench:run -- --node 24 --scope all
 ```
 
+Run with explicit cache scope behavior:
+
+```bash
+npm run bench:run -- --node 24 --scope all --cache-mode all
+```
+
 Limit to npm only:
 
 ```bash
@@ -86,6 +96,16 @@ npm run bench:render
 ```
 
 The merge step collects every JSON file in `results/partial` and writes a single `results/results.json` payload consumed by the README renderer.
+
+## Cold / warm definition
+
+- **Warm (`cache: true`)**: benchmark run keeps package-manager cache data intact.
+- **Cold (`cache: false`)**: benchmark run clears package-manager cache data according to `cache_mode` before each measurement.
+  - `cache_mode=global`: clear only tool-global caches.
+  - `cache_mode=local`: clear only project-local caches.
+  - `cache_mode=all`: clear both (default).
+
+Each partial benchmark JSON records the selected `cache_mode` at the top level for traceability.
 
 ## Results table
 
