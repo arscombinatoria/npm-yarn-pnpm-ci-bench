@@ -89,9 +89,10 @@ The merge step collects every JSON file in `results/partial` and writes a single
 ## Results table
 
 The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START --\>` and `\<!-- BENCH:END --\>` markers are maintained by `bench/render-readme.mjs`, so edits inside the marker block will be overwritten during rendering.
+Column order is deterministic: benchmark columns are sorted by Node major version ascending, then by tool order (`npm` → `pnpm` → `yarn` → `yarn-pnp`, then lexical for unknown tools).
 
 <!-- BENCH:START -->
-| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.7) | npm(Node24 11.11.0) | pnpm(10.33.0) | Yarn(4.13.0) | Yarn PnP(4.13.0) |
+| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.7) | npm(Node24 11.11.0) | pnpm(Node24 10.33.0) | Yarn(Node24 4.13.0) | Yarn PnP(Node24 4.13.0) |
 | --- | :---: | :---: | :---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | install | ✓ | ✓ | ✓ | 1.3s | 1.2s | 0.8s | 0.6s | 0.9s | 1.0s |
 | install | ✓ | ✓ |  | 3.4s | 4.1s | 3.5s | 1.0s | 2.3s | 1.4s |
