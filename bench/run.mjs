@@ -15,8 +15,8 @@ if (!['global', 'local', 'all'].includes(cacheMode)) {
   throw new Error(`Invalid --cache-mode "${cacheMode}". Expected one of: global, local, all.`);
 }
 
-const RUNS_CACHED = Number(process.env.RUNS_CACHED || 11);
-const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 3);
+const RUNS_CACHED = Number(process.env.RUNS_CACHED || 15);
+const RUNS_NOCACHE = Number(process.env.RUNS_NOCACHE || 5);
 const MIN_RUNS = Number(process.env.MIN_RUNS || 3);
 const MAX_RUNS = Number(process.env.MAX_RUNS || 0);
 const TARGET_REL_HALF_WIDTH = Number(process.env.TARGET_REL_HALF_WIDTH || 0.05);
