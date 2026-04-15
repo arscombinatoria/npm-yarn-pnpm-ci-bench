@@ -10,7 +10,7 @@ Each tool is exercised across a matrix of settings:
 - **Cache:** warmed vs cold (the relevant cache/store directories are cleared when disabled).【F:bench/run.mjs†L66-L122】
 - **Lockfile:** present vs removed (where applicable).【F:bench/run.mjs†L124-L185】
 - **node_modules / PnP state:** existing vs removed (PnP artifacts are cleared for Yarn PnP).【F:bench/run.mjs†L92-L185】
-- **Execution controls (standardized):** all runs share a CI-like env (`CI=1`, progress minimization vars), and package-manager invocations are normalized to quiet/non-interactive forms where possible (npm: `--no-audit --no-fund --loglevel=error`, pnpm: `--reporter=silent` with lockfile policy per scenario, yarn: `--silent` + progress-bar suppression env).【F:bench/run.mjs†L35-L64】【F:bench/run.mjs†L93】
+- **Execution controls (standardized):** all runs share a CI-like env (`CI=1`, progress minimization vars), and package-manager invocations are normalized to quiet/non-interactive forms where possible (npm: `--no-audit --no-fund --loglevel=error`, pnpm: `--reporter=silent` (`install` uses `--no-frozen-lockfile`, `ci` uses `--frozen-lockfile`), yarn: `--silent` + progress-bar suppression env).【F:bench/run.mjs†L35-L64】【F:bench/run.mjs†L93】
 
 Results are summarized as **P90 latency in seconds** across multiple runs to reduce outlier noise.
 

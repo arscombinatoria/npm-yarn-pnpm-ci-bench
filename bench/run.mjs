@@ -39,10 +39,7 @@ const commandMap = {
     ci: 'npm ci --no-audit --no-fund --loglevel=error'
   },
   pnpm: {
-    install: {
-      lockfileOn: 'pnpm install --reporter=silent --frozen-lockfile',
-      lockfileOff: 'pnpm install --reporter=silent --no-frozen-lockfile'
-    },
+    install: 'pnpm install --reporter=silent --no-frozen-lockfile',
     ci: 'pnpm install --reporter=silent --frozen-lockfile'
   },
   yarn: {
@@ -227,10 +224,7 @@ function runCommand(command, context) {
   return durationMs;
 }
 
-function resolveCommand(tool, action, settings) {
-  if (tool === 'pnpm' && action === 'install') {
-    return settings.lockfile ? commandMap.pnpm.install.lockfileOn : commandMap.pnpm.install.lockfileOff;
-  }
+function resolveCommand(tool, action) {
   return commandMap[tool][action];
 }
 
@@ -310,7 +304,7 @@ function cleanupForSettings(tool, settings) {
 
 function ensureState(tool, settings) {
   const lockfilePath = getLockfilePath(tool);
-  const preCommand = resolveCommand(tool, 'install', { ...settings, lockfile: true });
+  const preCommand = resolveCommand(tool, 'install');
   const stateCaseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-ensure-state`;
   const needsLockfile = settings.lockfile && lockfilePath && !fileExists(lockfilePath);
   const needsNodeModules = settings.nodeModules && getNodeModulesPaths(tool).some((dirPath) => !fileExists(dirPath));
@@ -357,7 +351,7 @@ function runCases(tool) {
       ensureState(tool, settings);
       cleanupForSettings(tool, settings);
       const caseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-run-${i + 1}`;
-      const command = resolveCommand(tool, settings.action, settings);
+      const command = resolveCommand(tool, settings.action);
       const durationMs = runCommand(command, { tool, caseId });
       runs.push(durationMs);
       stability = calculateStability(runs);
