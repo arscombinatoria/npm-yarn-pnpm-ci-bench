@@ -96,9 +96,7 @@ function buildTable(results) {
     'lockfile',
     'node_modules',
     ...toolColumns.map((column) => {
-      const partial = pickPartialForTool(column.nodeMajor, column.tool);
-      const version = resolveToolVersion(partial, column.tool);
-      return `${toolLabel[column.tool] ?? column.tool}(Node${column.nodeMajor} ${version})`;
+      return `${toolLabel[column.tool] ?? column.tool}<br>${column.nodeMajor}`;
     })
   ];
 
@@ -161,7 +159,16 @@ function buildTable(results) {
     lines.push(`| ${row.join(' | ')} |`);
   }
 
-  return lines.join('\n');
+  const versionLines = [];
+  versionLines.push('');
+  versionLines.push('Versions:');
+  for (const column of toolColumns) {
+    const partial = pickPartialForTool(column.nodeMajor, column.tool);
+    const version = resolveToolVersion(partial, column.tool);
+    versionLines.push(`- ${toolLabel[column.tool] ?? column.tool} ${version} on Node ${column.nodeMajor}`);
+  }
+
+  return `${lines.join('\n')}\n${versionLines.join('\n')}`;
 }
 
 const results = JSON.parse(fs.readFileSync(resultsPath, 'utf8'));

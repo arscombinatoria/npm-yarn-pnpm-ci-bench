@@ -92,20 +92,28 @@ The benchmark table below is updated automatically by CI. The `\<!-- BENCH:START
 Column order is deterministic: benchmark columns are sorted by Node major version ascending, then by tool order (`npm` → `pnpm` → `yarn` → `yarn-pnp`, then lexical for unknown tools).
 
 <!-- BENCH:START -->
-| action | cache | lockfile | node_modules | npm(Node20 10.8.2) | npm(Node22 10.9.7) | npm(Node24 11.11.0) | pnpm(Node24 10.33.0) | Yarn(Node24 4.13.0) | Yarn PnP(Node24 4.13.0) |
+| action | cache | lockfile | node_modules | npm<br>20 | npm<br>22 | npm<br>24 | pnpm<br>24 | Yarn<br>24 | Yarn PnP<br>24 |
 | --- | :---: | :---: | :---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| install | ✓ | ✓ | ✓ | 1.2s | 1.1s | 0.8s | 0.6s | 0.9s | 0.8s |
-| install | ✓ | ✓ |  | 3.5s | 3.9s | 3.8s | 1.1s | 2.5s | 1.5s |
-| install | ✓ |  | ✓ | 1.0s | 1.0s | 1.2s | 1.2s | 1.9s | 1.8s |
-| install | ✓ |  |  | 6.6s | 6.2s | 6.2s | 2.7s | 3.5s | 2.4s |
-| install |  | ✓ | ✓ | 1.5s | 1.3s | 0.8s | 0.5s | 0.9s | 0.8s |
-| install |  | ✓ |  | 5.9s | 5.4s | 5.2s | 2.6s | 2.5s | 1.4s |
-| install |  |  | ✓ | 1.0s | 0.8s | 4.2s | 2.8s | 1.9s | 1.8s |
-| install |  |  |  | 18.5s | 14.8s | 16.0s | 3.9s | 3.5s | 2.4s |
-| ci | ✓ | ✓ | ✓ | 4.1s | 4.3s | 4.0s | 0.6s | 3.5s | 3.4s |
-| ci | ✓ | ✓ |  | 3.6s | 3.8s | 3.7s | 1.1s | 5.1s | 4.2s |
-| ci |  | ✓ | ✓ | 6.1s | 5.5s | 5.2s | 0.6s | 3.5s | 3.4s |
-| ci |  | ✓ |  | 5.8s | 5.3s | 5.1s | 2.5s | 5.1s | 4.1s |
+| install | ✓ | ✓ | ✓ | 1.3s | 1.1s | 0.8s | 0.6s | 0.9s | 0.8s |
+| install | ✓ | ✓ |  | 3.7s | 4.1s | 4.0s | 1.1s | 2.5s | 1.5s |
+| install | ✓ |  | ✓ | 1.1s | 1.1s | 1.2s | 1.2s | 2.0s | 1.8s |
+| install | ✓ |  |  | 6.6s | 6.2s | 6.4s | 2.7s | 3.5s | 2.4s |
+| install |  | ✓ | ✓ | 1.4s | 1.3s | 0.8s | 0.6s | 0.9s | 0.8s |
+| install |  | ✓ |  | 5.6s | 5.5s | 5.2s | 2.4s | 2.5s | 1.5s |
+| install |  |  | ✓ | 0.9s | 0.8s | 3.3s | 2.4s | 1.8s | 1.8s |
+| install |  |  |  | 13.9s | 14.4s | 14.5s | 3.5s | 3.4s | 2.5s |
+| ci | ✓ | ✓ | ✓ | 4.1s | 4.4s | 4.0s | 0.6s | 3.4s | 3.5s |
+| ci | ✓ | ✓ |  | 3.6s | 3.9s | 3.8s | 1.1s | 5.0s | 4.2s |
+| ci |  | ✓ | ✓ | 5.7s | 5.5s | 5.4s | 0.5s | 3.5s | 3.4s |
+| ci |  | ✓ |  | 5.5s | 5.3s | 5.1s | 2.4s | 5.3s | 4.2s |
+
+Versions:
+- npm 10.8.2 on Node 20
+- npm 10.9.7 on Node 22
+- npm 11.11.0 on Node 24
+- pnpm 10.33.0 on Node 24
+- Yarn 4.13.0 on Node 24
+- Yarn PnP 4.13.0 on Node 24
 <!-- BENCH:END -->
 
 Results are populated automatically by GitHub Actions using P90 (seconds).
