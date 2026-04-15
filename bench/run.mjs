@@ -5,6 +5,7 @@ import path from 'node:path';
 const args = process.argv.slice(2);
 const nodeArgIndex = args.indexOf('--node');
 const scopeArgIndex = args.indexOf('--scope');
+const debugLogEnabled = args.includes('--debug-log');
 const nodeMajor = nodeArgIndex !== -1 ? Number(args[nodeArgIndex + 1]) : Number(process.versions.node.split('.')[0]);
 const scope = scopeArgIndex !== -1 ? args[scopeArgIndex + 1] : 'all';
 
@@ -15,6 +16,8 @@ const MAX_RUNS = Number(process.env.MAX_RUNS || 0);
 const TARGET_REL_HALF_WIDTH = Number(process.env.TARGET_REL_HALF_WIDTH || 0.05);
 const repoRoot = path.resolve(process.cwd());
 const resultsDir = path.join(repoRoot, 'results', 'partial');
+const errorsDir = path.join(repoRoot, 'results', 'errors');
+const debugDir = path.join(repoRoot, 'results', 'debug');
 
 const cases = [];
 for (const cache of [true, false]) {
@@ -51,6 +54,71 @@ const commandMap = {
 
 function ensureDir(dirPath) {
   fs.mkdirSync(dirPath, { recursive: true });
+}
+
+function timestampForFilename(date = new Date()) {
+  return date.toISOString().replace(/[:.]/g, '-');
+}
+
+function normalizeCaseId(caseId) {
+  return String(caseId).replace(/[^a-zA-Z0-9_-]/g, '_');
+}
+
+function truncateTail(output, maxLength = 2000) {
+  if (!output) {
+    return '';
+  }
+  return output.length <= maxLength ? output : output.slice(-maxLength);
+}
+
+function writeJson(filepath, payload) {
+  ensureDir(path.dirname(filepath));
+  fs.writeFileSync(filepath, `${JSON.stringify(payload, null, 2)}\n`);
+}
+
+function runSpawnSync(command, { tool = 'unknown', caseId = 'unknown', phase = 'run' } = {}) {
+  const startedAt = new Date();
+  const start = process.hrtime.bigint();
+  const result = spawnSync(command, { shell: true, encoding: 'utf8' });
+  const end = process.hrtime.bigint();
+  const durationMs = Number(end - start) / 1e6;
+  const finishedAt = new Date();
+  const stdoutTail = truncateTail(result.stdout);
+  const stderrTail = truncateTail(result.stderr);
+  const diagnostics = {
+    command,
+    tool,
+    caseId,
+    phase,
+    startedAt: startedAt.toISOString(),
+    finishedAt: finishedAt.toISOString(),
+    durationMs,
+    status: result.status,
+    signal: result.signal,
+    stdoutTail,
+    stderrTail
+  };
+
+  if (debugLogEnabled && result.status === 0) {
+    const debugFilename = `${timestampForFilename(finishedAt)}-${tool}-${normalizeCaseId(caseId)}.json`;
+    writeJson(path.join(debugDir, debugFilename), diagnostics);
+  }
+
+  if (result.status !== 0) {
+    const errorFilename = `${timestampForFilename(finishedAt)}-${tool}-${normalizeCaseId(caseId)}.json`;
+    const errorPath = path.join(errorsDir, errorFilename);
+    writeJson(errorPath, diagnostics);
+    throw new Error(`Command failed: ${command} (status=${result.status}, signal=${result.signal}, details=${errorPath})`);
+  }
+
+  if (stdoutTail) {
+    process.stdout.write(result.stdout);
+  }
+  if (stderrTail) {
+    process.stderr.write(result.stderr);
+  }
+
+  return { durationMs, diagnostics };
 }
 
 function fileExists(targetPath) {
@@ -143,14 +211,9 @@ function calculateStability(runs) {
   };
 }
 
-function runCommand(command) {
-  const start = process.hrtime.bigint();
-  const result = spawnSync(command, { stdio: 'inherit', shell: true });
-  const end = process.hrtime.bigint();
-  if (result.status !== 0) {
-    throw new Error(`Command failed: ${command}`);
-  }
-  return Number(end - start) / 1e6;
+function runCommand(command, context) {
+  const { durationMs } = runSpawnSync(command, context);
+  return durationMs;
 }
 
 function writeYarnConfig(nodeLinker) {
@@ -230,15 +293,13 @@ function cleanupForSettings(tool, settings) {
 function ensureState(tool, settings) {
   const lockfilePath = getLockfilePath(tool);
   const preCommand = commandMap[tool].install;
+  const stateCaseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-ensure-state`;
   const needsLockfile = settings.lockfile && lockfilePath && !fileExists(lockfilePath);
   const needsNodeModules = settings.nodeModules && getNodeModulesPaths(tool).some((dirPath) => !fileExists(dirPath));
   const needsPnp = tool === 'yarn-pnp' && settings.nodeModules && !fileExists(path.join(repoRoot, '.pnp.cjs'));
 
   if (needsLockfile || needsNodeModules || needsPnp) {
-    const result = spawnSync(preCommand, { stdio: 'inherit', shell: true });
-    if (result.status !== 0) {
-      throw new Error(`Command failed: ${preCommand}`);
-    }
+    runSpawnSync(preCommand, { tool, caseId: stateCaseId, phase: 'ensure_state' });
   }
 
   if (!settings.lockfile && lockfilePath) {
@@ -277,7 +338,8 @@ function runCases(tool) {
       cleanupForSettings(tool, settings);
       ensureState(tool, settings);
       cleanupForSettings(tool, settings);
-      const durationMs = runCommand(commandMap[tool][settings.action]);
+      const caseId = `${settings.action}-cache-${settings.cache ? 'on' : 'off'}-lockfile-${settings.lockfile ? 'on' : 'off'}-nodeModules-${settings.nodeModules ? 'on' : 'off'}-run-${i + 1}`;
+      const durationMs = runCommand(commandMap[tool][settings.action], { tool, caseId });
       runs.push(durationMs);
       stability = calculateStability(runs);
 
