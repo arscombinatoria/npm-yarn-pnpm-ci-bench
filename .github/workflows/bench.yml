@@ -2,6 +2,11 @@ name: bench
 
 on:
   pull_request:
+    paths:
+      - "package.json"
+      - "package-lock.json"
+      - "bench/**"
+      - ".github/workflows/bench.yml"
   workflow_dispatch:
 
 permissions:
