@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T00:29:25.376Z",
+  "generatedAt": "2026-05-02T00:49:24.416Z",
   "partials": {
     "20-npm": {
       "nodeMajor": 20,
@@ -11,7 +11,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-04-28T00:24:07.918Z",
+      "generatedAt": "2026-05-02T00:41:42.435Z",
       "results": [
         {
           "tool": "npm",
@@ -20,27 +20,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1383.600588,
-            781.438146,
-            785.028351,
-            779.361321,
-            783.263995
+            1511.282638,
+            880.193922,
+            868.121853,
+            885.262745,
+            858.779194
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 783.263995,
-            "mean_ms": 902.5384801999999,
-            "stddev_ms": 268.93014350256385,
-            "standard_error_ms": 120.26921641410122,
-            "rse": 0.13325660794811753,
-            "iqr_ms": 3.5902050000000827,
-            "robust_median_standard_error_ms": 2.5207739240121825,
-            "relative_half_width": 0.0032182941385071355,
+            "median_ms": 880.193922,
+            "mean_ms": 1000.7280703999999,
+            "stddev_ms": 285.59612269856825,
+            "standard_error_ms": 127.72246889287385,
+            "rse": 0.1276295455985581,
+            "iqr_ms": 17.140892000000008,
+            "robust_median_standard_error_ms": 12.035054707992455,
+            "relative_half_width": 0.013673185427872625,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1144.1716932000002
+          "p90_ms": 1260.8746808
         },
         {
           "tool": "npm",
@@ -49,25 +49,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3328.403574,
-            3379.752634,
-            3318.91312
+            3647.058848,
+            3699.350198,
+            3702.809204
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3328.403574,
-            "mean_ms": 3342.356442666667,
-            "stddev_ms": 32.73184266064134,
-            "standard_error_ms": 18.897738171193755,
-            "rse": 0.005654016408889165,
-            "iqr_ms": 30.419757000000118,
-            "robust_median_standard_error_ms": 27.573682181433924,
-            "relative_half_width": 0.008284356619740226,
+            "median_ms": 3699.350198,
+            "mean_ms": 3683.0727500000007,
+            "stddev_ms": 31.236869778776036,
+            "standard_error_ms": 18.03461517541763,
+            "rse": 0.004896622032626868,
+            "iqr_ms": 27.875177999999778,
+            "robust_median_standard_error_ms": 25.267174189553515,
+            "relative_half_width": 0.006830165525614159,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3369.482822
+          "p90_ms": 3702.1174028
         },
         {
           "tool": "npm",
@@ -76,25 +76,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            725.571201,
-            720.783424,
-            744.918715
+            799.343361,
+            809.19551,
+            802.673389
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 725.571201,
-            "mean_ms": 730.4244466666665,
-            "stddev_ms": 12.778636978936175,
-            "standard_error_ms": 7.377749499665307,
-            "rse": 0.01010063331441614,
-            "iqr_ms": 12.067645500000026,
-            "robust_median_standard_error_ms": 10.938595653318686,
-            "relative_half_width": 0.015075840438874704,
+            "median_ms": 802.673389,
+            "mean_ms": 803.73742,
+            "stddev_ms": 5.011519874875407,
+            "standard_error_ms": 2.893402348808476,
+            "rse": 0.003599934850374984,
+            "iqr_ms": 4.926074500000027,
+            "robust_median_standard_error_ms": 4.4651905886383725,
+            "relative_half_width": 0.005562898496238016,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 741.0492121999999
+          "p90_ms": 807.8910858
         },
         {
           "tool": "npm",
@@ -103,25 +103,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            6189.825853,
-            6301.93967,
-            6338.893096
+            6531.500071,
+            6587.692514,
+            6505.947253
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 6301.93967,
-            "mean_ms": 6276.886206333334,
-            "stddev_ms": 77.62742920629253,
-            "standard_error_ms": 44.818217148751614,
-            "rse": 0.007140199085261471,
-            "iqr_ms": 74.53362149999975,
-            "robust_median_standard_error_ms": 67.56025010562298,
-            "relative_half_width": 0.010720548536387844,
+            "median_ms": 6531.500071,
+            "mean_ms": 6541.713279333334,
+            "stddev_ms": 41.81870565111482,
+            "standard_error_ms": 24.144040964832865,
+            "rse": 0.0036907825112282183,
+            "iqr_ms": 40.872630500000014,
+            "robust_median_standard_error_ms": 37.04858402801109,
+            "relative_half_width": 0.005672293290251591,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 6331.5024108
+          "p90_ms": 6576.4540254
         },
         {
           "tool": "npm",
@@ -130,27 +130,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1472.581352,
-            990.15509,
-            1006.904344,
-            995.497075,
-            975.899641
+            1543.699838,
+            1012.161747,
+            1019.288206,
+            1035.384874,
+            1020.248051
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 995.497075,
-            "mean_ms": 1088.2075004,
-            "stddev_ms": 215.16041369204675,
-            "standard_error_ms": 96.2226622164786,
-            "rse": 0.08842308308030349,
-            "iqr_ms": 16.749254000000064,
-            "robust_median_standard_error_ms": 11.760075742152868,
-            "relative_half_width": 0.011813270011017228,
+            "median_ms": 1020.248051,
+            "mean_ms": 1126.1565432,
+            "stddev_ms": 233.5669939966068,
+            "standard_error_ms": 104.45433517533962,
+            "rse": 0.09275294434513535,
+            "iqr_ms": 16.096668000000136,
+            "robust_median_standard_error_ms": 11.301878571803208,
+            "relative_half_width": 0.011077579183538383,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1286.3105488
+          "p90_ms": 1340.3738524
         },
         {
           "tool": "npm",
@@ -159,25 +159,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5277.113887,
-            5434.052705,
-            5413.94855
+            5669.084095,
+            5670.913133,
+            5718.435573
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5413.94855,
-            "mean_ms": 5375.038380666668,
-            "stddev_ms": 85.39876525436858,
-            "standard_error_ms": 49.30500010807136,
-            "rse": 0.00917295777559751,
-            "iqr_ms": 78.46940899999936,
-            "robust_median_standard_error_ms": 71.12780502260175,
-            "relative_half_width": 0.013137879750002749,
+            "median_ms": 5670.913133,
+            "mean_ms": 5686.144267,
+            "stddev_ms": 27.980040696728388,
+            "standard_error_ms": 16.15428402819282,
+            "rse": 0.002840990884094433,
+            "iqr_ms": 24.67573900000025,
+            "robust_median_standard_error_ms": 22.367074949941856,
+            "relative_half_width": 0.00394417520165916,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5430.031874
+          "p90_ms": 5708.931085
         },
         {
           "tool": "npm",
@@ -186,25 +186,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            731.460293,
-            728.864743,
-            760.035759
+            799.229931,
+            804.639108,
+            820.505887
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 731.460293,
-            "mean_ms": 740.120265,
-            "stddev_ms": 17.296080362285906,
-            "standard_error_ms": 9.985896653091169,
-            "rse": 0.013492262170515178,
-            "iqr_ms": 15.585508000000004,
-            "robust_median_standard_error_ms": 14.127326665633598,
-            "relative_half_width": 0.019313866796093603,
+            "median_ms": 804.639108,
+            "mean_ms": 808.1249753333333,
+            "stddev_ms": 11.058030078982654,
+            "standard_error_ms": 6.384356642807615,
+            "rse": 0.007900209543918887,
+            "iqr_ms": 10.63797800000009,
+            "robust_median_standard_error_ms": 9.64268795523539,
+            "relative_half_width": 0.011983866878162466,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 754.3206657999999
+          "p90_ms": 817.3325312
         },
         {
           "tool": "npm",
@@ -213,25 +213,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            19572.608926,
-            18791.972119,
-            19457.202741
+            15208.87543,
+            14717.465907,
+            14785.041955
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 19457.202741,
-            "mean_ms": 19273.927928666668,
-            "stddev_ms": 421.35578640580457,
-            "standard_error_ms": 243.26987670599775,
-            "rse": 0.012621707293206979,
-            "iqr_ms": 390.3184035000013,
-            "robust_median_standard_error_ms": 353.80018346871344,
-            "relative_half_width": 0.018183507063077965,
+            "median_ms": 14785.041955,
+            "mean_ms": 14903.794430666667,
+            "stddev_ms": 266.3596115808355,
+            "standard_error_ms": 153.78279344743956,
+            "rse": 0.010318365176254021,
+            "iqr_ms": 245.70476150000104,
+            "robust_median_standard_error_ms": 222.71660500332152,
+            "relative_half_width": 0.01506364376111921,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 19549.527689000002
+          "p90_ms": 15124.108735
         },
         {
           "tool": "npm",
@@ -240,25 +240,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3831.375673,
-            3485.080207,
-            3489.400053
+            4198.174869,
+            3803.021301,
+            3860.571097
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3489.400053,
-            "mean_ms": 3601.951977666666,
-            "stddev_ms": 198.69848829990522,
-            "standard_error_ms": 114.718625707522,
-            "rse": 0.03184901587217617,
-            "iqr_ms": 173.1477329999998,
-            "robust_median_standard_error_ms": 156.94801770368366,
-            "relative_half_width": 0.04497851072385585,
+            "median_ms": 3860.571097,
+            "mean_ms": 3953.9224223333335,
+            "stddev_ms": 213.4770199152595,
+            "standard_error_ms": 123.25101491387417,
+            "rse": 0.031171834383422192,
+            "iqr_ms": 197.57678399999986,
+            "robust_median_standard_error_ms": 179.09148480199215,
+            "relative_half_width": 0.04638989421569307,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3762.980549
+          "p90_ms": 4130.6541146
         },
         {
           "tool": "npm",
@@ -267,25 +267,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3225.248772,
-            3233.691963,
-            3231.025543
+            3599.672017,
+            3573.646796,
+            3574.427526
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3231.025543,
-            "mean_ms": 3229.9887593333333,
-            "stddev_ms": 4.31602349903493,
-            "standard_error_ms": 2.4918573289965678,
-            "rse": 0.0007714755420730581,
-            "iqr_ms": 4.221595500000149,
-            "robust_median_standard_error_ms": 3.826622698385634,
-            "relative_half_width": 0.0011843368761587144,
+            "median_ms": 3574.427526,
+            "mean_ms": 3582.582113,
+            "stddev_ms": 14.805438152251194,
+            "standard_error_ms": 8.547923702672582,
+            "rse": 0.002385967280876831,
+            "iqr_ms": 13.012610499999937,
+            "robust_median_standard_error_ms": 11.795149654804504,
+            "relative_half_width": 0.0032998709776622575,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3233.158679
+          "p90_ms": 3594.6231188
         },
         {
           "tool": "npm",
@@ -294,25 +294,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5411.241105,
-            5417.349937,
-            5399.871268
+            5768.034484,
+            5833.702601,
+            5888.990758
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5411.241105,
-            "mean_ms": 5409.487436666666,
-            "stddev_ms": 8.870314648894555,
-            "standard_error_ms": 5.121278550335952,
-            "rse": 0.0009467215905933763,
-            "iqr_ms": 8.73933450000004,
-            "robust_median_standard_error_ms": 7.921681687997736,
-            "relative_half_width": 0.0014639306462759685,
+            "median_ms": 5833.702601,
+            "mean_ms": 5830.242614333333,
+            "stddev_ms": 60.55232188604257,
+            "standard_error_ms": 34.959899340963545,
+            "rse": 0.005996302667579655,
+            "iqr_ms": 60.47813700000006,
+            "robust_median_standard_error_ms": 54.81979782294826,
+            "relative_half_width": 0.009397084762865899,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5416.1281706
+          "p90_ms": 5877.9331266
         },
         {
           "tool": "npm",
@@ -321,25 +321,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5178.210563,
-            5209.181008,
-            5241.623867
+            5617.807274,
+            5595.291168,
+            5587.909537
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5209.181008,
-            "mean_ms": 5209.6718126666665,
-            "stddev_ms": 31.709500910054384,
-            "standard_error_ms": 18.30748888628858,
-            "rse": 0.0035141347755872467,
-            "iqr_ms": 31.70665199999985,
-            "robust_median_standard_error_ms": 28.74017518566367,
-            "relative_half_width": 0.005517215689285119,
+            "median_ms": 5595.291168,
+            "mean_ms": 5600.335993,
+            "stddev_ms": 15.574221132716849,
+            "standard_error_ms": 8.991780763392832,
+            "rse": 0.0016055788035989063,
+            "iqr_ms": 14.948868499999662,
+            "robust_median_standard_error_ms": 13.550251206511543,
+            "relative_half_width": 0.0024217240532551218,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5235.1352952
+          "p90_ms": 5613.3040528
         }
       ]
     },
@@ -353,7 +353,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-04-28T00:23:48.091Z",
+      "generatedAt": "2026-05-02T00:42:49.308Z",
       "results": [
         {
           "tool": "npm",
@@ -362,27 +362,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1266.38586,
-            680.257553,
-            704.262959,
-            704.428613,
-            698.439861
+            1248.012984,
+            716.155556,
+            734.350969,
+            695.155092,
+            721.523221
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 704.262959,
-            "mean_ms": 810.7549692,
-            "stddev_ms": 254.89684682007226,
-            "standard_error_ms": 113.99333534800653,
-            "rse": 0.14060146367093834,
-            "iqr_ms": 5.9887520000000904,
-            "robust_median_standard_error_ms": 4.204854563729839,
-            "relative_half_width": 0.005970574641182909,
+            "median_ms": 721.523221,
+            "mean_ms": 823.0395644,
+            "stddev_ms": 237.9875373998221,
+            "standard_error_ms": 106.43126228475514,
+            "rse": 0.12931487973162512,
+            "iqr_ms": 18.195412999999917,
+            "robust_median_standard_error_ms": 12.775460628858523,
+            "relative_half_width": 0.01770623627490781,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1041.6029612000002
+          "p90_ms": 1042.548178
         },
         {
           "tool": "npm",
@@ -391,25 +391,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3549.782293,
-            3531.637221,
-            3599.764142
+            3243.983276,
+            3233.187368,
+            3207.89675
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3549.782293,
-            "mean_ms": 3560.394552,
-            "stddev_ms": 35.281501839453625,
-            "standard_error_ms": 20.369784584422828,
-            "rse": 0.005721215524549209,
-            "iqr_ms": 34.06346050000002,
-            "robust_median_standard_error_ms": 30.876480500052157,
-            "relative_half_width": 0.008698133561863523,
+            "median_ms": 3233.187368,
+            "mean_ms": 3228.355798,
+            "stddev_ms": 18.522078479097445,
+            "standard_error_ms": 10.693726995858285,
+            "rse": 0.003312437557992573,
+            "iqr_ms": 18.043263000000024,
+            "robust_median_standard_error_ms": 16.35513391767149,
+            "relative_half_width": 0.005058517201800317,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3589.7677722
+          "p90_ms": 3241.8240944
         },
         {
           "tool": "npm",
@@ -418,25 +418,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            692.191691,
-            686.921755,
-            715.491534
+            631.70738,
+            631.029866,
+            654.47275
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 692.191691,
-            "mean_ms": 698.2016600000001,
-            "stddev_ms": 15.203547729491676,
-            "standard_error_ms": 8.777772374259344,
-            "rse": 0.012571972937244725,
-            "iqr_ms": 14.284889500000077,
-            "robust_median_standard_error_ms": 12.948394133125491,
-            "relative_half_width": 0.018706370361682788,
+            "median_ms": 631.70738,
+            "mean_ms": 639.0699986666667,
+            "stddev_ms": 13.343474726712914,
+            "standard_error_ms": 7.70385872539267,
+            "rse": 0.012054796409572865,
+            "iqr_ms": 11.721442000000025,
+            "robust_median_standard_error_ms": 10.624782979565243,
+            "relative_half_width": 0.016819152848214697,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 710.8315654
+          "p90_ms": 649.919676
         },
         {
           "tool": "npm",
@@ -445,25 +445,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            5789.45988,
-            5761.760247,
-            5765.160138
+            5499.303372,
+            5596.538846,
+            5571.360272
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5765.160138,
-            "mean_ms": 5772.126755,
-            "stddev_ms": 15.106876957273197,
-            "standard_error_ms": 8.721959477896236,
-            "rse": 0.0015110478075244964,
-            "iqr_ms": 13.849816500000088,
-            "robust_median_standard_error_ms": 12.554026596668097,
-            "relative_half_width": 0.00217756771644911,
+            "median_ms": 5571.360272,
+            "mean_ms": 5555.734163333334,
+            "stddev_ms": 50.46598661522453,
+            "standard_error_ms": 29.136550957219935,
+            "rse": 0.005244410567646484,
+            "iqr_ms": 48.61773700000049,
+            "robust_median_standard_error_ms": 44.06905776461492,
+            "relative_half_width": 0.00790992784761971,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5784.5999316
+          "p90_ms": 5591.5031312
         },
         {
           "tool": "npm",
@@ -472,27 +472,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1351.091303,
-            841.21664,
-            839.692745,
-            859.777061,
-            843.641377
+            1288.664331,
+            853.327216,
+            835.612406,
+            925.150679,
+            950.528885
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 843.641377,
-            "mean_ms": 947.0838252,
-            "stddev_ms": 225.98979970990695,
-            "standard_error_ms": 101.06571087458283,
-            "rse": 0.10671252975230607,
-            "iqr_ms": 18.56042100000002,
-            "robust_median_standard_error_ms": 13.031741996762607,
-            "relative_half_width": 0.01544701617540815,
+            "median_ms": 925.150679,
+            "mean_ms": 970.6567034,
+            "stddev_ms": 184.12492322864892,
+            "standard_error_ms": 82.34316893823781,
+            "rse": 0.08483243215629949,
+            "iqr_ms": 97.20166899999992,
+            "robust_median_standard_error_ms": 68.24775537487622,
+            "relative_half_width": 0.07376934041560188,
             "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
+            "passed": false,
+            "criterion": null
           },
-          "p90_ms": 1154.5656061999998
+          "p90_ms": 1153.4101526
         },
         {
           "tool": "npm",
@@ -501,25 +501,27 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5092.75462,
-            5100.963631,
-            5044.37326
+            5541.632095,
+            5535.03527,
+            8093.41773,
+            5019.129506,
+            4874.163377
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 5092.75462,
-            "mean_ms": 5079.363837,
-            "stddev_ms": 30.579442841461393,
-            "standard_error_ms": 17.655049556186512,
-            "rse": 0.003475838731531787,
-            "iqr_ms": 28.295185499999207,
-            "robust_median_standard_error_ms": 25.647885755356054,
-            "relative_half_width": 0.00503615188028754,
+            "median_ms": 5535.03527,
+            "mean_ms": 5812.675595600001,
+            "stddev_ms": 1309.8524720388543,
+            "standard_error_ms": 585.7838335950041,
+            "rse": 0.10077696991010865,
+            "iqr_ms": 522.5025889999997,
+            "robust_median_standard_error_ms": 366.8623105310208,
+            "relative_half_width": 0.06628003122571263,
             "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
+            "passed": false,
+            "criterion": null
           },
-          "p90_ms": 5099.321828799999
+          "p90_ms": 7072.703476000001
         },
         {
           "tool": "npm",
@@ -528,25 +530,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            652.843352,
-            640.969256,
-            661.689661
+            614.898951,
+            661.537265,
+            629.278432
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 652.843352,
-            "mean_ms": 651.8340896666667,
-            "stddev_ms": 10.397006957972117,
-            "standard_error_ms": 6.002714765951614,
-            "rse": 0.00920896108551375,
-            "iqr_ms": 10.360202500000014,
-            "robust_median_standard_error_ms": 9.390901152507446,
-            "relative_half_width": 0.01438461634592466,
+            "median_ms": 629.278432,
+            "mean_ms": 635.2382160000001,
+            "stddev_ms": 23.88351632791207,
+            "standard_error_ms": 13.789154581114856,
+            "rse": 0.021707060806169846,
+            "iqr_ms": 23.31915700000002,
+            "robust_median_standard_error_ms": 21.137414866823498,
+            "relative_half_width": 0.033589924256014383,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 659.9203992
+          "p90_ms": 655.0854984
         },
         {
           "tool": "npm",
@@ -555,25 +557,27 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            14845.04273,
-            13937.900576,
-            14500.332351
+            18207.951396,
+            19199.523637,
+            21566.146244,
+            23453.502196,
+            17168.77623
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 14500.332351,
-            "mean_ms": 14427.758552333333,
-            "stddev_ms": 457.9049454642545,
-            "standard_error_ms": 264.3715435270483,
-            "rse": 0.018323812570615324,
-            "iqr_ms": 453.5710770000005,
-            "robust_median_standard_error_ms": 411.1349319420487,
-            "relative_half_width": 0.028353483354034658,
+            "median_ms": 19199.523637,
+            "mean_ms": 19919.1799406,
+            "stddev_ms": 2560.0224954088835,
+            "standard_error_ms": 1144.8768647325812,
+            "rse": 0.0574761043449912,
+            "iqr_ms": 3358.194847999999,
+            "robust_median_standard_error_ms": 2357.8737160107175,
+            "relative_half_width": 0.12280896966978837,
             "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
+            "passed": false,
+            "criterion": null
           },
-          "p90_ms": 14776.1006542
+          "p90_ms": 22698.559815200002
         },
         {
           "tool": "npm",
@@ -582,25 +586,26 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            4044.060538,
-            3705.685527,
-            3717.8357
+            3745.964767,
+            3370.035748,
+            3362.446002,
+            3446.102323
           ],
-          "actual_runs": 3,
+          "actual_runs": 4,
           "stability": {
-            "median_ms": 3717.8357,
-            "mean_ms": 3822.5272550000004,
-            "stddev_ms": 191.94961131388382,
-            "standard_error_ms": 110.82215976291486,
-            "rse": 0.028991856007816705,
-            "iqr_ms": 169.18750550000004,
-            "robust_median_standard_error_ms": 153.35830939499573,
-            "relative_half_width": 0.04124935090461252,
+            "median_ms": 3408.0690354999997,
+            "mean_ms": 3481.13721,
+            "stddev_ms": 180.54751541605117,
+            "standard_error_ms": 90.27375770802558,
+            "rse": 0.025932260713166656,
+            "iqr_ms": 152.92962250000028,
+            "robust_median_standard_error_ms": 120.04975366250022,
+            "relative_half_width": 0.03522515313275855,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3978.8155704
+          "p90_ms": 3656.0060338000003
         },
         {
           "tool": "npm",
@@ -609,25 +614,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3475.754909,
-            3494.363945,
-            3480.271024
+            3260.999042,
+            3347.705492,
+            3216.923037
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3480.271024,
-            "mean_ms": 3483.463292666667,
-            "stddev_ms": 9.706543650674982,
-            "standard_error_ms": 5.604075589618054,
-            "rse": 0.0016087655068493666,
-            "iqr_ms": 9.304517999999916,
-            "robust_median_standard_error_ms": 8.433986576008083,
-            "relative_half_width": 0.002423370627703184,
+            "median_ms": 3260.999042,
+            "mean_ms": 3275.2091903333335,
+            "stddev_ms": 66.53915291539457,
+            "standard_error_ms": 38.41639784735273,
+            "rse": 0.011729448598500943,
+            "iqr_ms": 65.39122750000024,
+            "robust_median_standard_error_ms": 59.27321919563136,
+            "relative_half_width": 0.018176398837357083,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3491.5453608
+          "p90_ms": 3330.3642019999998
         },
         {
           "tool": "npm",
@@ -636,25 +641,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5253.067447,
-            5322.946219,
-            5215.749615
+            4956.458287,
+            4992.245728,
+            5101.402907
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5253.067447,
-            "mean_ms": 5263.921093666667,
-            "stddev_ms": 54.416258707824355,
-            "standard_error_ms": 31.41724161325471,
-            "rse": 0.00596841044047082,
-            "iqr_ms": 53.59830200000033,
-            "robust_median_standard_error_ms": 48.583640717857065,
-            "relative_half_width": 0.009248623058438538,
+            "median_ms": 4992.245728,
+            "mean_ms": 5016.702307333333,
+            "stddev_ms": 75.50383381823583,
+            "standard_error_ms": 43.59215877980723,
+            "rse": 0.008689405132946583,
+            "iqr_ms": 72.4723100000001,
+            "robust_median_standard_error_ms": 65.6917950690517,
+            "relative_half_width": 0.01315876634449427,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5308.9704646
+          "p90_ms": 5079.5714712
         },
         {
           "tool": "npm",
@@ -663,25 +668,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4996.007479,
-            4945.125187,
-            4919.220971
+            4892.81333,
+            4722.794843,
+            4734.407912
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4945.125187,
-            "mean_ms": 4953.451212333333,
-            "stddev_ms": 39.06448484361472,
-            "standard_error_ms": 22.553890840215015,
-            "rse": 0.004553167049280568,
-            "iqr_ms": 38.393253999999615,
-            "robust_median_standard_error_ms": 34.80117818518577,
-            "relative_half_width": 0.007037471624919204,
+            "median_ms": 4734.407912,
+            "mean_ms": 4783.3386949999995,
+            "stddev_ms": 94.98546006724997,
+            "standard_error_ms": 54.83988093892722,
+            "rse": 0.011464770620623432,
+            "iqr_ms": 85.0092435000006,
+            "robust_median_standard_error_ms": 77.05577210078091,
+            "relative_half_width": 0.016275693504455457,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4985.8310206
+          "p90_ms": 4861.1322463999995
         }
       ]
     },
@@ -695,7 +700,7 @@
         "pnpm": "10.33.2",
         "yarn": "4.14.1"
       },
-      "generatedAt": "2026-04-28T00:29:11.785Z",
+      "generatedAt": "2026-05-02T00:49:08.383Z",
       "results": [
         {
           "tool": "npm",
@@ -704,25 +709,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            653.202921,
-            641.338491,
-            633.419858
+            646.184116,
+            638.884651,
+            639.018185
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 641.338491,
-            "mean_ms": 642.6537566666667,
-            "stddev_ms": 9.956899027605234,
-            "standard_error_ms": 5.748618333881805,
-            "rse": 0.00894512523150707,
-            "iqr_ms": 9.891531500000042,
-            "robust_median_standard_error_ms": 8.96607904752962,
-            "relative_half_width": 0.013980260304584807,
+            "median_ms": 639.018185,
+            "mean_ms": 641.3623173333334,
+            "stddev_ms": 4.176333872990816,
+            "standard_error_ms": 2.411207485797,
+            "rse": 0.003759509127106746,
+            "iqr_ms": 3.6497325000000274,
+            "robust_median_standard_error_ms": 3.3082632449118727,
+            "relative_half_width": 0.005177103441761791,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 650.830035
+          "p90_ms": 644.7509298
         },
         {
           "tool": "npm",
@@ -731,25 +736,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3750.932888,
-            3783.074731,
-            3806.998922
+            3581.292904,
+            3574.320435,
+            3622.791731
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3783.074731,
-            "mean_ms": 3780.335513666667,
-            "stddev_ms": 28.133210371760384,
-            "standard_error_ms": 16.24271658130423,
-            "rse": 0.004296633598415688,
-            "iqr_ms": 28.0330170000002,
-            "robust_median_standard_error_ms": 25.41024576050153,
-            "relative_half_width": 0.006716823633506364,
+            "median_ms": 3581.292904,
+            "mean_ms": 3592.80169,
+            "stddev_ms": 26.20507108128586,
+            "standard_error_ms": 15.129504842913668,
+            "rse": 0.004211060378039866,
+            "iqr_ms": 24.235647999999856,
+            "robust_median_standard_error_ms": 21.968158897952346,
+            "relative_half_width": 0.006134141910988565,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3802.2140838
+          "p90_ms": 3614.4919655999997
         },
         {
           "tool": "npm",
@@ -758,25 +763,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1012.251131,
-            1012.869129,
-            1007.052898
+            987.592524,
+            1001.71765,
+            991.727456
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1012.251131,
-            "mean_ms": 1010.724386,
-            "stddev_ms": 3.194581112228796,
-            "standard_error_ms": 1.8443922650933895,
-            "rse": 0.0018248221677847096,
-            "iqr_ms": 2.9081155000001218,
-            "robust_median_standard_error_ms": 2.636031988812562,
-            "relative_half_width": 0.0026041284697883556,
+            "median_ms": 991.727456,
+            "mean_ms": 993.6792100000001,
+            "stddev_ms": 7.262011008416079,
+            "standard_error_ms": 4.192724010567049,
+            "rse": 0.004219393913421061,
+            "iqr_ms": 7.062563000000068,
+            "robust_median_standard_error_ms": 6.4017890592734075,
+            "relative_half_width": 0.006455189901764107,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1012.7455294
+          "p90_ms": 999.7196112
         },
         {
           "tool": "npm",
@@ -785,25 +790,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            6144.276911,
-            6137.389319,
-            6140.701451
+            5937.59185,
+            5981.217039,
+            5928.412564
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 6140.701451,
-            "mean_ms": 6140.789227,
-            "stddev_ms": 3.444634865881744,
-            "standard_error_ms": 1.9887608670767953,
-            "rse": 0.00032386079273533016,
-            "iqr_ms": 3.443796000000475,
-            "robust_median_standard_error_ms": 3.1215941797860567,
-            "relative_half_width": 0.0005083448861168315,
+            "median_ms": 5937.59185,
+            "mean_ms": 5949.073817666666,
+            "stddev_ms": 28.21267146390416,
+            "standard_error_ms": 16.28859346424354,
+            "rse": 0.002738004933788537,
+            "iqr_ms": 26.40223750000041,
+            "robust_median_standard_error_ms": 23.932042116698863,
+            "relative_half_width": 0.004030597373697699,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 6143.5618190000005
+          "p90_ms": 5972.4920012
         },
         {
           "tool": "npm",
@@ -812,25 +817,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            649.637822,
-            638.887292,
-            632.470737
+            631.449007,
+            632.471597,
+            628.267062
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 638.887292,
-            "mean_ms": 640.3319503333333,
-            "stddev_ms": 8.674242337193416,
-            "standard_error_ms": 5.008076148394667,
-            "rse": 0.007821062412687117,
-            "iqr_ms": 8.583542500000021,
-            "robust_median_standard_error_ms": 7.780465599571702,
-            "relative_half_width": 0.01217815050791729,
+            "median_ms": 631.449007,
+            "mean_ms": 630.7292219999999,
+            "stddev_ms": 2.19273721093636,
+            "standard_error_ms": 1.2659774189962167,
+            "rse": 0.002007164683097903,
+            "iqr_ms": 2.1022674999999253,
+            "robust_median_standard_error_ms": 1.905579190042687,
+            "relative_half_width": 0.0030177879273198174,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 647.4877160000001
+          "p90_ms": 632.267079
         },
         {
           "tool": "npm",
@@ -839,25 +844,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5123.783029,
-            5074.710794,
-            5166.305602
+            4912.663519,
+            4887.193709,
+            4971.482492
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5123.783029,
-            "mean_ms": 5121.599808333333,
-            "stddev_ms": 45.8364162266071,
-            "standard_error_ms": 26.46366724711934,
-            "rse": 0.005167070493102647,
-            "iqr_ms": 45.797403999999915,
-            "robust_median_standard_error_ms": 41.51259533831002,
-            "relative_half_width": 0.008101942471676433,
+            "median_ms": 4912.663519,
+            "mean_ms": 4923.779906666667,
+            "stddev_ms": 43.22996982386165,
+            "standard_error_ms": 24.958834714865926,
+            "rse": 0.005069039475357607,
+            "iqr_ms": 42.14439149999998,
+            "robust_median_standard_error_ms": 38.201358970452006,
+            "relative_half_width": 0.007776099222490228,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5157.801087400001
+          "p90_ms": 4959.7186974
         },
         {
           "tool": "npm",
@@ -866,27 +871,27 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            3953.843157,
-            3684.164212,
-            3362.757449,
-            3253.222731,
-            4013.309066
+            3613.461159,
+            4573.23688,
+            6382.587338,
+            3436.971924,
+            3739.356757
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 3684.164212,
-            "mean_ms": 3653.459323,
-            "stddev_ms": 341.08722659940446,
-            "standard_error_ms": 152.53884498662856,
-            "rse": 0.041751893616643,
-            "iqr_ms": 591.0857079999996,
-            "robust_median_standard_error_ms": 415.01625661560934,
-            "relative_half_width": 0.1126486857626555,
+            "median_ms": 3739.356757,
+            "mean_ms": 4349.1228116,
+            "stddev_ms": 1217.6039017246185,
+            "standard_error_ms": 544.5290187850441,
+            "rse": 0.12520433254555924,
+            "iqr_ms": 959.7757210000004,
+            "robust_median_standard_error_ms": 673.8828591673002,
+            "relative_half_width": 0.18021357761754217,
             "target_rel_half_width": 0.05,
             "passed": false,
             "criterion": null
           },
-          "p90_ms": 3989.5227023999996
+          "p90_ms": 5658.847154800001
         },
         {
           "tool": "npm",
@@ -895,25 +900,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            13389.629045,
-            12910.914648,
-            13289.873226
+            15229.364551,
+            14167.176944,
+            15263.592157
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 13289.873226,
-            "mean_ms": 13196.805639666665,
-            "stddev_ms": 252.5629628294748,
-            "standard_error_ms": 145.81729457692674,
-            "rse": 0.011049438671630683,
-            "iqr_ms": 239.35719849999805,
-            "robust_median_standard_error_ms": 216.96292048872428,
-            "relative_half_width": 0.016325431913395763,
+            "median_ms": 15229.364551,
+            "mean_ms": 14886.711217333335,
+            "stddev_ms": 623.3699223808591,
+            "standard_error_ms": 359.90279249130515,
+            "rse": 0.024176111649983005,
+            "iqr_ms": 548.2076064999983,
+            "robust_median_standard_error_ms": 496.91726041978194,
+            "relative_half_width": 0.032628889981306086,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 13369.677881200001
+          "p90_ms": 15256.7466358
         },
         {
           "tool": "npm",
@@ -922,25 +927,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3945.268248,
-            3970.855777,
-            3936.052954
+            3787.563433,
+            3753.59093,
+            3729.365377
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3945.268248,
-            "mean_ms": 3950.7256596666666,
-            "stddev_ms": 18.031822669018684,
-            "standard_error_ms": 10.410677671937535,
-            "rse": 0.0026351304972200757,
-            "iqr_ms": 17.401411499999995,
-            "robust_median_standard_error_ms": 15.773334093672982,
-            "relative_half_width": 0.003998038435452155,
+            "median_ms": 3753.59093,
+            "mean_ms": 3756.8399133333332,
+            "stddev_ms": 29.23474559612217,
+            "standard_error_ms": 16.878688239611364,
+            "rse": 0.0044927887876477016,
+            "iqr_ms": 29.099027999999635,
+            "robust_median_standard_error_ms": 26.37652068886131,
+            "relative_half_width": 0.007027009916837504,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3965.7382712
+          "p90_ms": 3780.7689324000003
         },
         {
           "tool": "npm",
@@ -949,25 +954,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3677.139828,
-            3670.792078,
-            3744.377568
+            3509.773862,
+            3507.984556,
+            3518.509699
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3677.139828,
-            "mean_ms": 3697.4364913333334,
-            "stddev_ms": 40.775875116115316,
-            "standard_error_ms": 23.54196247473174,
-            "rse": 0.006367103946183608,
-            "iqr_ms": 36.79274499999974,
-            "robust_median_standard_error_ms": 33.35041293106092,
-            "relative_half_width": 0.009069661337627252,
+            "median_ms": 3509.773862,
+            "mean_ms": 3512.0893723333334,
+            "stddev_ms": 5.631682685525167,
+            "standard_error_ms": 3.2514535144785097,
+            "rse": 0.0009257889449203668,
+            "iqr_ms": 5.2625715000003765,
+            "robust_median_standard_error_ms": 4.770204903283147,
+            "relative_half_width": 0.0013591202997235,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3730.93002
+          "p90_ms": 3516.7625316000003
         },
         {
           "tool": "npm",
@@ -976,25 +981,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5295.445169,
-            5267.673573,
-            5254.774253
+            5037.450284,
+            5028.660591,
+            5066.821622
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5267.673573,
-            "mean_ms": 5272.630998333333,
-            "stddev_ms": 20.783717220974786,
-            "standard_error_ms": 11.999484732290854,
-            "rse": 0.0022758058995753475,
-            "iqr_ms": 20.335457999999562,
-            "robust_median_standard_error_ms": 18.4328709761187,
-            "relative_half_width": 0.003499243208728473,
+            "median_ms": 5037.450284,
+            "mean_ms": 5044.310832333333,
+            "stddev_ms": 19.984154080702456,
+            "standard_error_ms": 11.537856738020523,
+            "rse": 0.00228730090621388,
+            "iqr_ms": 19.08051550000073,
+            "robust_median_standard_error_ms": 17.29534099351753,
+            "relative_half_width": 0.0034333521957429867,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5289.890849799999
+          "p90_ms": 5060.9473544
         },
         {
           "tool": "npm",
@@ -1003,25 +1008,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5002.848424,
-            4969.988694,
-            4993.802496
+            4814.390193,
+            4812.683842,
+            4807.161153
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4993.802496,
-            "mean_ms": 4988.8798713333335,
-            "stddev_ms": 16.97394000003788,
-            "standard_error_ms": 9.799908828230429,
-            "rse": 0.001964350531778047,
-            "iqr_ms": 16.429865000000063,
-            "robust_median_standard_error_ms": 14.89268555938382,
-            "relative_half_width": 0.0029822335928008275,
+            "median_ms": 4812.683842,
+            "mean_ms": 4811.411729333334,
+            "stddev_ms": 3.7786846663781417,
+            "standard_error_ms": 2.1816246093161316,
+            "rse": 0.0004534271295087058,
+            "iqr_ms": 3.6145200000009936,
+            "robust_median_standard_error_ms": 3.2763452291372204,
+            "relative_half_width": 0.000680773002486628,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5001.0392384
+          "p90_ms": 4814.048922800001
         },
         {
           "tool": "pnpm",
@@ -1030,25 +1035,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            640.011165,
-            637.604885,
-            641.545307
+            633.767969,
+            618.355512,
+            620.095308
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 640.011165,
-            "mean_ms": 639.7204523333334,
-            "stddev_ms": 1.9862318030485182,
-            "standard_error_ms": 1.1467514661630578,
-            "rse": 0.0017925821536272071,
-            "iqr_ms": 1.9702109999999493,
-            "robust_median_standard_error_ms": 1.7858779064002221,
-            "relative_half_width": 0.002790385549602439,
+            "median_ms": 620.095308,
+            "mean_ms": 624.0729296666667,
+            "stddev_ms": 8.441093725730347,
+            "standard_error_ms": 4.873467734805278,
+            "rse": 0.007809131758700576,
+            "iqr_ms": 7.706228499999952,
+            "robust_median_standard_error_ms": 6.9852331652914295,
+            "relative_half_width": 0.01126477345526283,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 641.2384785999999
+          "p90_ms": 631.0334368
         },
         {
           "tool": "pnpm",
@@ -1057,25 +1062,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1065.153872,
-            1034.03169,
-            1051.024666
+            1084.649767,
+            1028.272488,
+            1025.064951
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1051.024666,
-            "mean_ms": 1050.070076,
-            "stddev_ms": 15.583035155622186,
-            "standard_error_ms": 8.996869541889872,
-            "rse": 0.008567875370909885,
-            "iqr_ms": 15.561091000000033,
-            "robust_median_standard_error_ms": 14.105194122042825,
-            "relative_half_width": 0.013420421592696307,
+            "median_ms": 1028.272488,
+            "mean_ms": 1045.9957353333336,
+            "stddev_ms": 33.51376875953145,
+            "standard_error_ms": 19.349183414874354,
+            "rse": 0.01849833872287083,
+            "iqr_ms": 29.79240800000025,
+            "robust_median_standard_error_ms": 27.005028002413468,
+            "relative_half_width": 0.026262521187295898,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1062.3280308
+          "p90_ms": 1073.3743112000002
         },
         {
           "tool": "pnpm",
@@ -1084,25 +1089,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1128.456731,
-            1138.783095,
-            1131.34635
+            1141.024383,
+            1137.420587,
+            1136.551495
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1131.34635,
-            "mean_ms": 1132.8620586666666,
-            "stddev_ms": 5.327426952739976,
-            "standard_error_ms": 3.0757913852524927,
-            "rse": 0.0027150625812930626,
-            "iqr_ms": 5.163182000000006,
-            "robust_median_standard_error_ms": 4.680114292592803,
-            "relative_half_width": 0.004136765273156892,
+            "median_ms": 1137.420587,
+            "mean_ms": 1138.332155,
+            "stddev_ms": 2.3716869374147818,
+            "standard_error_ms": 1.3692940917499434,
+            "rse": 0.0012028950300098861,
+            "iqr_ms": 2.236443999999892,
+            "robust_median_standard_error_ms": 2.0272021263211144,
+            "relative_half_width": 0.001782280142887122,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1137.295746
+          "p90_ms": 1140.3036238
         },
         {
           "tool": "pnpm",
@@ -1111,25 +1116,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            2592.457573,
-            2573.734873,
-            2557.636061
+            2652.340381,
+            2554.956479,
+            2630.852874
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2573.734873,
-            "mean_ms": 2574.6095023333332,
-            "stddev_ms": 17.427224588114463,
-            "standard_error_ms": 10.061612807175951,
-            "rse": 0.0039080150982342176,
-            "iqr_ms": 17.410755999999765,
-            "robust_median_standard_error_ms": 15.78180432152977,
-            "relative_half_width": 0.00613186870453916,
+            "median_ms": 2630.852874,
+            "mean_ms": 2612.716578,
+            "stddev_ms": 51.16248641960355,
+            "standard_error_ms": 29.538675306768685,
+            "rse": 0.011305732721066955,
+            "iqr_ms": 48.69195099999979,
+            "robust_median_standard_error_ms": 44.13632829703218,
+            "relative_half_width": 0.01677643350307402,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2588.713033
+          "p90_ms": 2648.0428796
         },
         {
           "tool": "pnpm",
@@ -1138,25 +1143,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            528.6325,
-            533.287625,
-            550.22594
+            522.462597,
+            538.281592,
+            527.999118
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 533.287625,
-            "mean_ms": 537.3820216666667,
-            "stddev_ms": 11.364076108791608,
-            "standard_error_ms": 6.56105240050223,
-            "rse": 0.012209288989894776,
-            "iqr_ms": 10.79672000000005,
-            "robust_median_standard_error_ms": 9.786578041433122,
-            "relative_half_width": 0.01835140660058092,
+            "median_ms": 527.999118,
+            "mean_ms": 529.5811023333333,
+            "stddev_ms": 8.02727578482832,
+            "standard_error_ms": 4.634549835229995,
+            "rse": 0.00875135048212668,
+            "iqr_ms": 7.909497500000043,
+            "robust_median_standard_error_ms": 7.1694843019241254,
+            "relative_half_width": 0.013578591436063964,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 546.8382770000001
+          "p90_ms": 536.2250972
         },
         {
           "tool": "pnpm",
@@ -1165,25 +1170,26 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2077.103451,
-            2094.303851,
-            2123.790401
+            2286.842631,
+            2518.41426,
+            2262.621118,
+            2189.966468
           ],
-          "actual_runs": 3,
+          "actual_runs": 4,
           "stability": {
-            "median_ms": 2094.303851,
-            "mean_ms": 2098.3992343333334,
-            "stddev_ms": 23.61137328832948,
-            "standard_error_ms": 13.632032723953767,
-            "rse": 0.00649639615803839,
-            "iqr_ms": 23.34347500000058,
-            "robust_median_standard_error_ms": 21.159457672862466,
-            "relative_half_width": 0.010103337040973843,
+            "median_ms": 2274.7318745000002,
+            "mean_ms": 2314.46111925,
+            "stddev_ms": 142.0633291111911,
+            "standard_error_ms": 71.03166455559555,
+            "rse": 0.030690368468411916,
+            "iqr_ms": 100.27808275000007,
+            "robust_median_standard_error_ms": 78.71829495875005,
+            "relative_half_width": 0.03460552684964368,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2117.893091
+          "p90_ms": 2448.9427713
         },
         {
           "tool": "pnpm",
@@ -1192,25 +1198,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            2168.121637,
-            2292.712752,
-            2166.31038
+            2348.727422,
+            2328.953818,
+            2403.174079
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2168.121637,
-            "mean_ms": 2209.048256333333,
-            "stddev_ms": 72.46123818531026,
-            "standard_error_ms": 41.83551537210247,
-            "rse": 0.018938253273625964,
-            "iqr_ms": 63.20118599999978,
-            "robust_median_standard_error_ms": 57.28807814781947,
-            "relative_half_width": 0.026422907815766363,
+            "median_ms": 2348.727422,
+            "mean_ms": 2360.2851063333333,
+            "stddev_ms": 38.436269799354385,
+            "standard_error_ms": 22.191190715302337,
+            "rse": 0.009401911089366662,
+            "iqr_ms": 37.110130500000196,
+            "robust_median_standard_error_ms": 33.638103819124495,
+            "relative_half_width": 0.01432184233216846,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2267.794529
+          "p90_ms": 2392.2847475999997
         },
         {
           "tool": "pnpm",
@@ -1219,25 +1225,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            3310.888508,
-            3319.175567,
-            3313.487935
+            3525.941852,
+            3533.888216,
+            3417.063404
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3313.487935,
-            "mean_ms": 3314.5173366666663,
-            "stddev_ms": 4.238347267611653,
-            "standard_error_ms": 2.4470109358747028,
-            "rse": 0.0007382706703038715,
-            "iqr_ms": 4.143529499999659,
-            "robust_median_standard_error_ms": 3.755860559385335,
-            "relative_half_width": 0.0011335066350212425,
+            "median_ms": 3525.941852,
+            "mean_ms": 3492.2978239999998,
+            "stddev_ms": 65.27594993378047,
+            "standard_error_ms": 37.68708726587669,
+            "rse": 0.010791487199883413,
+            "iqr_ms": 58.412405999999464,
+            "robust_median_standard_error_ms": 52.94733677513805,
+            "relative_half_width": 0.015016508779095444,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3318.0380405999995
+          "p90_ms": 3532.2989432
         },
         {
           "tool": "pnpm",
@@ -1246,25 +1252,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            561.357261,
-            565.073677,
-            574.782121
+            555.716791,
+            555.954858,
+            556.666675
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 565.073677,
-            "mean_ms": 567.0710196666666,
-            "stddev_ms": 6.931720551274778,
-            "standard_error_ms": 4.002030726225755,
-            "rse": 0.007057371277019608,
-            "iqr_ms": 6.71243000000004,
-            "robust_median_standard_error_ms": 6.084414529843973,
-            "relative_half_width": 0.010767471176761209,
+            "median_ms": 555.954858,
+            "mean_ms": 556.1127746666666,
+            "stddev_ms": 0.4942399807506417,
+            "standard_error_ms": 0.28534958593065846,
+            "rse": 0.0005131146036012151,
+            "iqr_ms": 0.4749420000000555,
+            "robust_median_standard_error_ms": 0.43050638973270133,
+            "relative_half_width": 0.0007743549382433877,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 572.8404322
+          "p90_ms": 556.5243116
         },
         {
           "tool": "pnpm",
@@ -1273,25 +1279,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1046.076274,
-            1038.959411,
-            1043.205187
+            1018.050372,
+            1006.856068,
+            1019.253098
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1043.205187,
-            "mean_ms": 1042.7469573333333,
-            "stddev_ms": 3.58049096643913,
-            "standard_error_ms": 2.067197423304655,
-            "rse": 0.0019824535653320896,
-            "iqr_ms": 3.5584314999998696,
-            "robust_median_standard_error_ms": 3.225504373535897,
-            "relative_half_width": 0.003091917499769771,
+            "median_ms": 1018.050372,
+            "mean_ms": 1014.7198460000001,
+            "stddev_ms": 6.83673100119727,
+            "standard_error_ms": 3.947188483918304,
+            "rse": 0.003889929323328031,
+            "iqr_ms": 6.198514999999929,
+            "robust_median_standard_error_ms": 5.618581457006652,
+            "relative_half_width": 0.005518962137373152,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1045.5020566
+          "p90_ms": 1019.0125528000001
         },
         {
           "tool": "pnpm",
@@ -1300,25 +1306,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            554.665997,
-            540.33818,
-            546.344972
+            527.743343,
+            537.511717,
+            524.432643
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 546.344972,
-            "mean_ms": 547.1163829999999,
-            "stddev_ms": 7.194990701492452,
-            "standard_error_ms": 4.154029818323522,
-            "rse": 0.007592588976308397,
-            "iqr_ms": 7.163908499999934,
-            "robust_median_standard_error_ms": 6.493652666451953,
-            "relative_half_width": 0.011885627212200194,
+            "median_ms": 527.743343,
+            "mean_ms": 529.895901,
+            "stddev_ms": 6.800049531576365,
+            "standard_error_ms": 3.926010427558403,
+            "rse": 0.007409022074240207,
+            "iqr_ms": 6.539536999999996,
+            "robust_median_standard_error_ms": 5.927697412301059,
+            "relative_half_width": 0.011232159516413,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 553.0017919999999
+          "p90_ms": 535.5580421999999
         },
         {
           "tool": "pnpm",
@@ -1327,25 +1333,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2119.481817,
-            2070.898178,
-            2072.352189
+            2195.785615,
+            2200.156885,
+            2141.30485
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2072.352189,
-            "mean_ms": 2087.5773946666664,
-            "stddev_ms": 27.639603114277865,
-            "standard_error_ms": 15.957732298322744,
-            "rse": 0.00764413924920412,
-            "iqr_ms": 24.291819499999747,
-            "robust_median_standard_error_ms": 22.019074988066127,
-            "relative_half_width": 0.010625160677293605,
+            "median_ms": 2195.785615,
+            "mean_ms": 2179.08245,
+            "stddev_ms": 32.789286309299555,
+            "standard_error_ms": 18.93090327720981,
+            "rse": 0.008687557130851021,
+            "iqr_ms": 29.426017499999944,
+            "robust_median_standard_error_ms": 26.672917025941665,
+            "relative_half_width": 0.012147322964378591,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2110.0558914
+          "p90_ms": 2199.282631
         },
         {
           "tool": "yarn",
@@ -1354,25 +1360,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            888.892497,
-            852.281202,
-            858.743506
+            879.124959,
+            848.872408,
+            853.623787
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 858.743506,
-            "mean_ms": 866.6390683333333,
-            "stddev_ms": 19.541025019530608,
-            "standard_error_ms": 11.282016055267208,
-            "rse": 0.013018125385189575,
-            "iqr_ms": 18.305647500000077,
-            "robust_median_standard_error_ms": 16.59296970355025,
-            "relative_half_width": 0.019322381581480336,
+            "median_ms": 853.623787,
+            "mean_ms": 860.5403846666667,
+            "stddev_ms": 16.269102709240137,
+            "standard_error_ms": 9.392970828653464,
+            "rse": 0.010915200490319655,
+            "iqr_ms": 15.12627550000002,
+            "robust_median_standard_error_ms": 13.711059993865481,
+            "relative_half_width": 0.016062181259090758,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 882.8626988000001
+          "p90_ms": 874.0247246
         },
         {
           "tool": "yarn",
@@ -1381,25 +1387,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2311.667299,
-            2345.160219,
-            2308.450512
+            2231.279954,
+            2274.102151,
+            2253.820409
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2311.667299,
-            "mean_ms": 2321.759343333333,
-            "stddev_ms": 20.329477763236635,
-            "standard_error_ms": 11.737229459089184,
-            "rse": 0.005055316991742188,
-            "iqr_ms": 18.35485349999999,
-            "robust_median_standard_error_ms": 16.63757198638299,
-            "relative_half_width": 0.007197217347660802,
+            "median_ms": 2253.820409,
+            "mean_ms": 2253.067504666667,
+            "stddev_ms": 21.421024431106588,
+            "standard_error_ms": 12.36743422161694,
+            "rse": 0.0054891538739966226,
+            "iqr_ms": 21.411098500000207,
+            "robust_median_standard_error_ms": 19.407874467714517,
+            "relative_half_width": 0.00861110068495902,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2338.461635
+          "p90_ms": 2270.0458026
         },
         {
           "tool": "yarn",
@@ -1408,25 +1414,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1803.484625,
-            1718.13259,
-            1773.677728
+            1741.654417,
+            1737.12001,
+            1749.478613
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1773.677728,
-            "mean_ms": 1765.0983143333333,
-            "stddev_ms": 43.31797806694295,
-            "standard_error_ms": 25.009646297699817,
-            "rse": 0.014168982030412173,
-            "iqr_ms": 42.67601749999994,
-            "robust_median_standard_error_ms": 38.68324600075886,
-            "relative_half_width": 0.02180962493359947,
+            "median_ms": 1741.654417,
+            "mean_ms": 1742.7510133333335,
+            "stddev_ms": 6.2518524987888044,
+            "standard_error_ms": 3.609508723109551,
+            "rse": 0.0020711557161603358,
+            "iqr_ms": 6.179301499999838,
+            "robust_median_standard_error_ms": 5.601165573553161,
+            "relative_half_width": 0.0032160028527365206,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1797.5232455999999
+          "p90_ms": 1747.9137738
         },
         {
           "tool": "yarn",
@@ -1435,25 +1441,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            3186.293057,
-            3246.916974,
-            3190.383726
+            3107.418596,
+            3233.733006,
+            3108.163784
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3190.383726,
-            "mean_ms": 3207.8645856666667,
-            "stddev_ms": 33.88215118790428,
-            "standard_error_ms": 19.561869109060133,
-            "rse": 0.006098096907352695,
-            "iqr_ms": 30.311958499999946,
-            "robust_median_standard_error_ms": 27.475969317434384,
-            "relative_half_width": 0.008612120571428211,
+            "median_ms": 3108.163784,
+            "mean_ms": 3149.7717953333336,
+            "stddev_ms": 72.71349598766464,
+            "standard_error_ms": 41.98115648219696,
+            "rse": 0.013328316846444484,
+            "iqr_ms": 63.157204999999976,
+            "robust_median_standard_error_ms": 57.24821201358256,
+            "relative_half_width": 0.01841866001665714,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3235.6103244000005
+          "p90_ms": 3208.6191615999996
         },
         {
           "tool": "yarn",
@@ -1462,405 +1468,425 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3065.971118,
-            3060.450007,
-            3107.532463
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3065.971118,
-            "mean_ms": 3077.9845293333333,
-            "stddev_ms": 25.73773406199316,
-            "standard_error_ms": 14.859687689022751,
-            "rse": 0.004827733066040211,
-            "iqr_ms": 23.541228000000046,
-            "robust_median_standard_error_ms": 21.33870888688138,
-            "relative_half_width": 0.006959853196791067,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3099.220194
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            4403.9916,
-            4486.750415,
-            4425.977246
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4425.977246,
-            "mean_ms": 4438.906420333334,
-            "stddev_ms": 42.867563807118266,
-            "standard_error_ms": 24.74959950354319,
-            "rse": 0.00557560740415083,
-            "iqr_ms": 41.379407500000525,
-            "robust_median_standard_error_ms": 37.507946932681065,
-            "relative_half_width": 0.008474500623919625,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4474.595781200001
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            4121.742043,
-            3825.169201,
-            3811.557863
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3825.169201,
-            "mean_ms": 3919.4897023333338,
-            "stddev_ms": 175.28783217724106,
-            "standard_error_ms": 101.20247709319608,
-            "rse": 0.025820319679102272,
-            "iqr_ms": 155.0920900000001,
-            "robust_median_standard_error_ms": 140.5816620597703,
-            "relative_half_width": 0.036751749967823266,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4062.4274746
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            5240.221964,
-            5172.741274,
-            5233.245315
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 5233.245315,
-            "mean_ms": 5215.402851,
-            "stddev_ms": 37.110322309466774,
-            "standard_error_ms": 21.42565457508442,
-            "rse": 0.004108149492416731,
-            "iqr_ms": 33.74034500000016,
-            "robust_median_standard_error_ms": 30.583595711232473,
-            "relative_half_width": 0.005844097471137271,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 5238.826634200001
-        },
-        {
-          "tool": "yarn",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            893.634822,
-            876.181995,
-            927.661077
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 893.634822,
-            "mean_ms": 899.1592979999999,
-            "stddev_ms": 26.180409607120588,
-            "standard_error_ms": 15.115266534165738,
-            "rse": 0.016810443452886074,
-            "iqr_ms": 25.73954100000003,
-            "robust_median_standard_error_ms": 23.331347552512863,
-            "relative_half_width": 0.026108368852834234,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 920.855826
-        },
-        {
-          "tool": "yarn",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            2299.810154,
-            2358.522103,
-            2348.549806
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2348.549806,
-            "mean_ms": 2335.627354333333,
-            "stddev_ms": 31.41680373068933,
-            "standard_error_ms": 18.138500090991126,
-            "rse": 0.007766007731215524,
-            "iqr_ms": 29.35597450000023,
-            "robust_median_standard_error_ms": 26.609427254441307,
-            "relative_half_width": 0.01133015241425172,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2356.5276436
-        },
-        {
-          "tool": "yarn",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            3048.576288,
-            3095.390865,
-            3097.729333
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3095.390865,
-            "mean_ms": 3080.5654953333337,
-            "stddev_ms": 27.728129174323886,
-            "standard_error_ms": 16.00884284292061,
-            "rse": 0.0051967221171476405,
-            "iqr_ms": 24.576522500000465,
-            "robust_median_standard_error_ms": 22.277141153358656,
-            "relative_half_width": 0.007196875007046535,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3097.2616394
-        },
-        {
-          "tool": "yarn",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            4379.527964,
-            4472.937309,
-            4361.135209
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4379.527964,
-            "mean_ms": 4404.533494,
-            "stddev_ms": 59.94901824916043,
-            "standard_error_ms": 34.61158182380657,
-            "rse": 0.007858172010941817,
-            "iqr_ms": 55.901049999999486,
-            "robust_median_standard_error_ms": 50.67094343680743,
-            "relative_half_width": 0.01156995545029643,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4454.25544
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            778.566794,
-            780.812008,
-            774.439838
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 778.566794,
-            "mean_ms": 777.9395466666666,
-            "stddev_ms": 3.232060803899774,
-            "standard_error_ms": 1.8660311751687728,
-            "rse": 0.0023986840406357876,
-            "iqr_ms": 3.1860849999999346,
-            "robust_median_standard_error_ms": 2.8879946408852564,
-            "relative_half_width": 0.003709372995536792,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 780.3629652
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            1120.214395,
-            1110.204138,
-            1128.199583
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1120.214395,
-            "mean_ms": 1119.539372,
-            "stddev_ms": 9.016692976080705,
-            "standard_error_ms": 5.2057901169404035,
-            "rse": 0.004649939293908462,
-            "iqr_ms": 8.997722500000009,
-            "robust_median_standard_error_ms": 8.155894886725637,
-            "relative_half_width": 0.007280655313062315,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1126.6025454
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            1668.724317,
-            1651.262713,
-            1703.194261
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1668.724317,
-            "mean_ms": 1674.393763666667,
-            "stddev_ms": 26.425903741380555,
-            "standard_error_ms": 15.257002638665202,
-            "rse": 0.009111956201541682,
-            "iqr_ms": 25.965773999999783,
-            "robust_median_standard_error_ms": 23.536414175528474,
-            "relative_half_width": 0.014104435307709653,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1696.3002722
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            2034.61536,
-            2006.231808,
-            1992.306997
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2006.231808,
-            "mean_ms": 2011.0513883333333,
-            "stddev_ms": 21.562018942507084,
-            "standard_error_ms": 12.448837440728276,
-            "rse": 0.006190213493771185,
-            "iqr_ms": 21.15418150000005,
-            "robust_median_standard_error_ms": 19.174994642112633,
-            "relative_half_width": 0.009557716394312413,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2028.9386496000002
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            3029.609638,
-            3009.623666,
-            2986.826874
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3009.623666,
-            "mean_ms": 3008.686726,
-            "stddev_ms": 21.40676566631739,
-            "standard_error_ms": 12.359201919927585,
-            "rse": 0.00410783941482633,
-            "iqr_ms": 21.391381999999794,
-            "robust_median_standard_error_ms": 19.390002644979656,
-            "relative_half_width": 0.006442666856999541,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3025.6124436
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            3209.892776,
-            3187.649439,
-            3309.197321
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3209.892776,
-            "mean_ms": 3235.579845333333,
-            "stddev_ms": 64.7173937428965,
-            "standard_error_ms": 37.3646046987123,
-            "rse": 0.011548039759427711,
-            "iqr_ms": 60.77394100000038,
-            "robust_median_standard_error_ms": 55.0879263778215,
-            "relative_half_width": 0.017161921042879565,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3289.336412
-        },
-        {
-          "tool": "yarn-pnp",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            3731.271898,
-            4588.088036,
-            3812.382698,
-            4017.15429,
-            3788.832672
+            7275.184328,
+            5857.124744,
+            3120.13511,
+            3078.100771,
+            3072.231938
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 3812.382698,
-            "mean_ms": 3987.5459188,
-            "stddev_ms": 352.6233728385009,
-            "standard_error_ms": 157.6979664244282,
-            "rse": 0.0395476239360487,
-            "iqr_ms": 228.32161799999994,
-            "robust_median_standard_error_ms": 160.3103947943522,
-            "relative_half_width": 0.042049921923749164,
+            "median_ms": 3120.13511,
+            "mean_ms": 4480.555378200001,
+            "stddev_ms": 1968.876032760944,
+            "standard_error_ms": 880.5081297047147,
+            "rse": 0.1965176312715158,
+            "iqr_ms": 2779.023973,
+            "robust_median_standard_error_ms": 1951.2231656250756,
+            "relative_half_width": 0.625364959155591,
+            "target_rel_half_width": 0.05,
+            "passed": false,
+            "criterion": null
+          },
+          "p90_ms": 6707.9604944
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            6459.319409,
+            4295.55275,
+            4329.860453,
+            4284.612121,
+            6042.48109
+          ],
+          "actual_runs": 5,
+          "stability": {
+            "median_ms": 4329.860453,
+            "mean_ms": 5082.3651646,
+            "stddev_ms": 1076.9833583556222,
+            "standard_error_ms": 481.6415999838374,
+            "rse": 0.09476721651930815,
+            "iqr_ms": 1746.9283400000004,
+            "robust_median_standard_error_ms": 1226.5626632991118,
+            "relative_half_width": 0.28327995246342685,
+            "target_rel_half_width": 0.05,
+            "passed": false,
+            "criterion": null
+          },
+          "p90_ms": 6292.5840814
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            4719.577247,
+            3941.882805,
+            3946.166647,
+            3865.689827
+          ],
+          "actual_runs": 4,
+          "stability": {
+            "median_ms": 3944.024726,
+            "mean_ms": 4118.329131500001,
+            "stddev_ms": 402.53328714327154,
+            "standard_error_ms": 201.26664357163577,
+            "rse": 0.04887094672259216,
+            "iqr_ms": 216.68473649999987,
+            "robust_median_standard_error_ms": 170.0975181524999,
+            "relative_half_width": 0.04312790359329504,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4359.7145376
+          "p90_ms": 4487.554067
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            5973.329795,
+            16832.867144,
+            5159.995014,
+            7604.220961,
+            5140.217718
+          ],
+          "actual_runs": 5,
+          "stability": {
+            "median_ms": 5973.329795,
+            "mean_ms": 8142.1261264,
+            "stddev_ms": 4960.508013122745,
+            "standard_error_ms": 2218.406624054975,
+            "rse": 0.272460361042802,
+            "iqr_ms": 2444.225947,
+            "robust_median_standard_error_ms": 1716.1529861362906,
+            "relative_half_width": 0.28730256741772464,
+            "target_rel_half_width": 0.05,
+            "passed": false,
+            "criterion": null
+          },
+          "p90_ms": 13141.4086708
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            881.65642,
+            847.782695,
+            860.69028
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 860.69028,
+            "mean_ms": 863.3764649999999,
+            "stddev_ms": 17.09587680508302,
+            "standard_error_ms": 9.870309075447361,
+            "rse": 0.011432219287385094,
+            "iqr_ms": 16.93686249999996,
+            "robust_median_standard_error_ms": 15.35224833405617,
+            "relative_half_width": 0.017837134554437133,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 877.463192
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            2244.431498,
+            2280.461758,
+            2248.743514
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 2248.743514,
+            "mean_ms": 2257.878923333333,
+            "stddev_ms": 19.67578935348126,
+            "standard_error_ms": 11.359822279750778,
+            "rse": 0.005031191957352673,
+            "iqr_ms": 18.015129999999772,
+            "robust_median_standard_error_ms": 16.329633043327977,
+            "relative_half_width": 0.007261669879941666,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2274.1181092
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            3004.058378,
+            3085.86886,
+            3023.753173
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3023.753173,
+            "mean_ms": 3037.893470333334,
+            "stddev_ms": 42.69894316929146,
+            "standard_error_ms": 24.65224633290296,
+            "rse": 0.008114914684680494,
+            "iqr_ms": 40.90524099999948,
+            "robust_median_standard_error_ms": 37.07814348710746,
+            "relative_half_width": 0.012262291716860139,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3073.4457226000004
+        },
+        {
+          "tool": "yarn",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            4332.500902,
+            4364.032035,
+            4392.235257
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 4364.032035,
+            "mean_ms": 4362.922731333333,
+            "stddev_ms": 29.882623843718637,
+            "standard_error_ms": 17.252740920263285,
+            "rse": 0.0039543998330199065,
+            "iqr_ms": 29.867177500000253,
+            "robust_median_standard_error_ms": 27.072802062208385,
+            "relative_half_width": 0.006203621294500508,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 4386.5946126
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            759.101467,
+            758.025205,
+            775.203806
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 759.101467,
+            "mean_ms": 764.1101593333333,
+            "stddev_ms": 9.622438996782169,
+            "standard_error_ms": 5.555517745052938,
+            "rse": 0.007270571758789316,
+            "iqr_ms": 8.589300500000036,
+            "robust_median_standard_error_ms": 7.785684880646205,
+            "relative_half_width": 0.010256448207662607,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 771.9833382
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1100.091521,
+            1094.272242,
+            1100.919653
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 1100.091521,
+            "mean_ms": 1098.4278053333335,
+            "stddev_ms": 3.622565474268784,
+            "standard_error_ms": 2.091489151726127,
+            "rse": 0.0019040752078298263,
+            "iqr_ms": 3.32370549999996,
+            "robust_median_standard_error_ms": 3.012739356257266,
+            "relative_half_width": 0.002738626104052361,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 1100.7540265999999
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            1647.976338,
+            1940.630402,
+            1651.979234,
+            1742.625109,
+            2540.480344,
+            3307.436418,
+            1933.165921,
+            1664.79465,
+            1692.233281,
+            3063.162257,
+            1658.543777,
+            4055.082469,
+            3968.948799,
+            1689.298934,
+            1653.938708
+          ],
+          "actual_runs": 15,
+          "stability": {
+            "median_ms": 1742.625109,
+            "mean_ms": 2280.6864427333335,
+            "stddev_ms": 882.7479217501856,
+            "standard_error_ms": 227.92453332251176,
+            "rse": 0.09993681246657964,
+            "iqr_ms": 1140.1520869999997,
+            "robust_median_standard_error_ms": 462.1860247199045,
+            "relative_half_width": 0.2652240130897279,
+            "target_rel_half_width": 0.05,
+            "passed": false,
+            "criterion": null
+          },
+          "p90_ms": 3704.3438466
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            1960.311234,
+            2000.482534,
+            2196.503167,
+            1971.004081
+          ],
+          "actual_runs": 4,
+          "stability": {
+            "median_ms": 1985.7433075,
+            "mean_ms": 2032.075254,
+            "stddev_ms": 110.92700493070544,
+            "standard_error_ms": 55.46350246535272,
+            "rse": 0.02729401992183933,
+            "iqr_ms": 81.1568229999998,
+            "robust_median_standard_error_ms": 63.708106054999845,
+            "relative_half_width": 0.032082749977995255,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2137.6969771
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            5036.614768,
+            2979.384534,
+            2918.327932,
+            2938.835326,
+            2913.159724
+          ],
+          "actual_runs": 5,
+          "stability": {
+            "median_ms": 2938.835326,
+            "mean_ms": 3357.2644568000005,
+            "stddev_ms": 939.1469437451968,
+            "standard_error_ms": 419.9992814150862,
+            "rse": 0.12510163760391144,
+            "iqr_ms": 61.05660199999966,
+            "robust_median_standard_error_ms": 42.869387739804736,
+            "relative_half_width": 0.014587203087065634,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 4213.7226744
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            3224.985709,
+            3237.031882,
+            3270.682878
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3237.031882,
+            "mean_ms": 3244.2334896666666,
+            "stddev_ms": 23.68449236086946,
+            "standard_error_ms": 13.674248040167619,
+            "rse": 0.0042149395485010545,
+            "iqr_ms": 22.84858450000047,
+            "robust_median_standard_error_ms": 20.710869166333175,
+            "relative_half_width": 0.00639810478281016,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3263.9526788
+        },
+        {
+          "tool": "yarn-pnp",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            3708.066831,
+            3892.829921,
+            3719.475183
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3719.475183,
+            "mean_ms": 3773.457311666667,
+            "stddev_ms": 103.53696208661637,
+            "standard_error_ms": 59.77709293178404,
+            "rse": 0.01584146526501491,
+            "iqr_ms": 92.38154499999973,
+            "robust_median_standard_error_ms": 83.7383205020283,
+            "relative_half_width": 0.022513477407984175,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3858.1589734
         },
         {
           "tool": "yarn-pnp",
@@ -1869,25 +1895,27 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            4051.394405,
-            4079.374566,
-            3978.47829
+            4082.57785,
+            5410.827834,
+            4367.85174,
+            4080.704191,
+            4019.550451
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 4051.394405,
-            "mean_ms": 4036.4157536666667,
-            "stddev_ms": 52.08919873151456,
-            "standard_error_ms": 30.073712909511844,
-            "rse": 0.007450598438030816,
-            "iqr_ms": 50.448137999999744,
-            "robust_median_standard_error_ms": 45.72820630543193,
-            "relative_half_width": 0.011287029040914108,
+            "median_ms": 4082.57785,
+            "mean_ms": 4392.3024132,
+            "stddev_ms": 585.2261636938601,
+            "standard_error_ms": 261.7210968461781,
+            "rse": 0.05958631082860752,
+            "iqr_ms": 287.14754900000025,
+            "robust_median_standard_error_ms": 201.61357188884602,
+            "relative_half_width": 0.049383889125064945,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4073.7785338
+          "p90_ms": 4993.6373964
         },
         {
           "tool": "yarn-pnp",
@@ -1896,25 +1924,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            831.181809,
-            788.363801,
-            807.674653
+            824.043517,
+            777.331836,
+            801.629688
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 807.674653,
-            "mean_ms": 809.073421,
-            "stddev_ms": 21.443247566783946,
-            "standard_error_ms": 12.3802647549825,
-            "rse": 0.015301781561036473,
-            "iqr_ms": 21.409004000000095,
-            "robust_median_standard_error_ms": 19.405975929296474,
-            "relative_half_width": 0.024026971574774025,
+            "median_ms": 801.629688,
+            "mean_ms": 801.0016803333333,
+            "stddev_ms": 23.362172002694535,
+            "standard_error_ms": 13.488156294610029,
+            "rse": 0.016839111110225128,
+            "iqr_ms": 23.355840500000113,
+            "robust_median_standard_error_ms": 21.170666255725298,
+            "relative_half_width": 0.026409533694472277,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 826.4803778
+          "p90_ms": 819.5607512
         },
         {
           "tool": "yarn-pnp",
@@ -1923,25 +1951,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1145.594283,
-            1133.805591,
-            1112.315958
+            1114.333456,
+            1122.272488,
+            1109.588362
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1133.805591,
-            "mean_ms": 1130.571944,
-            "stddev_ms": 16.87317644641528,
-            "standard_error_ms": 9.741732963421915,
-            "rse": 0.008616641351416656,
-            "iqr_ms": 16.639162499999884,
-            "robust_median_standard_error_ms": 15.08240116908983,
-            "relative_half_width": 0.013302457924720032,
+            "median_ms": 1114.333456,
+            "mean_ms": 1115.3981019999999,
+            "stddev_ms": 6.408733605397919,
+            "standard_error_ms": 3.7000840722410895,
+            "rse": 0.0033172766437440915,
+            "iqr_ms": 6.342063000000053,
+            "robust_median_standard_error_ms": 5.748699095020126,
+            "relative_half_width": 0.005158867899071789,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1143.2365446
+          "p90_ms": 1120.6846816
         },
         {
           "tool": "yarn-pnp",
@@ -1950,25 +1978,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3044.915018,
-            2967.186593,
-            2992.058972
+            4226.665863,
+            2922.739047,
+            2908.707177,
+            4201.128974,
+            3411.969447
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 2992.058972,
-            "mean_ms": 3001.3868610000004,
-            "stddev_ms": 39.694888186546244,
-            "standard_error_ms": 22.91785437995457,
-            "rse": 0.007635754883100545,
-            "iqr_ms": 38.864212500000576,
-            "robust_median_standard_error_ms": 35.2280737714875,
-            "relative_half_width": 0.011773856765911198,
+            "median_ms": 3411.969447,
+            "mean_ms": 3534.2421016,
+            "stddev_ms": 652.7574771063844,
+            "standard_error_ms": 291.9220183262276,
+            "rse": 0.08259819501161805,
+            "iqr_ms": 1278.3899270000002,
+            "robust_median_standard_error_ms": 897.5899684562202,
+            "relative_half_width": 0.26307092791977754,
             "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
+            "passed": false,
+            "criterion": null
           },
-          "p90_ms": 3034.3438088000003
+          "p90_ms": 4216.4511074
         },
         {
           "tool": "yarn-pnp",
@@ -1977,25 +2007,27 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3256.067998,
-            3308.339468,
-            3249.690723
+            3280.121349,
+            3244.208506,
+            5996.392106,
+            3274.234785,
+            3259.436088
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 3256.067998,
-            "mean_ms": 3271.366063,
-            "stddev_ms": 32.17828331463514,
-            "standard_error_ms": 18.578140533764643,
-            "rse": 0.005679016097858396,
-            "iqr_ms": 29.32437250000021,
-            "robust_median_standard_error_ms": 26.58078194000641,
-            "relative_half_width": 0.008163460332011903,
+            "median_ms": 3274.234785,
+            "mean_ms": 3810.8785667999996,
+            "stddev_ms": 1221.8186207504448,
+            "standard_error_ms": 546.4138984346059,
+            "rse": 0.143382658055523,
+            "iqr_ms": 20.685261000000082,
+            "robust_median_standard_error_ms": 14.523646014694194,
+            "relative_half_width": 0.004435737498492856,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3297.885174
+          "p90_ms": 4909.8838032
         }
       ]
     }
