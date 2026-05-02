@@ -115,18 +115,18 @@ Column order is deterministic: benchmark columns are sorted by Node major versio
 <!-- BENCH:START -->
 | action | cache | lockfile | node_modules | npm<br>20 | npm<br>22 | npm<br>24 | pnpm<br>24 | Yarn<br>24 | Yarn PnP<br>24 |
 | --- | :---: | :---: | :---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| install | ✓ | ✓ | ✓ | 1.1s | 1.0s | 0.7s | 0.6s | 0.9s | 0.8s |
-| install | ✓ | ✓ |  | 3.4s | 3.6s | 3.8s | 1.1s | 2.3s | 1.1s |
-| install | ✓ |  | ✓ | 0.7s | 0.7s | 1.0s | 1.1s | 1.8s | 1.7s |
-| install | ✓ |  |  | 6.3s | 5.8s | 6.1s | 2.6s | 3.2s | 2.0s |
-| install |  | ✓ | ✓ | 1.3s | 1.2s | 0.6s | 0.5s | 3.1s | 3.0s |
-| install |  | ✓ |  | 5.4s | 5.1s | 5.2s | 2.1s | 4.5s | 3.3s |
-| install |  |  | ✓ | 0.8s | 0.7s | 4.0s | 2.3s | 4.1s | 4.4s |
-| install |  |  |  | 19.5s | 14.8s | 13.4s | 3.3s | 5.2s | 4.1s |
-| ci | ✓ | ✓ | ✓ | 3.8s | 4.0s | 4.0s | 0.6s | 0.9s | 0.8s |
-| ci | ✓ | ✓ |  | 3.2s | 3.5s | 3.7s | 1.0s | 2.4s | 1.1s |
-| ci |  | ✓ | ✓ | 5.4s | 5.3s | 5.3s | 0.6s | 3.1s | 3.0s |
-| ci |  | ✓ |  | 5.2s | 5.0s | 5.0s | 2.1s | 4.5s | 3.3s |
+| install | ✓ | ✓ | ✓ | 1.3s | 1.0s | 0.6s | 0.6s | 0.9s | 0.8s |
+| install | ✓ | ✓ |  | 3.7s | 3.2s | 3.6s | 1.1s | 2.3s | 1.1s |
+| install | ✓ |  | ✓ | 0.8s | 0.6s | 1.0s | 1.1s | 1.7s | 3.7s |
+| install | ✓ |  |  | 6.6s | 5.6s | 6.0s | 2.6s | 3.2s | 2.1s |
+| install |  | ✓ | ✓ | 1.3s | 1.2s | 0.6s | 0.5s | 6.7s | 4.2s |
+| install |  | ✓ |  | 5.7s | 7.1s | 5.0s | 2.4s | 6.3s | 3.3s |
+| install |  |  | ✓ | 0.8s | 0.7s | 5.7s | 2.4s | 4.5s | 3.9s |
+| install |  |  |  | 15.1s | 22.7s | 15.3s | 3.5s | 13.1s | 5.0s |
+| ci | ✓ | ✓ | ✓ | 4.1s | 3.7s | 3.8s | 0.6s | 0.9s | 0.8s |
+| ci | ✓ | ✓ |  | 3.6s | 3.3s | 3.5s | 1.0s | 2.3s | 1.1s |
+| ci |  | ✓ | ✓ | 5.9s | 5.1s | 5.1s | 0.5s | 3.1s | 4.2s |
+| ci |  | ✓ |  | 5.6s | 4.9s | 4.8s | 2.2s | 4.4s | 4.9s |
 
 Versions:
 - npm 10.8.2 on Node 20
