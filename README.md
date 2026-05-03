@@ -9,9 +9,9 @@ Each tool is exercised across a matrix of settings:
 - **Action:** `install` or `ci` (ci maps to each tool's immutable/locked equivalent).【F:bench/run.mjs†L8-L47】
 - **Cache:** warmed vs cold (the relevant cache/store directories are cleared when disabled).【F:bench/run.mjs†L66-L122】
 - **Cache mode (`--cache-mode`)**: when cache is disabled, choose which cache scope to clear — `global`, `local`, or `all` (default). The meaning is unified across tools:
-  - npm: `npm config get cache` のパスを取得し、リポジトリ外なら global / リポジトリ内なら local に分類
-  - pnpm: `pnpm store path` のパスを取得し、リポジトリ外なら global / リポジトリ内なら local に分類
-  - yarn / yarn-pnp: `yarn config get cacheFolder` を同様に分類し、あわせて `.yarn/cache` を project-local として扱う
+  - npm: resolve `npm config get cache`, and classify it as `global` if outside the repository or `local` if inside it.
+  - pnpm: resolve `pnpm store path`, and classify it as `global` if outside the repository or `local` if inside it.
+  - yarn / yarn-pnp: resolve `yarn config get cacheFolder` the same way, and also treat `.yarn/cache` as project-local.
 - **Lockfile:** present vs removed (where applicable).【F:bench/run.mjs†L124-L185】
 - **node_modules / PnP state:** existing vs removed (PnP artifacts are cleared for Yarn PnP).【F:bench/run.mjs†L92-L185】
 - **Execution controls (standardized):** all runs share a CI-like env (`CI=1`, progress minimization vars), and package-manager invocations are normalized to quiet/non-interactive forms where possible (npm: `--no-audit --no-fund --loglevel=error`, pnpm: `--reporter=silent` (`install` uses `--no-frozen-lockfile`, `ci` uses `--frozen-lockfile`), yarn: progress-bar suppression env + immutable/non-immutable mode flags).【F:bench/run.mjs†L35-L64】【F:bench/run.mjs†L93】
