@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-02T21:12:07.652Z",
+  "generatedAt": "2026-05-06T21:19:22.087Z",
   "partials": {
     "20-npm": {
       "nodeMajor": 20,
@@ -11,7 +11,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-05-02T21:07:31.627Z",
+      "generatedAt": "2026-05-06T21:14:02.454Z",
       "results": [
         {
           "tool": "npm",
@@ -20,27 +20,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1583.923103,
-            910.514708,
-            869.210926,
-            869.462346,
-            863.844095
+            1456.572958,
+            838.433436,
+            842.083035,
+            844.288604,
+            851.570856
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 869.462346,
-            "mean_ms": 1019.3910356000002,
-            "stddev_ms": 316.1400155980107,
-            "standard_error_ms": 141.38211305699915,
-            "rse": 0.13869271763193747,
-            "iqr_ms": 41.30378200000007,
-            "robust_median_standard_error_ms": 29.000432183867368,
-            "relative_half_width": 0.0333544429120883,
+            "median_ms": 844.288604,
+            "mean_ms": 966.5897778000001,
+            "stddev_ms": 273.95091864694564,
+            "standard_error_ms": 122.51457531861702,
+            "rse": 0.1267492975121933,
+            "iqr_ms": 9.487821000000054,
+            "robust_median_standard_error_ms": 6.661639592305948,
+            "relative_half_width": 0.007890239854884917,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1314.5597450000002
+          "p90_ms": 1214.5721172
         },
         {
           "tool": "npm",
@@ -49,25 +49,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3691.682592,
-            3619.586753,
-            3652.433345
+            3557.973883,
+            3539.523537,
+            3560.078199
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3652.433345,
-            "mean_ms": 3654.5675633333335,
-            "stddev_ms": 36.095272075428866,
-            "standard_error_ms": 20.83961504922164,
-            "rse": 0.005702347730086515,
-            "iqr_ms": 36.04791950000026,
-            "robust_median_standard_error_ms": 32.67527336247024,
-            "relative_half_width": 0.008946165549386705,
+            "median_ms": 3557.973883,
+            "mean_ms": 3552.5252063333332,
+            "stddev_ms": 11.308827991749181,
+            "standard_error_ms": 6.529154885255565,
+            "rse": 0.0018378912199174793,
+            "iqr_ms": 10.277331000000231,
+            "robust_median_standard_error_ms": 9.3157831164596,
+            "relative_half_width": 0.002618283164182406,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3683.8327426
+          "p90_ms": 3559.6573358
         },
         {
           "tool": "npm",
@@ -76,25 +76,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            801.318869,
-            790.767323,
-            823.345269
+            785.894096,
+            789.549857,
+            784.19509
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 801.318869,
-            "mean_ms": 805.1438203333333,
-            "stddev_ms": 16.622374406850113,
-            "standard_error_ms": 9.59693233836566,
-            "rse": 0.011919525550593538,
-            "iqr_ms": 16.288973000000055,
-            "robust_median_standard_error_ms": 14.76497542580495,
-            "relative_half_width": 0.018425842691350565,
+            "median_ms": 785.894096,
+            "mean_ms": 786.5463476666667,
+            "stddev_ms": 2.7363217251584553,
+            "standard_error_ms": 1.5798160846096554,
+            "rse": 0.0020085479886802187,
+            "iqr_ms": 2.6773834999999053,
+            "robust_median_standard_error_ms": 2.4268872925846283,
+            "relative_half_width": 0.003088058944502655,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 818.9399890000001
+          "p90_ms": 788.8187048
         },
         {
           "tool": "npm",
@@ -103,25 +103,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            6504.454814,
-            6505.700671,
-            6557.530419
+            6510.045238,
+            6385.089146,
+            6379.916143
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 6505.700671,
-            "mean_ms": 6522.561967999999,
-            "stddev_ms": 30.289972993065952,
-            "standard_error_ms": 17.48792406129312,
-            "rse": 0.002681143413752098,
-            "iqr_ms": 26.537802499999998,
-            "robust_median_standard_error_ms": 24.054923644809513,
-            "relative_half_width": 0.003697514666181529,
+            "median_ms": 6385.089146,
+            "mean_ms": 6425.016842333333,
+            "stddev_ms": 73.68216230706632,
+            "standard_error_ms": 42.54041624245844,
+            "rse": 0.006621059101692456,
+            "iqr_ms": 65.06454750000012,
+            "robust_median_standard_error_ms": 58.97710340170724,
+            "relative_half_width": 0.009236692245503574,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 6547.1644694
+          "p90_ms": 6485.0540196
         },
         {
           "tool": "npm",
@@ -130,27 +130,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1592.154467,
-            1060.879653,
-            1046.821537,
-            1035.490599,
-            1180.081068
+            1572.464168,
+            1042.02381,
+            1055.510899,
+            1034.059871,
+            1055.083283
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 1060.879653,
-            "mean_ms": 1183.0854648,
-            "stddev_ms": 235.91992170476837,
-            "standard_error_ms": 105.50659643565803,
-            "rse": 0.08917918406976107,
-            "iqr_ms": 133.25953099999992,
-            "robust_median_standard_error_ms": 93.56489416924246,
-            "relative_half_width": 0.08819557798535935,
+            "median_ms": 1055.083283,
+            "mean_ms": 1151.8284061999998,
+            "stddev_ms": 235.3176589161289,
+            "standard_error_ms": 105.23725632851473,
+            "rse": 0.09136539415250511,
+            "iqr_ms": 13.487089000000196,
+            "robust_median_standard_error_ms": 9.469627016293291,
+            "relative_half_width": 0.008975241261872302,
             "target_rel_half_width": 0.05,
-            "passed": false,
-            "criterion": null
+            "passed": true,
+            "criterion": "relative_half_width"
           },
-          "p90_ms": 1427.3251074
+          "p90_ms": 1365.6828604000002
         },
         {
           "tool": "npm",
@@ -159,25 +159,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5636.027848,
-            5622.449468,
-            5574.071582
+            5502.812572,
+            5559.093045,
+            5501.006007
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5622.449468,
-            "mean_ms": 5610.849632666667,
-            "stddev_ms": 32.56626872986882,
-            "standard_error_ms": 18.802144017691454,
-            "rse": 0.003351033310218182,
-            "iqr_ms": 30.978133000000525,
-            "robust_median_standard_error_ms": 28.079816479671468,
-            "relative_half_width": 0.004994231898301068,
+            "median_ms": 5502.812572,
+            "mean_ms": 5520.970541333333,
+            "stddev_ms": 33.02741109496861,
+            "standard_error_ms": 19.068384686316563,
+            "rse": 0.0034538102573739658,
+            "iqr_ms": 29.043519000000742,
+            "robust_median_standard_error_ms": 26.326205115197173,
+            "relative_half_width": 0.004784136252278151,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5633.312172
+          "p90_ms": 5547.836950399999
         },
         {
           "tool": "npm",
@@ -186,25 +186,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            796.880669,
-            798.992435,
-            799.541956
+            785.528908,
+            776.559839,
+            779.110197
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 798.992435,
-            "mean_ms": 798.4716866666668,
-            "stddev_ms": 1.404989766544349,
-            "standard_error_ms": 0.8111712199230494,
-            "rse": 0.001015904800969711,
-            "iqr_ms": 1.3306435000000647,
-            "robust_median_standard_error_ms": 1.2061483911851272,
-            "relative_half_width": 0.0015095867474453962,
+            "median_ms": 779.110197,
+            "mean_ms": 780.399648,
+            "stddev_ms": 4.6214783990343395,
+            "standard_error_ms": 2.6682117977365167,
+            "rse": 0.0034190325489953538,
+            "iqr_ms": 4.484534499999995,
+            "robust_median_standard_error_ms": 4.064961105201303,
+            "relative_half_width": 0.005217440512078554,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 799.4320518
+          "p90_ms": 784.2451658
         },
         {
           "tool": "npm",
@@ -213,27 +213,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            18811.559294,
-            17454.008623,
-            16306.052084,
-            18395.870667,
-            17643.659278
+            17378.687871,
+            17819.541994,
+            17451.741572
           ],
-          "actual_runs": 5,
+          "actual_runs": 3,
           "stability": {
-            "median_ms": 17643.659278,
-            "mean_ms": 17722.229989199997,
-            "stddev_ms": 964.8971466177387,
-            "standard_error_ms": 431.51512222656896,
-            "rse": 0.024348805003068807,
-            "iqr_ms": 941.8620439999977,
-            "robust_median_standard_error_ms": 661.3052125246203,
-            "relative_half_width": 0.03748118245228224,
+            "median_ms": 17451.741572,
+            "mean_ms": 17549.990479,
+            "stddev_ms": 236.2789140751793,
+            "standard_error_ms": 136.41569464513722,
+            "rse": 0.007772978270750048,
+            "iqr_ms": 220.42706149999867,
+            "robust_median_standard_error_ms": 199.80388857111285,
+            "relative_half_width": 0.011448936929692054,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 18645.2838432
+          "p90_ms": 17745.9819096
         },
         {
           "tool": "npm",
@@ -242,26 +240,26 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            4209.543477,
-            3746.713933,
-            3733.982038,
-            3799.608863
+            4098.187388,
+            3707.808687,
+            3689.014691,
+            3722.229356
           ],
           "actual_runs": 4,
           "stability": {
-            "median_ms": 3773.161398,
-            "mean_ms": 3872.46207775,
-            "stddev_ms": 226.51032201423413,
-            "standard_error_ms": 113.25516100711707,
-            "rse": 0.029246293116166867,
-            "iqr_ms": 158.56155724999962,
-            "robust_median_standard_error_ms": 124.47082244124971,
-            "relative_half_width": 0.03298847022744022,
+            "median_ms": 3715.0190215000002,
+            "mean_ms": 3804.3100305000003,
+            "stddev_ms": 196.38963226647445,
+            "standard_error_ms": 98.19481613323723,
+            "rse": 0.025811465244942586,
+            "iqr_ms": 113.10867599999983,
+            "robust_median_standard_error_ms": 88.79031065999988,
+            "relative_half_width": 0.023900365017283095,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4086.5630928
+          "p90_ms": 3985.3999784
         },
         {
           "tool": "npm",
@@ -270,25 +268,27 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3507.105793,
-            3620.066524,
-            3557.532788
+            3447.952303,
+            3457.099613,
+            4211.706288,
+            3500.593172,
+            3510.442545
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 3557.532788,
-            "mean_ms": 3561.5683683333336,
-            "stddev_ms": 56.588392082508065,
-            "standard_error_ms": 32.67132340184412,
-            "rse": 0.009173296711732911,
-            "iqr_ms": 56.48036550000006,
-            "robust_median_standard_error_ms": 51.19605813380498,
-            "relative_half_width": 0.01439088862553724,
+            "median_ms": 3500.593172,
+            "mean_ms": 3625.558784200001,
+            "stddev_ms": 328.7702858747581,
+            "standard_error_ms": 147.0305416395996,
+            "rse": 0.04055389814126064,
+            "iqr_ms": 53.34293200000002,
+            "robust_median_standard_error_ms": 37.45342453034074,
+            "relative_half_width": 0.010699165167182912,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3607.5597768
+          "p90_ms": 3931.2007908000005
         },
         {
           "tool": "npm",
@@ -297,25 +297,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            5827.447759,
-            5783.178906,
-            5695.206931
+            5736.759158,
+            5860.547684,
+            5697.632441
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5783.178906,
-            "mean_ms": 5768.6111986666665,
-            "stddev_ms": 67.31324327532911,
-            "standard_error_ms": 38.86331912503803,
-            "rse": 0.006737032153253931,
-            "iqr_ms": 66.12041399999998,
-            "robust_median_standard_error_ms": 59.93418295027231,
-            "relative_half_width": 0.010363536028271768,
+            "median_ms": 5736.759158,
+            "mean_ms": 5764.979761,
+            "stddev_ms": 85.04496414074147,
+            "standard_error_ms": 49.10073293987916,
+            "rse": 0.008517069439175635,
+            "iqr_ms": 81.45762150000064,
+            "robust_median_standard_error_ms": 73.83644012989807,
+            "relative_half_width": 0.01287075822713108,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5818.5939884
+          "p90_ms": 5835.7899788
         },
         {
           "tool": "npm",
@@ -324,25 +324,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            5484.622988,
-            5512.03712,
-            5563.237135
+            5550.349208,
+            5556.929362,
+            5580.49366
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5512.03712,
-            "mean_ms": 5519.965747666666,
-            "stddev_ms": 39.90229792432871,
-            "standard_error_ms": 23.037602447895825,
-            "rse": 0.004173504601479457,
-            "iqr_ms": 39.307073500000115,
-            "robust_median_standard_error_ms": 35.629500662061915,
-            "relative_half_width": 0.006463944252621781,
+            "median_ms": 5556.929362,
+            "mean_ms": 5562.590743333333,
+            "stddev_ms": 15.849619097825167,
+            "standard_error_ms": 9.150781852682394,
+            "rse": 0.0016450575415150655,
+            "iqr_ms": 15.072226000000228,
+            "robust_median_standard_error_ms": 13.662067369267604,
+            "relative_half_width": 0.002458564160036484,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5552.997132
+          "p90_ms": 5575.7808004
         }
       ]
     },
@@ -356,7 +356,7 @@
         "pnpm": null,
         "yarn": null
       },
-      "generatedAt": "2026-05-02T21:06:04.663Z",
+      "generatedAt": "2026-05-06T21:13:35.658Z",
       "results": [
         {
           "tool": "npm",
@@ -365,27 +365,27 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            1044.199944,
-            528.719463,
-            542.145173,
-            528.018933,
-            534.867329
+            1315.562748,
+            750.775307,
+            748.146813,
+            762.159893,
+            747.850546
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 534.867329,
-            "mean_ms": 635.5901683999999,
-            "stddev_ms": 228.49065878945814,
-            "standard_error_ms": 102.18412905538763,
-            "rse": 0.16077046835482114,
-            "iqr_ms": 13.425709999999981,
-            "robust_median_standard_error_ms": 9.426531264746378,
-            "relative_half_width": 0.017624055076182036,
+            "median_ms": 750.775307,
+            "mean_ms": 864.8990614,
+            "stddev_ms": 251.9964131320015,
+            "standard_error_ms": 112.6962219698552,
+            "rse": 0.13029985462978236,
+            "iqr_ms": 14.013080000000059,
+            "robust_median_standard_error_ms": 9.838938628600866,
+            "relative_half_width": 0.013105037601617426,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 843.3780356
+          "p90_ms": 1094.201606
         },
         {
           "tool": "npm",
@@ -394,25 +394,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2757.793944,
-            2772.777699,
-            2835.772827
+            3856.354969,
+            3863.306401,
+            3911.356957
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2772.777699,
-            "mean_ms": 2788.78149,
-            "stddev_ms": 41.379554652759,
-            "standard_error_ms": 23.89049701771724,
-            "rse": 0.008566643569380993,
-            "iqr_ms": 38.989441499999884,
-            "robust_median_standard_error_ms": 35.34158633655762,
-            "relative_half_width": 0.012745914087993254,
+            "median_ms": 3863.306401,
+            "mean_ms": 3877.006109,
+            "stddev_ms": 29.95106292691439,
+            "standard_error_ms": 17.292254243369445,
+            "rse": 0.004460208149589337,
+            "iqr_ms": 27.50099399999999,
+            "robust_median_standard_error_ms": 24.927998873545178,
+            "relative_half_width": 0.0064525037069523335,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2823.1738014000002
+          "p90_ms": 3901.7468458000003
         },
         {
           "tool": "npm",
@@ -421,83 +421,81 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            602.907457,
-            516.066228,
-            501.74132,
-            503.31972,
-            499.172861
+            704.715048,
+            703.830539,
+            704.867233
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 704.715048,
+            "mean_ms": 704.47094,
+            "stddev_ms": 0.5597992043197271,
+            "standard_error_ms": 0.32320022130613274,
+            "rse": 0.0004587843201965616,
+            "iqr_ms": 0.5183469999999488,
+            "robust_median_standard_error_ms": 0.4698504145742605,
+            "relative_half_width": 0.0006667239700751509,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 704.836796
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            6065.958783,
+            6103.926921,
+            6133.095796
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 6103.926921,
+            "mean_ms": 6100.993833333334,
+            "stddev_ms": 33.664475060303445,
+            "standard_error_ms": 19.436193738193637,
+            "rse": 0.003185742236289804,
+            "iqr_ms": 33.568506499999785,
+            "robust_median_standard_error_ms": 30.42783443458767,
+            "relative_half_width": 0.0049849604735442525,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 6127.262021
+        },
+        {
+          "tool": "npm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            1392.757609,
+            895.779632,
+            878.69069,
+            894.733495,
+            876.330006
           ],
           "actual_runs": 5,
           "stability": {
-            "median_ms": 503.31972,
-            "mean_ms": 524.6415172,
-            "stddev_ms": 44.234555027465454,
-            "standard_error_ms": 19.782294399173566,
-            "rse": 0.037706307546439,
-            "iqr_ms": 14.32490800000005,
-            "robust_median_standard_error_ms": 10.05788097066123,
-            "relative_half_width": 0.019983085444498838,
+            "median_ms": 894.733495,
+            "mean_ms": 987.6582864,
+            "stddev_ms": 226.6330118518049,
+            "standard_error_ms": 101.35336408923024,
+            "rse": 0.10261986912362349,
+            "iqr_ms": 17.088941999999975,
+            "robust_median_standard_error_ms": 11.998579296323062,
+            "relative_half_width": 0.013410227026677997,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 568.1709654
-        },
-        {
-          "tool": "npm",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            4514.65199,
-            4454.261985,
-            4493.383659
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4493.383659,
-            "mean_ms": 4487.432544666666,
-            "stddev_ms": 30.6316829007372,
-            "standard_error_ms": 17.68521036847188,
-            "rse": 0.003941053195215342,
-            "iqr_ms": 30.195002500000555,
-            "robust_median_standard_error_ms": 27.36995572984409,
-            "relative_half_width": 0.0060911682168567054,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4510.3983238
-        },
-        {
-          "tool": "npm",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            1080.526267,
-            709.606639,
-            713.273128,
-            718.868727,
-            715.571026
-          ],
-          "actual_runs": 5,
-          "stability": {
-            "median_ms": 715.571026,
-            "mean_ms": 787.5691574,
-            "stddev_ms": 163.80277957600362,
-            "standard_error_ms": 73.25483000707165,
-            "rse": 0.0930138379833304,
-            "iqr_ms": 5.595598999999993,
-            "robust_median_standard_error_ms": 3.9288118779925667,
-            "relative_half_width": 0.005490456901188963,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 935.863251
+          "p90_ms": 1193.9664182000001
         },
         {
           "tool": "npm",
@@ -506,25 +504,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3927.557273,
-            4077.882987,
-            3932.593443
+            5298.744959,
+            5299.444771,
+            5326.625148
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3932.593443,
-            "mean_ms": 3979.3445676666665,
-            "stddev_ms": 85.37391765405344,
-            "standard_error_ms": 49.290654339340705,
-            "rse": 0.012386626365517987,
-            "iqr_ms": 75.16285700000026,
-            "robust_median_standard_error_ms": 68.13061428355806,
-            "relative_half_width": 0.017324601505612096,
+            "median_ms": 5299.444771,
+            "mean_ms": 5308.271626000001,
+            "stddev_ms": 15.89846727084722,
+            "standard_error_ms": 9.178984358526098,
+            "rse": 0.0017291851294058283,
+            "iqr_ms": 13.940094500000669,
+            "robust_median_standard_error_ms": 12.635858180003606,
+            "relative_half_width": 0.0023843739723735683,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4048.8250782000005
+          "p90_ms": 5321.1890726
         },
         {
           "tool": "npm",
@@ -533,25 +531,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            506.244552,
-            500.960289,
-            489.786796
+            700.107333,
+            715.876791,
+            716.097215
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 500.960289,
-            "mean_ms": 498.9972123333334,
-            "stddev_ms": 8.402659438433316,
-            "standard_error_ms": 4.851277688688225,
-            "rse": 0.009722053688443333,
-            "iqr_ms": 8.228878000000009,
-            "robust_median_standard_error_ms": 7.458983537632894,
-            "relative_half_width": 0.01488937087712534,
+            "median_ms": 715.876791,
+            "mean_ms": 710.6937796666667,
+            "stddev_ms": 9.168794165787402,
+            "standard_error_ms": 5.293605779761627,
+            "rse": 0.0074485044490532355,
+            "iqr_ms": 7.994940999999926,
+            "robust_median_standard_error_ms": 7.2469337014530595,
+            "relative_half_width": 0.01012315777318315,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 505.1876994
+          "p90_ms": 716.0531302
         },
         {
           "tool": "npm",
@@ -560,25 +558,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            14955.555359,
-            15624.999893,
-            14863.807235
+            14050.639955,
+            14867.138104,
+            13848.942619
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 14955.555359,
-            "mean_ms": 15148.120829,
-            "stddev_ms": 415.5293742029761,
-            "standard_error_ms": 239.905996052285,
-            "rse": 0.01583734370490378,
-            "iqr_ms": 380.59632899999997,
-            "robust_median_standard_error_ms": 344.98770701115143,
-            "relative_half_width": 0.02306752900376539,
+            "median_ms": 14050.639955,
+            "mean_ms": 14255.573559333332,
+            "stddev_ms": 539.1464068853511,
+            "standard_error_ms": 311.27632314787695,
+            "rse": 0.021835412083022067,
+            "iqr_ms": 509.0977425000001,
+            "robust_median_standard_error_ms": 461.4665183216432,
+            "relative_half_width": 0.032843096100930814,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 15491.110986200001
+          "p90_ms": 14703.8384742
         },
         {
           "tool": "npm",
@@ -587,26 +585,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3189.065876,
-            2976.433436,
-            2847.590365,
-            2854.141896
+            4388.449088,
+            3996.680915,
+            4051.48344
           ],
-          "actual_runs": 4,
+          "actual_runs": 3,
           "stability": {
-            "median_ms": 2915.287666,
-            "mean_ms": 2966.8078932500002,
-            "stddev_ms": 159.58039556673614,
-            "standard_error_ms": 79.79019778336807,
-            "rse": 0.026894291998111688,
-            "iqr_ms": 177.08753275000026,
-            "robust_median_standard_error_ms": 139.0137132087502,
-            "relative_half_width": 0.04768438971907282,
+            "median_ms": 4051.48344,
+            "mean_ms": 4145.537814333334,
+            "stddev_ms": 212.14439502934238,
+            "standard_error_ms": 122.48162357726113,
+            "rse": 0.02954541221497893,
+            "iqr_ms": 195.88408650000065,
+            "robust_median_standard_error_ms": 177.55715621106071,
+            "relative_half_width": 0.04382522077174298,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3125.276144
+          "p90_ms": 4321.0559584
         },
         {
           "tool": "npm",
@@ -615,25 +612,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2684.005103,
-            2720.306591,
-            2694.432691
+            3859.772565,
+            3831.059302,
+            3895.328498
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2694.432691,
-            "mean_ms": 2699.5814616666667,
-            "stddev_ms": 18.690422341054322,
-            "standard_error_ms": 10.79092036987551,
-            "rse": 0.003997256805584009,
-            "iqr_ms": 18.150744000000486,
-            "robust_median_standard_error_ms": 16.452558986995857,
-            "relative_half_width": 0.006106131001880669,
+            "median_ms": 3859.772565,
+            "mean_ms": 3862.0534549999998,
+            "stddev_ms": 32.195251715364336,
+            "standard_error_ms": 18.58793724449336,
+            "rse": 0.004812967365956192,
+            "iqr_ms": 32.13459799999964,
+            "robust_median_standard_error_ms": 29.128082524792323,
+            "relative_half_width": 0.007546580021041297,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2715.131811
+          "p90_ms": 3888.2173113999997
         },
         {
           "tool": "npm",
@@ -642,25 +639,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            4045.614983,
-            4076.500558,
-            4033.836655
+            5609.170617,
+            5650.461614,
+            5630.796806
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4045.614983,
-            "mean_ms": 4051.9840653333335,
-            "stddev_ms": 22.03352132830656,
-            "standard_error_ms": 12.721059470093154,
-            "rse": 0.00313946433771246,
-            "iqr_ms": 21.331951499999832,
-            "robust_median_standard_error_ms": 19.336132467157967,
-            "relative_half_width": 0.004779528587967454,
+            "median_ms": 5630.796806,
+            "mean_ms": 5630.143012333334,
+            "stddev_ms": 20.65326107258691,
+            "standard_error_ms": 11.924165839901672,
+            "rse": 0.002117915266766886,
+            "iqr_ms": 20.64549850000003,
+            "robust_median_standard_error_ms": 18.713904062950583,
+            "relative_half_width": 0.003323491276227484,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4070.323443
+          "p90_ms": 5646.528652399999
         },
         {
           "tool": "npm",
@@ -669,25 +666,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3922.107629,
-            3962.402872,
-            3865.508257
+            5364.666845,
+            5374.86144,
+            5419.85009
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3922.107629,
-            "mean_ms": 3916.6729193333335,
-            "stddev_ms": 48.675390659657616,
-            "standard_error_ms": 28.10274990026352,
-            "rse": 0.007175158732694728,
-            "iqr_ms": 48.447307500000534,
-            "robust_median_standard_error_ms": 43.91457366182148,
-            "relative_half_width": 0.01119667735202314,
+            "median_ms": 5374.86144,
+            "mean_ms": 5386.459458333334,
+            "stddev_ms": 29.36295547331305,
+            "standard_error_ms": 16.952710246720287,
+            "rse": 0.0031472826218886564,
+            "iqr_ms": 27.591622500000085,
+            "robust_median_standard_error_ms": 25.01014816407313,
+            "relative_half_width": 0.004653170773472652,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3954.3438234
+          "p90_ms": 5410.85236
         }
       ]
     },
@@ -698,10 +695,10 @@
       "versions": {
         "node": "v24.14.1",
         "npm": "11.11.0",
-        "pnpm": "10.33.2",
+        "pnpm": "10.33.4",
         "yarn": "4.14.1"
       },
-      "generatedAt": "2026-05-02T21:11:51.084Z",
+      "generatedAt": "2026-05-06T21:19:07.568Z",
       "results": [
         {
           "tool": "npm",
@@ -710,25 +707,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            595.287549,
-            597.905608,
-            591.015065
+            624.535159,
+            623.362259,
+            625.339645
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 595.287549,
-            "mean_ms": 594.736074,
-            "stddev_ms": 3.478216384216329,
-            "standard_error_ms": 2.0081491657270645,
-            "rse": 0.003376538356284513,
-            "iqr_ms": 3.44527149999999,
-            "robust_median_standard_error_ms": 3.122931631891454,
-            "relative_half_width": 0.0052460892843089755,
+            "median_ms": 624.535159,
+            "mean_ms": 624.4123543333334,
+            "stddev_ms": 0.9943965948580873,
+            "standard_error_ms": 0.574115141722564,
+            "rse": 0.0009194487228484288,
+            "iqr_ms": 0.988693000000012,
+            "robust_median_standard_error_ms": 0.8961908064225719,
+            "relative_half_width": 0.0014349725447924252,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 597.3819962
+          "p90_ms": 625.1787478
         },
         {
           "tool": "npm",
@@ -737,25 +734,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3359.708513,
-            3362.411645,
-            3370.801385
+            3487.6065,
+            3613.5599,
+            3609.021069
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3362.411645,
-            "mean_ms": 3364.307181,
-            "stddev_ms": 5.784267010397162,
-            "standard_error_ms": 3.3395481155174735,
-            "rse": 0.0009926406644368403,
-            "iqr_ms": 5.54643600000054,
-            "robust_median_standard_error_ms": 5.027511018700049,
-            "relative_half_width": 0.0014952098521833572,
+            "median_ms": 3609.021069,
+            "mean_ms": 3570.062489666667,
+            "stddev_ms": 71.44503426161776,
+            "standard_error_ms": 41.248809763207056,
+            "rse": 0.01155408620510125,
+            "iqr_ms": 62.976700000000164,
+            "robust_median_standard_error_ms": 57.084595075348815,
+            "relative_half_width": 0.01581719640422216,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3369.123437
+          "p90_ms": 3612.6521338000002
         },
         {
           "tool": "npm",
@@ -764,25 +761,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            954.665479,
-            958.918765,
-            957.144615
+            982.574665,
+            984.638558,
+            1002.560623
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 957.144615,
-            "mean_ms": 956.9096196666668,
-            "stddev_ms": 2.1363584798589748,
-            "standard_error_ms": 1.233427143432119,
-            "rse": 0.0012889693217440694,
-            "iqr_ms": 2.1266430000000582,
-            "robust_median_standard_error_ms": 1.9276741163768192,
-            "relative_half_width": 0.0020139841839645297,
+            "median_ms": 984.638558,
+            "mean_ms": 989.9246153333333,
+            "stddev_ms": 10.991652782584886,
+            "standard_error_ms": 6.3460336928642835,
+            "rse": 0.0064106231874307,
+            "iqr_ms": 9.992978999999991,
+            "robust_median_standard_error_ms": 9.058035111580347,
+            "relative_half_width": 0.00919935039917495,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 958.563935
+          "p90_ms": 998.9762099999999
         },
         {
           "tool": "npm",
@@ -791,25 +788,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            5696.754173,
-            5737.821706,
-            5669.171322
+            5891.421298,
+            5929.657419,
+            5932.323
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5696.754173,
-            "mean_ms": 5701.249067,
-            "stddev_ms": 34.54521471767508,
-            "standard_error_ms": 19.94468901646313,
-            "rse": 0.0034983016497046383,
-            "iqr_ms": 34.32519200000024,
-            "robust_median_standard_error_ms": 31.113724380661598,
-            "relative_half_width": 0.005461658241832932,
+            "median_ms": 5929.657419,
+            "mean_ms": 5917.800572333334,
+            "stddev_ms": 22.883966358169534,
+            "standard_error_ms": 13.21206413701552,
+            "rse": 0.0022325970562076794,
+            "iqr_ms": 20.450850999999602,
+            "robust_median_standard_error_ms": 18.53746779811052,
+            "relative_half_width": 0.0031262291374055044,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5729.6081994
+          "p90_ms": 5931.7898838
         },
         {
           "tool": "npm",
@@ -818,25 +815,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            601.813867,
-            596.157201,
-            592.739375
+            624.072885,
+            630.299649,
+            619.622967
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 596.157201,
-            "mean_ms": 596.9034809999999,
-            "stddev_ms": 4.583045018687447,
-            "standard_error_ms": 2.6460222752473714,
-            "rse": 0.004432914800252893,
-            "iqr_ms": 4.537245999999868,
-            "robust_median_standard_error_ms": 4.112740913182779,
-            "relative_half_width": 0.006898752386592037,
+            "median_ms": 624.072885,
+            "mean_ms": 624.665167,
+            "stddev_ms": 5.362926729680739,
+            "standard_error_ms": 3.096287191025414,
+            "rse": 0.004956714980435933,
+            "iqr_ms": 5.338341000000014,
+            "robust_median_standard_error_ms": 4.838885403000358,
+            "relative_half_width": 0.007753718386595754,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 600.6825338
+          "p90_ms": 629.0542962000001
         },
         {
           "tool": "npm",
@@ -845,25 +842,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4715.474886,
-            4694.538731,
-            4634.940034
+            4868.613985,
+            4840.97145,
+            4861.5691
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4694.538731,
-            "mean_ms": 4681.651217,
-            "stddev_ms": 41.785543068035004,
-            "standard_error_ms": 24.12489453856471,
-            "rse": 0.005153073866537186,
-            "iqr_ms": 40.26742600000034,
-            "robust_median_standard_error_ms": 36.50000250785745,
-            "relative_half_width": 0.007774992304746086,
+            "median_ms": 4861.5691,
+            "mean_ms": 4857.0515116666675,
+            "stddev_ms": 14.364326944505839,
+            "standard_error_ms": 8.29324802813824,
+            "rse": 0.0017074655288744226,
+            "iqr_ms": 13.821267500000431,
+            "robust_median_standard_error_ms": 12.528148643317309,
+            "relative_half_width": 0.002576976360022798,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4711.287655
+          "p90_ms": 4867.205008
         },
         {
           "tool": "npm",
@@ -872,25 +869,27 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            3409.407814,
-            3345.958869,
-            3541.498548
+            4479.636165,
+            3960.331783,
+            4120.387515,
+            3798.104104,
+            3941.04301
           ],
-          "actual_runs": 3,
+          "actual_runs": 5,
           "stability": {
-            "median_ms": 3409.407814,
-            "mean_ms": 3432.288410333333,
-            "stddev_ms": 99.75762017150603,
-            "standard_error_ms": 57.595088859735455,
-            "rse": 0.016780375648601745,
-            "iqr_ms": 97.76983949999976,
-            "robust_median_standard_error_ms": 88.62248575170366,
-            "relative_half_width": 0.025993512828765886,
+            "median_ms": 3960.331783,
+            "mean_ms": 4059.9005153999997,
+            "stddev_ms": 260.9669963564915,
+            "standard_error_ms": 116.70798874741098,
+            "rse": 0.02874651442928581,
+            "iqr_ms": 179.34450500000048,
+            "robust_median_standard_error_ms": 125.92232243531032,
+            "relative_half_width": 0.03179590229683297,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3515.0804012
+          "p90_ms": 4335.936705
         },
         {
           "tool": "npm",
@@ -899,648 +898,649 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            13594.217229,
-            14876.661017,
-            12993.429419,
-            13703.168126
+            14784.572889,
+            15111.200197,
+            15351.622562
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 15111.200197,
+            "mean_ms": 15082.465216000002,
+            "stddev_ms": 284.61484020014643,
+            "standard_error_ms": 164.32245460491689,
+            "rse": 0.010894933437711357,
+            "iqr_ms": 283.5248365000007,
+            "robust_median_standard_error_ms": 256.9982308600955,
+            "relative_half_width": 0.01700713560204946,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 15303.538089000001
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            3727.637121,
+            3710.469089,
+            3701.437006
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3710.469089,
+            "mean_ms": 3713.181072,
+            "stddev_ms": 13.30893103699633,
+            "standard_error_ms": 7.683914916835997,
+            "rse": 0.0020693617595915607,
+            "iqr_ms": 13.10005749999982,
+            "robust_median_standard_error_ms": 11.874415106718423,
+            "relative_half_width": 0.003200246335947423,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3724.2035146
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            3482.944522,
+            3478.332993,
+            3478.907995
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3478.907995,
+            "mean_ms": 3480.0618366666663,
+            "stddev_ms": 2.512978884364468,
+            "standard_error_ms": 1.450869035355671,
+            "rse": 0.0004169089813488394,
+            "iqr_ms": 2.3057644999998956,
+            "robust_median_standard_error_ms": 2.090036994977632,
+            "relative_half_width": 0.0006007738629424811,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3482.1372166
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            4942.829474,
+            5037.596259,
+            4956.671163
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 4956.671163,
+            "mean_ms": 4979.032298666666,
+            "stddev_ms": 51.18790068010557,
+            "standard_error_ms": 29.553348236910782,
+            "rse": 0.005935560660015173,
+            "iqr_ms": 47.3833924999999,
+            "robust_median_standard_error_ms": 42.95019863153845,
+            "relative_half_width": 0.008665129724995325,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 5021.4112398
+        },
+        {
+          "tool": "npm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            4759.484433,
+            4754.631276,
+            4734.681934
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 4754.631276,
+            "mean_ms": 4749.599214333333,
+            "stddev_ms": 13.144665177329404,
+            "standard_error_ms": 7.589075978538632,
+            "rse": 0.0015978350248240587,
+            "iqr_ms": 12.401249499999722,
+            "robust_median_standard_error_ms": 11.240987637266706,
+            "relative_half_width": 0.002364218587045425,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 4758.5138016
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            633.638302,
+            630.91328,
+            611.9923
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 630.91328,
+            "mean_ms": 625.5146273333334,
+            "stddev_ms": 11.789675084898688,
+            "standard_error_ms": 6.806772083924482,
+            "rse": 0.010881875157648695,
+            "iqr_ms": 10.823000999999977,
+            "robust_median_standard_error_ms": 9.810400189039633,
+            "relative_half_width": 0.015549522414617161,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 633.0932975999999
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1034.401735,
+            1038.143199,
+            1023.582821
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 1034.401735,
+            "mean_ms": 1032.042585,
+            "stddev_ms": 7.561437919972408,
+            "standard_error_ms": 4.365598218556714,
+            "rse": 0.004230056280629849,
+            "iqr_ms": 7.280189000000064,
+            "robust_median_standard_error_ms": 6.599053953875182,
+            "relative_half_width": 0.006379585155930913,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 1037.3949062000002
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            1146.715175,
+            1131.703268,
+            1141.104469
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 1141.104469,
+            "mean_ms": 1139.8409706666669,
+            "stddev_ms": 7.585292279992574,
+            "standard_error_ms": 4.379370539735703,
+            "rse": 0.0038420890742103344,
+            "iqr_ms": 7.505953500000032,
+            "robust_median_standard_error_ms": 6.803695909787238,
+            "relative_half_width": 0.005962377761739567,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 1145.5930338
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            2604.162916,
+            2567.897105,
+            2549.998568
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 2567.897105,
+            "mean_ms": 2574.0195296666666,
+            "stddev_ms": 27.596326049232342,
+            "standard_error_ms": 15.932746273168975,
+            "rse": 0.006189831153003044,
+            "iqr_ms": 27.082174000000123,
+            "robust_median_standard_error_ms": 24.548363705150358,
+            "relative_half_width": 0.009559714700932441,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2596.9097538
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            523.458186,
+            526.566169,
+            519.898071
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 523.458186,
+            "mean_ms": 523.3074753333334,
+            "stddev_ms": 3.336602765266835,
+            "standard_error_ms": 1.926388504705657,
+            "rse": 0.00368117903050897,
+            "iqr_ms": 3.33404900000005,
+            "robust_median_standard_error_ms": 3.0221151175970475,
+            "relative_half_width": 0.005773364899860497,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 525.9445724
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            2121.026848,
+            2254.401314,
+            2450.12628,
+            2154.988896,
+            2161.266388
+          ],
+          "actual_runs": 5,
+          "stability": {
+            "median_ms": 2161.266388,
+            "mean_ms": 2228.3619452,
+            "stddev_ms": 133.47631826714286,
+            "standard_error_ms": 59.69242420634567,
+            "rse": 0.026787580148245692,
+            "iqr_ms": 99.41241800000034,
+            "robust_median_standard_error_ms": 69.79997827906608,
+            "relative_half_width": 0.032295869989288004,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2371.8362936
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            2455.655586,
+            2396.369842,
+            2465.433072
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 2455.655586,
+            "mean_ms": 2439.152833333333,
+            "stddev_ms": 37.37229011836303,
+            "standard_error_ms": 21.57690176006969,
+            "rse": 0.008846063873161572,
+            "iqr_ms": 34.531614999999874,
+            "robust_median_standard_error_ms": 31.300834428809843,
+            "relative_half_width": 0.012746426904187957,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2463.4775747999997
+        },
+        {
+          "tool": "pnpm",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            3545.296632,
+            3516.846831,
+            3580.439559
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3545.296632,
+            "mean_ms": 3547.5276740000004,
+            "stddev_ms": 31.855014125327603,
+            "standard_error_ms": 18.391500980297224,
+            "rse": 0.0051843150132666795,
+            "iqr_ms": 31.796363999999812,
+            "robust_median_standard_error_ms": 28.821493724002412,
+            "relative_half_width": 0.008129501340976201,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3573.4109736
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            548.067775,
+            555.780772,
+            550.543591
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 550.543591,
+            "mean_ms": 551.464046,
+            "stddev_ms": 3.9380209161164794,
+            "standard_error_ms": 2.2736174359942263,
+            "rse": 0.004122875194649093,
+            "iqr_ms": 3.8564984999999297,
+            "robust_median_standard_error_ms": 3.4956842019538255,
+            "relative_half_width": 0.0063495139333187255,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 554.7333358
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            1020.009064,
+            1017.113898,
+            1003.130806
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 1017.113898,
+            "mean_ms": 1013.4179226666666,
+            "stddev_ms": 9.025745040000679,
+            "standard_error_ms": 5.211016328481322,
+            "rse": 0.00514202108718313,
+            "iqr_ms": 8.43912899999998,
+            "robust_median_standard_error_ms": 7.649563437805267,
+            "relative_half_width": 0.007520852338019343,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 1019.4300307999999
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            520.602044,
+            516.656924,
+            542.703351
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 520.602044,
+            "mean_ms": 526.6541063333334,
+            "stddev_ms": 14.038329093289429,
+            "standard_error_ms": 8.105033080983207,
+            "rse": 0.015389670342479615,
+            "iqr_ms": 13.023213499999883,
+            "robust_median_standard_error_ms": 11.804760637304076,
+            "relative_half_width": 0.022675209929264275,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 538.2830896
+        },
+        {
+          "tool": "pnpm",
+          "action": "ci",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            2187.461615,
+            2167.286986,
+            2105.52804
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 2167.286986,
+            "mean_ms": 2153.4255470000003,
+            "stddev_ms": 42.68936982942237,
+            "standard_error_ms": 24.646719162552493,
+            "rse": 0.01144535468007638,
+            "iqr_ms": 40.96678750000001,
+            "robust_median_standard_error_ms": 37.13393169180595,
+            "relative_half_width": 0.017133832266644704,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2183.4266892
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            888.887382,
+            866.266997,
+            858.045508
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 866.266997,
+            "mean_ms": 871.066629,
+            "stddev_ms": 15.9713070366685,
+            "standard_error_ms": 9.221038416930723,
+            "rse": 0.010585916289224211,
+            "iqr_ms": 15.420937000000094,
+            "robust_median_standard_error_ms": 13.978152941126917,
+            "relative_half_width": 0.01613607927987001,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 884.363305
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            2258.615535,
+            2244.672,
+            2237.908077
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 2244.672,
+            "mean_ms": 2247.065204,
+            "stddev_ms": 10.559132220246674,
+            "standard_error_ms": 6.096317829768268,
+            "rse": 0.0027130133201814593,
+            "iqr_ms": 10.353728999999475,
+            "robust_median_standard_error_ms": 9.385033313667828,
+            "relative_half_width": 0.004181026588146432,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 2255.826828
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            1732.284931,
+            1729.538465,
+            1747.09516
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 1732.284931,
+            "mean_ms": 1736.3061853333331,
+            "stddev_ms": 9.44390012869529,
+            "standard_error_ms": 5.452438281502167,
+            "rse": 0.003140251602833182,
+            "iqr_ms": 8.778347500000109,
+            "robust_median_standard_error_ms": 7.957044628699273,
+            "relative_half_width": 0.004593380965396895,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 1744.1331142
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": true,
+          "lockfile": false,
+          "nodeModules": false,
+          "runs": [
+            3108.526877,
+            3119.626915,
+            3262.267216
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3119.626915,
+            "mean_ms": 3163.473669333333,
+            "stddev_ms": 85.73754345754567,
+            "standard_error_ms": 49.500593794871236,
+            "rse": 0.0156475441141582,
+            "iqr_ms": 76.87016950000043,
+            "robust_median_standard_error_ms": 69.67819049395953,
+            "relative_half_width": 0.02233542420054404,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3233.7391558
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": true,
+          "runs": [
+            3105.717906,
+            3123.812457,
+            3045.685331
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 3105.717906,
+            "mean_ms": 3091.7385646666667,
+            "stddev_ms": 40.8965578299732,
+            "standard_error_ms": 23.611638672064124,
+            "rse": 0.007637010108779943,
+            "iqr_ms": 39.063562999999704,
+            "robust_median_standard_error_ms": 35.40877302328251,
+            "relative_half_width": 0.011401155576582011,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 3120.1935468
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": true,
+          "nodeModules": false,
+          "runs": [
+            4374.690319,
+            4459.837998,
+            4409.914935
+          ],
+          "actual_runs": 3,
+          "stability": {
+            "median_ms": 4409.914935,
+            "mean_ms": 4414.814417333334,
+            "stddev_ms": 42.78475785981186,
+            "standard_error_ms": 24.701791467575337,
+            "rse": 0.005595204946915046,
+            "iqr_ms": 42.57383949999985,
+            "robust_median_standard_error_ms": 38.59062778234451,
+            "relative_half_width": 0.008750878044395774,
+            "target_rel_half_width": 0.05,
+            "passed": true,
+            "criterion": "relative_half_width"
+          },
+          "p90_ms": 4449.8533854
+        },
+        {
+          "tool": "yarn",
+          "action": "install",
+          "cache": false,
+          "lockfile": false,
+          "nodeModules": true,
+          "runs": [
+            4353.251597,
+            4066.324459,
+            3897.18846,
+            3908.414659
           ],
           "actual_runs": 4,
           "stability": {
-            "median_ms": 13648.6926775,
-            "mean_ms": 13791.868947750001,
-            "stddev_ms": 787.6576143397531,
-            "standard_error_ms": 393.82880716987654,
-            "rse": 0.028555144242008303,
-            "iqr_ms": 552.5210722499996,
-            "robust_median_standard_error_ms": 433.72904171624975,
-            "relative_half_width": 0.03177806490076931,
+            "median_ms": 3987.3695589999998,
+            "mean_ms": 4056.29479375,
+            "stddev_ms": 212.49886029069359,
+            "standard_error_ms": 106.24943014534679,
+            "rse": 0.026193715089213317,
+            "iqr_ms": 232.4481342500003,
+            "robust_median_standard_error_ms": 182.47178538625025,
+            "relative_half_width": 0.0457624463161154,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 14524.613149699999
-        },
-        {
-          "tool": "npm",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            3553.744742,
-            3490.39626,
-            3446.763295
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3490.39626,
-            "mean_ms": 3496.968099,
-            "stddev_ms": 53.792650998392666,
-            "standard_error_ms": 31.057201534345598,
-            "rse": 0.008881179540421537,
-            "iqr_ms": 53.49072350000006,
-            "robust_median_standard_error_ms": 48.48612727064042,
-            "relative_half_width": 0.013891295904219315,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3541.0750456
-        },
-        {
-          "tool": "npm",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            3289.363285,
-            3304.510299,
-            3283.622741
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3289.363285,
-            "mean_ms": 3292.498775,
-            "stddev_ms": 10.791014454439189,
-            "standard_error_ms": 6.230195100099609,
-            "rse": 0.001892239155077471,
-            "iqr_ms": 10.443778999999722,
-            "robust_median_standard_error_ms": 9.466658228700677,
-            "relative_half_width": 0.002877960689799782,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3301.4808962
-        },
-        {
-          "tool": "npm",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            4806.970601,
-            4807.796817,
-            5007.438099
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4807.796817,
-            "mean_ms": 4874.068505666666,
-            "stddev_ms": 115.50219468756283,
-            "standard_error_ms": 66.68522319485697,
-            "rse": 0.013681634371229646,
-            "iqr_ms": 100.2337490000009,
-            "robust_median_standard_error_ms": 90.85587168824638,
-            "relative_half_width": 0.018897610516107295,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4967.5098426
-        },
-        {
-          "tool": "npm",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            4779.298527,
-            4792.297854,
-            4747.30294
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4779.298527,
-            "mean_ms": 4772.966440333333,
-            "stddev_ms": 23.15614524553903,
-            "standard_error_ms": 13.369206690906033,
-            "rse": 0.002801026753075674,
-            "iqr_ms": 22.497456999999486,
-            "robust_median_standard_error_ms": 20.392593182399825,
-            "relative_half_width": 0.00426685905205432,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4789.697988600001
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            611.298509,
-            619.12818,
-            620.032056
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 619.12818,
-            "mean_ms": 616.8195816666666,
-            "stddev_ms": 4.802700334062562,
-            "standard_error_ms": 2.772840330708126,
-            "rse": 0.004495383112215441,
-            "iqr_ms": 4.366773500000136,
-            "robust_median_standard_error_ms": 3.958217833472869,
-            "relative_half_width": 0.0063932121995688655,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 619.8512808
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            1010.211246,
-            992.722141,
-            1018.225414
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1010.211246,
-            "mean_ms": 1007.0529336666667,
-            "stddev_ms": 13.041680720838734,
-            "standard_error_ms": 7.529617874861396,
-            "rse": 0.007476883908620527,
-            "iqr_ms": 12.751636499999904,
-            "robust_median_standard_error_ms": 11.558592402436629,
-            "relative_half_width": 0.011441757798879848,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1016.6225804000001
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            1120.447712,
-            1197.669646,
-            1145.474309
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1145.474309,
-            "mean_ms": 1154.5305556666665,
-            "stddev_ms": 39.39947303506391,
-            "standard_error_ms": 22.747296362723553,
-            "rse": 0.019702636929854547,
-            "iqr_ms": 38.61096700000007,
-            "robust_median_standard_error_ms": 34.99852194006123,
-            "relative_half_width": 0.030553738014966893,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1187.2305786
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            2696.605387,
-            2648.363375,
-            2599.425035
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2648.363375,
-            "mean_ms": 2648.131265666667,
-            "stddev_ms": 48.59059178244215,
-            "standard_error_ms": 28.05379124567619,
-            "rse": 0.010593806889181398,
-            "iqr_ms": 48.590176000000156,
-            "robust_median_standard_error_ms": 44.04407537390708,
-            "relative_half_width": 0.01663067681333838,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2686.9569846
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            528.926216,
-            513.124108,
-            533.481037
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 528.926216,
-            "mean_ms": 525.1771203333333,
-            "stddev_ms": 10.683769387071425,
-            "standard_error_ms": 6.168277131585571,
-            "rse": 0.011745136817214211,
-            "iqr_ms": 10.178464500000018,
-            "robust_median_standard_error_ms": 9.226166573848936,
-            "relative_half_width": 0.017443201518014633,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 532.5700727999999
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            2069.861318,
-            2093.962663,
-            2045.425698
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2069.861318,
-            "mean_ms": 2069.7498929999997,
-            "stddev_ms": 24.268674345764538,
-            "standard_error_ms": 14.011525666402521,
-            "rse": 0.006769670921974786,
-            "iqr_ms": 24.268482499999664,
-            "robust_median_standard_error_ms": 21.99792139959169,
-            "relative_half_width": 0.010627727185532962,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2089.142394
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            2302.902153,
-            2375.632569,
-            2417.900225
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2375.632569,
-            "mean_ms": 2365.4783156666667,
-            "stddev_ms": 58.16760942739027,
-            "standard_error_ms": 33.58308496102079,
-            "rse": 0.014197164581302033,
-            "iqr_ms": 57.499035999999705,
-            "robust_median_standard_error_ms": 52.11942174300779,
-            "relative_half_width": 0.021939176294820277,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2409.4466937999996
-        },
-        {
-          "tool": "pnpm",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            3453.557576,
-            3428.941337,
-            3412.165467
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3428.941337,
-            "mean_ms": 3431.5547933333332,
-            "stddev_ms": 20.819444934283357,
-            "standard_error_ms": 12.020112137187088,
-            "rse": 0.0035028180696806033,
-            "iqr_ms": 20.696054500000173,
-            "robust_median_standard_error_ms": 18.75973003967908,
-            "relative_half_width": 0.005470997662529879,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3448.6343282000003
-        },
-        {
-          "tool": "pnpm",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            544.334842,
-            538.353234,
-            544.555523
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 544.334842,
-            "mean_ms": 542.414533,
-            "stddev_ms": 3.518918470423942,
-            "standard_error_ms": 2.031648526155609,
-            "rse": 0.0037455643286674416,
-            "iqr_ms": 3.101144500000032,
-            "robust_median_standard_error_ms": 2.8110011806373856,
-            "relative_half_width": 0.005164102981740393,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 544.5113868
-        },
-        {
-          "tool": "pnpm",
-          "action": "ci",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            1006.579563,
-            1012.235562,
-            1000.786336
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1006.579563,
-            "mean_ms": 1006.5338203333334,
-            "stddev_ms": 5.724750063839824,
-            "standard_error_ms": 3.30518599040125,
-            "rse": 0.0032837306840883627,
-            "iqr_ms": 5.72461300000009,
-            "robust_median_standard_error_ms": 5.189017764793679,
-            "relative_half_width": 0.005155099463104914,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1011.1043622
-        },
-        {
-          "tool": "pnpm",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            511.200568,
-            511.76861,
-            535.587932
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 511.76861,
-            "mean_ms": 519.5190366666667,
-            "stddev_ms": 13.918969640517854,
-            "standard_error_ms": 8.036120868795212,
-            "rse": 0.015468385759945386,
-            "iqr_ms": 12.193681999999967,
-            "robust_median_standard_error_ms": 11.052840168626902,
-            "relative_half_width": 0.021597339017386984,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 530.8240676
-        },
-        {
-          "tool": "pnpm",
-          "action": "ci",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            2293.947234,
-            2320.895597,
-            2077.381347
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2293.947234,
-            "mean_ms": 2230.741392666667,
-            "stddev_ms": 133.49543539858033,
-            "standard_error_ms": 77.07362556295665,
-            "rse": 0.034550677105077386,
-            "iqr_ms": 121.75712500000009,
-            "robust_median_standard_error_ms": 110.36551896437281,
-            "relative_half_width": 0.04811162058506739,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2315.5059244000004
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            901.570041,
-            856.329366,
-            865.354887
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 865.354887,
-            "mean_ms": 874.418098,
-            "stddev_ms": 23.943391861572056,
-            "standard_error_ms": 13.823723736591322,
-            "rse": 0.015809054922593015,
-            "iqr_ms": 22.620337500000005,
-            "robust_median_standard_error_ms": 20.50397697331275,
-            "relative_half_width": 0.023694298467991145,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 894.3270101999999
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": true,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            2085.23814,
-            2133.360876,
-            2117.508684
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 2117.508684,
-            "mean_ms": 2112.0359000000003,
-            "stddev_ms": 24.523722261606643,
-            "standard_error_ms": 14.158777649270215,
-            "rse": 0.006703852737195525,
-            "iqr_ms": 24.06136800000013,
-            "robust_median_standard_error_ms": 21.810184548237036,
-            "relative_half_width": 0.010299926849432008,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 2130.1904376
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            1800.49377,
-            1782.206101,
-            1747.165106
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 1782.206101,
-            "mean_ms": 1776.6216589999997,
-            "stddev_ms": 27.099374445635274,
-            "standard_error_ms": 15.645831131057992,
-            "rse": 0.008806507030801653,
-            "iqr_ms": 26.66433199999983,
-            "robust_median_standard_error_ms": 24.169615034999488,
-            "relative_half_width": 0.013561627368146626,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 1796.8362362
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": true,
-          "lockfile": false,
-          "nodeModules": false,
-          "runs": [
-            3081.444889,
-            3021.310649,
-            3110.636704
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3081.444889,
-            "mean_ms": 3071.130747333333,
-            "stddev_ms": 45.54747154569402,
-            "standard_error_ms": 26.296844957813267,
-            "rse": 0.00856259375497017,
-            "iqr_ms": 44.663027500000226,
-            "robust_median_standard_error_ms": 40.4843511914196,
-            "relative_half_width": 0.013138106521372091,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3104.798341
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": true,
-          "runs": [
-            3185.718557,
-            3091.057476,
-            3114.040064
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 3114.040064,
-            "mean_ms": 3130.272032333333,
-            "stddev_ms": 49.373957315602176,
-            "standard_error_ms": 28.50606754712001,
-            "rse": 0.009106578358901074,
-            "iqr_ms": 47.3305405000001,
-            "robust_median_standard_error_ms": 42.902291468747904,
-            "relative_half_width": 0.013777051864143231,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 3171.3828584
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": true,
-          "nodeModules": false,
-          "runs": [
-            4354.094465,
-            4245.14132,
-            4303.204292
-          ],
-          "actual_runs": 3,
-          "stability": {
-            "median_ms": 4303.204292,
-            "mean_ms": 4300.813359000001,
-            "stddev_ms": 54.515909345856514,
-            "standard_error_ms": 31.474774935947494,
-            "rse": 0.007318330815282303,
-            "iqr_ms": 54.47657249999975,
-            "robust_median_standard_error_ms": 49.37974016192275,
-            "relative_half_width": 0.011475109432690337,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4343.9164304000005
-        },
-        {
-          "tool": "yarn",
-          "action": "install",
-          "cache": false,
-          "lockfile": false,
-          "nodeModules": true,
-          "runs": [
-            4384.991637,
-            4041.884172,
-            3881.005807,
-            3947.621031
-          ],
-          "actual_runs": 4,
-          "stability": {
-            "median_ms": 3994.7526015000003,
-            "mean_ms": 4063.8756617500003,
-            "stddev_ms": 224.02054826085924,
-            "standard_error_ms": 112.01027413042962,
-            "rse": 0.027562426474976198,
-            "iqr_ms": 196.6938132500004,
-            "robust_median_standard_error_ms": 154.40464340125033,
-            "relative_half_width": 0.03865186628660621,
-            "target_rel_half_width": 0.05,
-            "passed": true,
-            "criterion": "relative_half_width"
-          },
-          "p90_ms": 4282.0593975
+          "p90_ms": 4267.173455600001
         },
         {
           "tool": "yarn",
@@ -1549,25 +1549,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            5069.290432,
-            5085.654888,
-            5132.865211
+            5296.936791,
+            5101.455847,
+            5121.0208
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 5085.654888,
-            "mean_ms": 5095.936843666666,
-            "stddev_ms": 33.011014684089915,
-            "standard_error_ms": 19.058918214082002,
-            "rse": 0.0037400224529408783,
-            "iqr_ms": 31.787389500001154,
-            "robust_median_standard_error_ms": 28.813358878918006,
-            "relative_half_width": 0.005665614264724368,
+            "median_ms": 5121.0208,
+            "mean_ms": 5173.137812666667,
+            "stddev_ms": 107.65842802008531,
+            "standard_error_ms": 62.15662239792821,
+            "rse": 0.012015265134776586,
+            "iqr_ms": 97.74047200000041,
+            "robust_median_standard_error_ms": 88.59586587727648,
+            "relative_half_width": 0.017300430780768646,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 5123.4231464
+          "p90_ms": 5261.7535928
         },
         {
           "tool": "yarn",
@@ -1576,25 +1576,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            953.999445,
-            868.843335,
-            871.520692
+            910.711494,
+            858.975262,
+            841.926065
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 871.520692,
-            "mean_ms": 898.1211573333334,
-            "stddev_ms": 48.41052917026859,
-            "standard_error_ms": 27.949832048066803,
-            "rse": 0.03112033584762034,
-            "iqr_ms": 42.57805499999995,
-            "robust_median_standard_error_ms": 38.59444887983844,
-            "relative_half_width": 0.044284030470086,
+            "median_ms": 858.975262,
+            "mean_ms": 870.5376070000001,
+            "stddev_ms": 35.82072971203657,
+            "standard_error_ms": 20.68110794181314,
+            "rse": 0.023756708240420837,
+            "iqr_ms": 34.39271450000001,
+            "robust_median_standard_error_ms": 31.174929470337016,
+            "relative_half_width": 0.03629316331852292,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 937.5036944
+          "p90_ms": 900.3642476
         },
         {
           "tool": "yarn",
@@ -1603,25 +1603,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            2111.825893,
-            2283.976666,
-            2194.390119
+            2220.072485,
+            2203.529818,
+            2247.251131
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2194.390119,
-            "mean_ms": 2196.7308926666665,
-            "stddev_ms": 86.09925421943728,
-            "standard_error_ms": 49.70942760061814,
-            "rse": 0.022628819837041864,
-            "iqr_ms": 86.0753864999997,
-            "robust_median_standard_error_ms": 78.02216667921017,
-            "relative_half_width": 0.03555528527204883,
+            "median_ms": 2220.072485,
+            "mean_ms": 2223.617811333333,
+            "stddev_ms": 22.075219290379927,
+            "standard_error_ms": 12.745133799720872,
+            "rse": 0.005731710609063071,
+            "iqr_ms": 21.860656500000005,
+            "robust_median_standard_error_ms": 19.815371786451006,
+            "relative_half_width": 0.008925551719745316,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2266.0593566
+          "p90_ms": 2241.8154018
         },
         {
           "tool": "yarn",
@@ -1630,25 +1630,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3029.845171,
-            3078.127635,
-            3179.209621
+            3104.504991,
+            3090.852235,
+            3172.20134
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3078.127635,
-            "mean_ms": 3095.7274756666666,
-            "stddev_ms": 76.22171950677622,
-            "standard_error_ms": 44.00663027533341,
-            "rse": 0.014215279161760373,
-            "iqr_ms": 74.68222500000002,
-            "robust_median_standard_error_ms": 67.69495025066543,
-            "relative_half_width": 0.021992249275480557,
+            "median_ms": 3104.504991,
+            "mean_ms": 3122.519522,
+            "stddev_ms": 43.56388086979556,
+            "standard_error_ms": 25.151618347121257,
+            "rse": 0.008054911480909312,
+            "iqr_ms": 40.67455249999966,
+            "robust_median_standard_error_ms": 36.869038221016524,
+            "relative_half_width": 0.011875979690127844,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3158.9932237999997
+          "p90_ms": 3158.6620702
         },
         {
           "tool": "yarn",
@@ -1657,25 +1657,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            4207.929881,
-            4336.313842,
-            4216.49428
+            4378.922449,
+            4407.587878,
+            4371.418852
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4216.49428,
-            "mean_ms": 4253.579334333333,
-            "stddev_ms": 71.77803495284655,
-            "standard_error_ms": 41.44106780192833,
-            "rse": 0.009742634272136699,
-            "iqr_ms": 64.19198049999977,
-            "robust_median_standard_error_ms": 58.186173837739425,
-            "relative_half_width": 0.013799656770254038,
+            "median_ms": 4378.922449,
+            "mean_ms": 4385.976393,
+            "stddev_ms": 19.088431179998324,
+            "standard_error_ms": 11.020710880179678,
+            "rse": 0.002512715503386814,
+            "iqr_ms": 18.084512999999788,
+            "robust_median_standard_error_ms": 16.392524564479668,
+            "relative_half_width": 0.003743506480281051,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4312.349929599999
+          "p90_ms": 4401.8547922
         },
         {
           "tool": "yarn-pnp",
@@ -1684,25 +1684,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            807.815168,
-            802.159606,
-            817.275985
+            751.582763,
+            767.842702,
+            768.691195
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 807.815168,
-            "mean_ms": 809.0835863333333,
-            "stddev_ms": 7.637597287050551,
-            "standard_error_ms": 4.409568849640591,
-            "rse": 0.005450078241760177,
-            "iqr_ms": 7.558189499999912,
-            "robust_median_standard_error_ms": 6.851044705585509,
-            "relative_half_width": 0.008480955764358103,
+            "median_ms": 767.842702,
+            "mean_ms": 762.7055533333333,
+            "stddev_ms": 9.641956943081237,
+            "standard_error_ms": 5.566786436602733,
+            "rse": 0.0072987359437382,
+            "iqr_ms": 8.554215999999997,
+            "robust_median_standard_error_ms": 7.753882889180738,
+            "relative_half_width": 0.010098269956833864,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 815.3838215999999
+          "p90_ms": 768.5214964
         },
         {
           "tool": "yarn-pnp",
@@ -1711,25 +1711,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1125.398201,
-            1113.451079,
-            1145.302052
+            1092.378522,
+            1108.651262,
+            1113.523527
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1125.398201,
-            "mean_ms": 1128.050444,
-            "stddev_ms": 16.09027392432988,
-            "standard_error_ms": 9.289723981546672,
-            "rse": 0.008235202628533049,
-            "iqr_ms": 15.925486500000034,
-            "robust_median_standard_error_ms": 14.435496750868712,
-            "relative_half_width": 0.012827012463714354,
+            "median_ms": 1108.651262,
+            "mean_ms": 1104.8511036666669,
+            "stddev_ms": 11.072881812396874,
+            "standard_error_ms": 6.392931295092247,
+            "rse": 0.005786237868501955,
+            "iqr_ms": 10.572502499999928,
+            "robust_median_standard_error_ms": 9.58333834808123,
+            "relative_half_width": 0.008644141468610199,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1141.3212818
+          "p90_ms": 1112.549074
         },
         {
           "tool": "yarn-pnp",
@@ -1738,25 +1738,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            1716.32674,
-            1770.802978,
-            1697.635403
+            1671.272318,
+            1690.981584,
+            1686.542616
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1716.32674,
-            "mean_ms": 1728.2550403333335,
-            "stddev_ms": 38.01429690888422,
-            "standard_error_ms": 21.947564553398664,
-            "rse": 0.0126992625747908,
-            "iqr_ms": 36.5837875000002,
-            "robust_median_standard_error_ms": 33.16100551092885,
-            "relative_half_width": 0.01932091643047457,
+            "median_ms": 1686.542616,
+            "mean_ms": 1682.9321726666667,
+            "stddev_ms": 10.33877494493896,
+            "standard_error_ms": 5.969094497551467,
+            "rse": 0.0035468419907221937,
+            "iqr_ms": 9.854632999999922,
+            "robust_median_standard_error_ms": 8.932632774044432,
+            "relative_half_width": 0.005296416876337285,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1759.9077304
+          "p90_ms": 1690.0937904
         },
         {
           "tool": "yarn-pnp",
@@ -1765,25 +1765,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            2131.0948,
-            2050.744564,
-            2056.346505
+            2042.446928,
+            1975.032917,
+            2002.044472
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 2056.346505,
-            "mean_ms": 2079.3952896666665,
-            "stddev_ms": 44.86061705183836,
-            "standard_error_ms": 25.900289330891596,
-            "rse": 0.012455683370833975,
-            "iqr_ms": 40.17511800000011,
-            "robust_median_standard_error_ms": 36.41633085147932,
-            "relative_half_width": 0.01770923857576198,
+            "median_ms": 2002.044472,
+            "mean_ms": 2006.5081056666666,
+            "stddev_ms": 33.9279418607979,
+            "standard_error_ms": 19.58830636638164,
+            "rse": 0.009762385863810594,
+            "iqr_ms": 33.70700549999992,
+            "robust_median_standard_error_ms": 30.55337545743181,
+            "relative_half_width": 0.01526108729588291,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 2116.145141
+          "p90_ms": 2034.3664368
         },
         {
           "tool": "yarn-pnp",
@@ -1792,25 +1792,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3101.389859,
-            3066.401946,
-            3003.993059
+            3086.121001,
+            3026.463907,
+            3049.220898
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3066.401946,
-            "mean_ms": 3057.261621333333,
-            "stddev_ms": 49.33754466751518,
-            "standard_error_ms": 28.485044694945078,
-            "rse": 0.009317176029744611,
-            "iqr_ms": 48.698399999999765,
-            "robust_median_standard_error_ms": 44.142173928093186,
-            "relative_half_width": 0.014395429792129797,
+            "median_ms": 3049.220898,
+            "mean_ms": 3053.9352686666666,
+            "stddev_ms": 30.106663452104055,
+            "standard_error_ms": 17.382090248473745,
+            "rse": 0.005691702252766701,
+            "iqr_ms": 29.82854700000007,
+            "robust_median_standard_error_ms": 27.037785834777154,
+            "relative_half_width": 0.008867112859062254,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3094.3922764
+          "p90_ms": 3078.7409804
         },
         {
           "tool": "yarn-pnp",
@@ -1819,25 +1819,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3431.37191,
-            3360.339546,
-            3471.182149
+            3325.992536,
+            3260.072976,
+            3274.208756
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3431.37191,
-            "mean_ms": 3420.9645350000005,
-            "stddev_ms": 56.14940561347796,
-            "standard_error_ms": 32.417874445778985,
-            "rse": 0.009476238094289095,
-            "iqr_ms": 55.42130150000003,
-            "robust_median_standard_error_ms": 50.23608024358715,
-            "relative_half_width": 0.014640231825989143,
+            "median_ms": 3274.208756,
+            "mean_ms": 3286.758089333334,
+            "stddev_ms": 34.70535150350365,
+            "standard_error_ms": 20.037144032868415,
+            "rse": 0.006096324550898916,
+            "iqr_ms": 32.95978000000014,
+            "robust_median_standard_error_ms": 29.876060433026552,
+            "relative_half_width": 0.009124665731309453,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3463.2201012000005
+          "p90_ms": 3315.6357800000005
         },
         {
           "tool": "yarn-pnp",
@@ -1846,25 +1846,25 @@
           "lockfile": false,
           "nodeModules": true,
           "runs": [
-            4002.957264,
-            3979.165933,
-            3991.785581
+            3878.384146,
+            3868.203891,
+            3884.610942
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3991.785581,
-            "mean_ms": 3991.3029260000003,
-            "stddev_ms": 11.903006955162958,
-            "standard_error_ms": 6.8722042697293215,
-            "rse": 0.001721794711436874,
-            "iqr_ms": 11.895665500000177,
-            "robust_median_standard_error_ms": 10.78270611542531,
-            "relative_half_width": 0.0027012237748311333,
+            "median_ms": 3878.384146,
+            "mean_ms": 3877.066326333333,
+            "stddev_ms": 8.28253084114618,
+            "standard_error_ms": 4.781921410707125,
+            "rse": 0.0012333865371938432,
+            "iqr_ms": 8.203525500000069,
+            "robust_median_standard_error_ms": 7.436003019494529,
+            "relative_half_width": 0.0019172940945428795,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4000.7229274
+          "p90_ms": 3883.3655827999996
         },
         {
           "tool": "yarn-pnp",
@@ -1873,25 +1873,25 @@
           "lockfile": false,
           "nodeModules": false,
           "runs": [
-            4227.40381,
-            4269.583043,
-            4266.839118
+            4191.531119,
+            4283.662534,
+            4161.765271
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 4266.839118,
-            "mean_ms": 4254.608657,
-            "stddev_ms": 23.600001193251273,
-            "standard_error_ms": 13.625467041799112,
-            "rse": 0.00320251946542286,
-            "iqr_ms": 21.089616499999465,
-            "robust_median_standard_error_ms": 19.116470348507647,
-            "relative_half_width": 0.00448024165426423,
+            "median_ms": 4191.531119,
+            "mean_ms": 4212.3196413333335,
+            "stddev_ms": 63.552007657708224,
+            "standard_error_ms": 36.691768728719005,
+            "rse": 0.008710585105812362,
+            "iqr_ms": 60.948631500000374,
+            "robust_median_standard_error_ms": 55.2462728211253,
+            "relative_half_width": 0.013180451546857595,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 4269.034258
+          "p90_ms": 4265.236251
         },
         {
           "tool": "yarn-pnp",
@@ -1900,25 +1900,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            864.560891,
-            840.677062,
-            904.11666
+            800.678012,
+            767.515112,
+            770.824442
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 864.560891,
-            "mean_ms": 869.784871,
-            "stddev_ms": 32.04080404547774,
-            "standard_error_ms": 18.498766840708626,
-            "rse": 0.021268209482007222,
-            "iqr_ms": 31.71979900000008,
-            "robust_median_standard_error_ms": 28.752092151326664,
-            "relative_half_width": 0.03325629513274695,
+            "median_ms": 770.824442,
+            "mean_ms": 779.672522,
+            "stddev_ms": 18.266386447989625,
+            "standard_error_ms": 10.546103132868543,
+            "rse": 0.01352632398255603,
+            "iqr_ms": 16.581449999999904,
+            "robust_median_standard_error_ms": 15.030088255055198,
+            "relative_half_width": 0.019498717783335673,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 896.2055062000001
+          "p90_ms": 794.707298
         },
         {
           "tool": "yarn-pnp",
@@ -1927,25 +1927,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            1179.141047,
-            1154.073528,
-            1167.572223
+            1092.419993,
+            1105.275957,
+            1099.207527
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 1167.572223,
-            "mean_ms": 1166.9289326666667,
-            "stddev_ms": 12.546134625595347,
-            "standard_error_ms": 7.243514203376758,
-            "rse": 0.006207331055562977,
-            "iqr_ms": 12.533759500000087,
-            "robust_median_standard_error_ms": 11.361099991414436,
-            "relative_half_width": 0.009730532953432926,
+            "median_ms": 1099.207527,
+            "mean_ms": 1098.9678256666668,
+            "stddev_ms": 6.431333076371172,
+            "standard_error_ms": 3.7131318828910405,
+            "rse": 0.003378744851459635,
+            "iqr_ms": 6.427982000000156,
+            "robust_median_standard_error_ms": 5.826579506732471,
+            "relative_half_width": 0.005300709250631315,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 1176.8272822
+          "p90_ms": 1104.062271
         },
         {
           "tool": "yarn-pnp",
@@ -1954,25 +1954,25 @@
           "lockfile": true,
           "nodeModules": true,
           "runs": [
-            3158.740422,
-            3166.522392,
-            3108.932423
+            3000.792216,
+            2912.003072,
+            2998.332925
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3158.740422,
-            "mean_ms": 3144.7317456666665,
-            "stddev_ms": 31.246334054002208,
-            "standard_error_ms": 18.040079377267148,
-            "rse": 0.005736603575845782,
-            "iqr_ms": 28.794984499999828,
-            "robust_median_standard_error_ms": 26.100923522246028,
-            "relative_half_width": 0.008263079593517174,
+            "median_ms": 2998.332925,
+            "mean_ms": 2970.376071,
+            "stddev_ms": 50.567452845147066,
+            "standard_error_ms": 29.195132512379367,
+            "rse": 0.009828766396758172,
+            "iqr_ms": 44.39457200000015,
+            "robust_median_standard_error_ms": 40.24101240877055,
+            "relative_half_width": 0.013421128812361805,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3164.9659979999997
+          "p90_ms": 3000.3003578
         },
         {
           "tool": "yarn-pnp",
@@ -1981,25 +1981,25 @@
           "lockfile": true,
           "nodeModules": false,
           "runs": [
-            3338.316959,
-            3303.139609,
-            3317.84165
+            3189.343688,
+            3292.499119,
+            3225.646173
           ],
           "actual_runs": 3,
           "stability": {
-            "median_ms": 3317.84165,
-            "mean_ms": 3319.766072666667,
-            "stddev_ms": 17.667457095055234,
-            "standard_error_ms": 10.200311109726304,
-            "rse": 0.0030725993598496853,
-            "iqr_ms": 17.588674999999967,
-            "robust_median_standard_error_ms": 15.94307720612395,
-            "relative_half_width": 0.004805255611317059,
+            "median_ms": 3225.646173,
+            "mean_ms": 3235.82966,
+            "stddev_ms": 52.32626770378643,
+            "standard_error_ms": 30.210584744469518,
+            "rse": 0.009336271657905973,
+            "iqr_ms": 51.57771550000007,
+            "robust_median_standard_error_ms": 46.75210044713423,
+            "relative_half_width": 0.014493871286463083,
             "target_rel_half_width": 0.05,
             "passed": true,
             "criterion": "relative_half_width"
           },
-          "p90_ms": 3334.2218972
+          "p90_ms": 3279.1285298000003
         }
       ]
     }
