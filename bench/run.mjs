@@ -361,6 +361,14 @@ function ensureState(tool, settings) {
   const needsNodeModules = settings.nodeModules && getNodeModulesPaths(tool).some((dirPath) => !fileExists(dirPath));
   const needsPnp = tool === 'yarn-pnp' && settings.nodeModules && !fileExists(path.join(repoRoot, '.pnp.cjs'));
 
+  if (tool === 'pnpm' && needsLockfile && settings.nodeModules) {
+    for (const targetPath of getNodeModulesPaths(tool)) {
+      if (fileExists(targetPath)) {
+        removePath(targetPath);
+      }
+    }
+  }
+
   if (needsLockfile || needsNodeModules || needsPnp) {
     runSpawnSync(preCommand, { tool, caseId: stateCaseId, phase: 'ensure_state' });
   }
